@@ -5,8 +5,9 @@ add_executable(sell_anything
 
 target_link_libraries(sell_anything PRIVATE sa::engine)
 
-# Copy runtime DLLs (DGL.dll / DGL_d.dll) next to the executable.
-if(WIN32)
+# Copy DGL.dll / DGL_d.dll next to the executable. Guarded because copy_if_different
+# fails when the DLL list is empty.
+if(SA_BACKEND_DGL)
   add_custom_command(TARGET sell_anything POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
             $<TARGET_RUNTIME_DLLS:sell_anything> $<TARGET_FILE_DIR:sell_anything>
