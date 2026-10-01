@@ -1,0 +1,48 @@
+# OS
+.DS_Store
+._*
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# C++ build
+build/
+cmake-build-*/
+out/
+.vs/
+*.o
+*.obj
+*.exe
+*.pdb
+*.ilk
+compile_commands.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ML artifacts (large; publish to Hugging Face instead)
+ml/data/raw/
+ml/data/processed/
+ml/checkpoints/
+ml/runs/
+wandb/
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.ndjson
+*.npy
+*.bin
+
+# Secrets
+.env

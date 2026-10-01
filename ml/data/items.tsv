@@ -1,0 +1,346 @@
+en	zh	label	group	note
+aircraft carrier	航空母艦	refuse	unrealistic	個人無法買賣
+airplane	飛機	refuse	unrealistic	個人二手交易不切實際
+alarm clock	鬧鐘	buy	household
+ambulance	救護車	refuse	unrealistic	特種車輛
+angel	天使	refuse	not_an_item	虛構
+animal migration	動物遷徙	refuse	not_an_item	抽象概念
+ant	螞蟻	refuse	not_an_item	一般不買賣
+anvil	鐵砧	buy	tools
+apple	蘋果	buy	food
+arm	手臂	refuse	body_part	身體部位
+asparagus	蘆筍	buy	food
+axe	斧頭	buy	tools
+backpack	背包	buy	fashion
+banana	香蕉	buy	food
+bandage	繃帶	buy	household
+barn	穀倉	buy	real_estate
+baseball	棒球	buy	sports
+baseball bat	球棒	buy	sports
+basket	籃子	buy	household
+basketball	籃球	buy	sports
+bat	蝙蝠	refuse	wildlife	野生動物
+bathtub	浴缸	buy	furniture
+beach	海灘	refuse	nature	自然地景
+bear	熊	refuse	wildlife	保育類動物
+beard	鬍子	refuse	body_part	身體部位
+bed	床	buy	furniture
+bee	蜜蜂	buy	pets_livestock	以蜂箱為單位買賣
+belt	皮帶	buy	fashion
+bench	長椅	buy	furniture
+bicycle	腳踏車	buy	vehicles
+binoculars	望遠鏡	buy	electronics
+bird	鳥	buy	pets_livestock	寵物鳥
+birthday cake	生日蛋糕	buy	food
+blackberry	黑莓	buy	food
+blueberry	藍莓	buy	food
+book	書	buy	books_media
+boomerang	迴力鏢	buy	toys
+bottlecap	瓶蓋	buy	collectibles
+bowtie	領結	buy	fashion
+bracelet	手環	buy	jewelry
+brain	大腦	refuse	body_part	身體部位
+bread	麵包	buy	food
+bridge	橋	refuse	unrealistic	公共建設
+broccoli	花椰菜	buy	food
+broom	掃把	buy	household
+bucket	水桶	buy	household
+bulldozer	推土機	buy	vehicles
+bus	公車	refuse	unrealistic	大型營業車輛
+bush	灌木	buy	plants
+butterfly	蝴蝶	refuse	wildlife	野生動物
+cactus	仙人掌	buy	plants
+cake	蛋糕	buy	food
+calculator	計算機	buy	electronics
+calendar	月曆	buy	books_media
+camel	駱駝	refuse	wildlife	個人飼養不切實際
+camera	相機	buy	electronics
+camouflage	迷彩	refuse	not_an_item	圖案而非物品
+campfire	營火	refuse	not_an_item	非實體商品
+candle	蠟燭	buy	household
+cannon	大砲	refuse	weapon	武器
+canoe	獨木舟	buy	sports
+car	汽車	buy	vehicles
+carrot	紅蘿蔔	buy	food
+castle	城堡	refuse	unrealistic	不切實際
+cat	貓	buy	pets_livestock
+ceiling fan	吊扇	buy	appliances
+cello	大提琴	buy	instruments
+cell phone	手機	buy	electronics
+chair	椅子	buy	furniture
+chandelier	水晶吊燈	buy	furniture
+church	教堂	refuse	unrealistic	宗教建築
+circle	圓形	refuse	shape	幾何圖形
+clarinet	單簧管	buy	instruments
+clock	時鐘	buy	household
+cloud	雲	refuse	nature	自然現象
+coffee cup	咖啡杯	buy	household
+compass	指南針	buy	household
+computer	電腦	buy	electronics
+cookie	餅乾	buy	food
+cooler	冰桶	buy	household
+couch	沙發	buy	furniture
+cow	牛	buy	pets_livestock	牲畜
+crab	螃蟹	buy	food
+crayon	蠟筆	buy	stationery
+crocodile	鱷魚	refuse	wildlife	保育類動物
+crown	皇冠	buy	collectibles
+cruise ship	郵輪	refuse	unrealistic	個人無法買賣
+cup	杯子	buy	household
+diamond	鑽石	buy	jewelry
+dishwasher	洗碗機	buy	appliances
+diving board	跳水板	refuse	unrealistic	泳池設施
+dog	狗	buy	pets_livestock
+dolphin	海豚	refuse	wildlife	保育類動物
+donut	甜甜圈	buy	food
+door	門	buy	furniture
+dragon	龍	refuse	not_an_item	虛構
+dresser	衣櫃	buy	furniture
+drill	電鑽	buy	tools
+drums	鼓	buy	instruments
+duck	鴨子	buy	pets_livestock
+dumbbell	啞鈴	buy	sports
+ear	耳朵	refuse	body_part	身體部位
+elbow	手肘	refuse	body_part	身體部位
+elephant	大象	refuse	wildlife	保育類動物
+envelope	信封	buy	stationery
+eraser	橡皮擦	buy	stationery
+eye	眼睛	refuse	body_part	身體部位
+eyeglasses	眼鏡	buy	fashion
+face	臉	refuse	body_part	身體部位
+fan	電風扇	buy	appliances
+feather	羽毛	buy	collectibles
+fence	圍籬	buy	household
+finger	手指	refuse	body_part	身體部位
+fire hydrant	消防栓	refuse	unrealistic	公共設施
+fireplace	壁爐	buy	furniture
+firetruck	消防車	refuse	unrealistic	特種車輛
+fish	魚	buy	pets_livestock	觀賞魚
+flamingo	紅鶴	refuse	wildlife	野生動物
+flashlight	手電筒	buy	household
+flip flops	拖鞋	buy	fashion
+floor lamp	立燈	buy	furniture
+flower	花	buy	plants
+flying saucer	飛碟	refuse	not_an_item	虛構
+foot	腳	refuse	body_part	身體部位
+fork	叉子	buy	household
+frog	青蛙	buy	pets_livestock	寵物蛙
+frying pan	平底鍋	buy	household
+garden	花園	refuse	not_an_item	場所而非物品
+garden hose	水管	buy	household
+giraffe	長頸鹿	refuse	wildlife	野生動物
+goatee	山羊鬍	refuse	body_part	身體部位
+golf club	高爾夫球桿	buy	sports
+grapes	葡萄	buy	food
+grass	草	refuse	nature	自然物
+guitar	吉他	buy	instruments
+hamburger	漢堡	buy	food
+hammer	鐵鎚	buy	tools
+hand	手	refuse	body_part	身體部位
+harp	豎琴	buy	instruments
+hat	帽子	buy	fashion
+headphones	耳機	buy	electronics
+hedgehog	刺蝟	buy	pets_livestock	寵物刺蝟
+helicopter	直升機	refuse	unrealistic	個人二手交易不切實際
+helmet	安全帽	buy	sports
+hexagon	六邊形	refuse	shape	幾何圖形
+hockey puck	冰球	buy	sports
+hockey stick	冰球桿	buy	sports
+horse	馬	buy	pets_livestock
+hospital	醫院	refuse	unrealistic	公共建築
+hot air balloon	熱氣球	refuse	unrealistic	個人二手交易不切實際
+hot dog	熱狗	buy	food
+hot tub	按摩浴缸	buy	furniture
+hourglass	沙漏	buy	household
+house	房子	buy	real_estate
+house plant	盆栽	buy	plants
+hurricane	颶風	refuse	nature	自然現象
+ice cream	冰淇淋	buy	food
+jacket	外套	buy	fashion
+jail	監獄	refuse	unrealistic	公共建築
+kangaroo	袋鼠	refuse	wildlife	野生動物
+key	鑰匙	refuse	not_an_item	單把鑰匙無交易價值且有安全疑慮
+keyboard	鍵盤	buy	electronics
+knee	膝蓋	refuse	body_part	身體部位
+knife	刀	buy	household	廚房刀具
+ladder	梯子	buy	tools
+lantern	燈籠	buy	household
+laptop	筆電	buy	electronics
+leaf	葉子	refuse	nature	自然物
+leg	腿	refuse	body_part	身體部位
+light bulb	燈泡	buy	household
+lighter	打火機	buy	household
+lighthouse	燈塔	refuse	unrealistic	公共設施
+lightning	閃電	refuse	nature	自然現象
+line	線條	refuse	shape	幾何圖形
+lion	獅子	refuse	wildlife	保育類動物
+lipstick	口紅	buy	beauty
+lobster	龍蝦	buy	food
+lollipop	棒棒糖	buy	food
+mailbox	信箱	buy	household
+map	地圖	buy	books_media
+marker	麥克筆	buy	stationery
+matches	火柴	buy	household
+megaphone	大聲公	buy	electronics
+mermaid	美人魚	refuse	not_an_item	虛構
+microphone	麥克風	buy	electronics
+microwave	微波爐	buy	appliances
+monkey	猴子	refuse	wildlife	保育類動物
+moon	月亮	refuse	nature	天體
+mosquito	蚊子	refuse	not_an_item	一般不買賣
+motorbike	機車	buy	vehicles
+mountain	山	refuse	nature	自然地景
+mouse	滑鼠	buy	electronics	電腦滑鼠
+moustache	八字鬍	refuse	body_part	身體部位
+mouth	嘴巴	refuse	body_part	身體部位
+mug	馬克杯	buy	household
+mushroom	香菇	buy	food
+nail	釘子	buy	tools
+necklace	項鍊	buy	jewelry
+nose	鼻子	refuse	body_part	身體部位
+ocean	海洋	refuse	nature	自然地景
+octagon	八邊形	refuse	shape	幾何圖形
+octopus	章魚	buy	food
+onion	洋蔥	buy	food
+oven	烤箱	buy	appliances
+owl	貓頭鷹	refuse	wildlife	保育類動物
+paintbrush	畫筆	buy	stationery
+paint can	油漆桶	buy	tools
+palm tree	棕櫚樹	buy	plants
+panda	熊貓	refuse	wildlife	保育類動物
+pants	褲子	buy	fashion
+paper clip	迴紋針	buy	stationery
+parachute	降落傘	buy	sports
+parrot	鸚鵡	buy	pets_livestock
+passport	護照	refuse	illegal	身分證件不得買賣
+peanut	花生	buy	food
+pear	梨子	buy	food
+peas	豌豆	buy	food
+pencil	鉛筆	buy	stationery
+penguin	企鵝	refuse	wildlife	保育類動物
+piano	鋼琴	buy	instruments
+pickup truck	小貨車	buy	vehicles
+picture frame	相框	buy	household
+pig	豬	buy	pets_livestock	牲畜
+pillow	枕頭	buy	household
+pineapple	鳳梨	buy	food
+pizza	披薩	buy	food
+pliers	鉗子	buy	tools
+police car	警車	refuse	unrealistic	特種車輛
+pond	池塘	refuse	nature	自然地景
+pool	游泳池	refuse	unrealistic	固定設施
+popsicle	冰棒	buy	food
+postcard	明信片	buy	collectibles
+potato	馬鈴薯	buy	food
+power outlet	插座	buy	household
+purse	錢包	buy	fashion
+rabbit	兔子	buy	pets_livestock
+raccoon	浣熊	refuse	wildlife	野生動物
+radio	收音機	buy	electronics
+rain	雨	refuse	nature	自然現象
+rainbow	彩虹	refuse	nature	自然現象
+rake	耙子	buy	tools
+remote control	遙控器	buy	electronics
+rhinoceros	犀牛	refuse	wildlife	保育類動物
+rifle	步槍	refuse	weapon	槍枝管制
+river	河流	refuse	nature	自然地景
+roller coaster	雲霄飛車	refuse	unrealistic	遊樂設施
+rollerskates	直排輪	buy	sports
+sailboat	帆船	buy	vehicles
+sandwich	三明治	buy	food
+saw	鋸子	buy	tools
+saxophone	薩克斯風	buy	instruments
+school bus	校車	refuse	unrealistic	特種車輛
+scissors	剪刀	buy	stationery
+scorpion	蠍子	refuse	wildlife	危險動物
+screwdriver	螺絲起子	buy	tools
+sea turtle	海龜	refuse	wildlife	保育類動物
+see saw	蹺蹺板	buy	toys
+shark	鯊魚	refuse	wildlife	保育類動物
+sheep	羊	buy	pets_livestock	牲畜
+shoe	鞋子	buy	fashion
+shorts	短褲	buy	fashion
+shovel	鏟子	buy	tools
+sink	洗手台	buy	furniture
+skateboard	滑板	buy	sports
+skull	頭骨	refuse	body_part	人體遺骸
+skyscraper	摩天大樓	refuse	unrealistic	不切實際
+sleeping bag	睡袋	buy	sports
+smiley face	笑臉	refuse	shape	符號
+snail	蝸牛	buy	pets_livestock	寵物蝸牛
+snake	蛇	refuse	wildlife	危險動物
+snorkel	浮潛呼吸管	buy	sports
+snowflake	雪花	refuse	nature	自然現象
+snowman	雪人	refuse	not_an_item	無法保存交易
+soccer ball	足球	buy	sports
+sock	襪子	buy	fashion
+speedboat	快艇	buy	vehicles
+spider	蜘蛛	refuse	wildlife	一般不買賣
+spoon	湯匙	buy	household
+spreadsheet	試算表	refuse	not_an_item	數位文件
+square	正方形	refuse	shape	幾何圖形
+squiggle	曲線	refuse	shape	幾何圖形
+squirrel	松鼠	refuse	wildlife	野生動物
+stairs	樓梯	refuse	not_an_item	建築結構
+star	星星	refuse	nature	天體
+steak	牛排	buy	food
+stereo	音響	buy	electronics
+stethoscope	聽診器	buy	electronics	醫療器材
+stitches	縫線	refuse	not_an_item	醫療處置
+stop sign	停止標誌	refuse	illegal	公共財產
+stove	瓦斯爐	buy	appliances
+strawberry	草莓	buy	food
+streetlight	路燈	refuse	illegal	公共財產
+string bean	四季豆	buy	food
+submarine	潛水艇	refuse	unrealistic	個人無法買賣
+suitcase	行李箱	buy	fashion
+sun	太陽	refuse	nature	天體
+swan	天鵝	refuse	wildlife	野生動物
+sweater	毛衣	buy	fashion
+swing set	鞦韆	buy	toys
+sword	劍	refuse	weapon	刀械管制
+syringe	針筒	refuse	illegal	醫療管制用品
+table	桌子	buy	furniture
+teapot	茶壺	buy	household
+teddy-bear	泰迪熊	buy	toys
+telephone	電話	buy	electronics
+television	電視	buy	electronics
+tennis racquet	網球拍	buy	sports
+tent	帳篷	buy	sports
+The Eiffel Tower	艾菲爾鐵塔	refuse	unrealistic	地標
+The Great Wall of China	萬里長城	refuse	unrealistic	地標
+The Mona Lisa	蒙娜麗莎	refuse	unrealistic	博物館館藏
+tiger	老虎	refuse	wildlife	保育類動物
+toaster	烤麵包機	buy	appliances
+toe	腳趾	refuse	body_part	身體部位
+toilet	馬桶	buy	furniture
+tooth	牙齒	refuse	body_part	身體部位
+toothbrush	牙刷	buy	household	只收全新
+toothpaste	牙膏	buy	household
+tornado	龍捲風	refuse	nature	自然現象
+tractor	拖拉機	buy	vehicles
+traffic light	紅綠燈	refuse	illegal	公共財產
+train	火車	refuse	unrealistic	個人無法買賣
+tree	樹	buy	plants
+triangle	三角形	refuse	shape	幾何圖形
+trombone	長號	buy	instruments
+truck	卡車	buy	vehicles
+trumpet	小號	buy	instruments
+t-shirt	T恤	buy	fashion
+umbrella	雨傘	buy	household
+underwear	內褲	buy	fashion	只收全新
+van	廂型車	buy	vehicles
+vase	花瓶	buy	household
+violin	小提琴	buy	instruments
+washing machine	洗衣機	buy	appliances
+watermelon	西瓜	buy	food
+waterslide	滑水道	refuse	unrealistic	遊樂設施
+whale	鯨魚	refuse	wildlife	保育類動物
+wheel	輪胎	buy	vehicles
+windmill	風車	refuse	unrealistic	大型設施
+wine bottle	葡萄酒	buy	food	酒類
+wine glass	紅酒杯	buy	household
+wristwatch	手錶	buy	fashion
+yoga	瑜珈	refuse	not_an_item	活動而非物品
+zebra	斑馬	refuse	wildlife	野生動物
+zigzag	鋸齒線	refuse	shape	幾何圖形
