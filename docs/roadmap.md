@@ -6,10 +6,16 @@
 - [x] Label all 345 Quick, Draw! categories as `buy` / `refuse`
 
 ## Milestone 1 — Engine
-- [ ] Window + OpenGL context
-- [ ] 2D renderer (lines, quads, text)
-- [ ] Mouse input and drawing canvas
+- [x] Backend interface, selectable at run time (`--backend`)
+- [x] OpenGL backend (GLFW, macOS/Linux), batched into one draw call per frame
+- [x] DGL backend (Direct3D 11, Windows) — compiles against DGL 1.4.0; needs a run on Windows
+- [x] Headless backend + CI smoke test
+- [x] Mouse input and drawing canvas
+- [ ] Text rendering (bitmap font) for the dialogue UI
+- [ ] Text input for the player's answers
+- [ ] Render the canvas to a texture instead of redrawing every segment each frame
 - [ ] TCP client talking to the ML service
+- [ ] *Stretch:* Vulkan backend
 
 ## Milestone 2 — Sketch classifier
 - [ ] Download Quick, Draw! bitmaps

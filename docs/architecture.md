@@ -16,6 +16,9 @@ flowchart LR
     Client <-- "NDJSON over 127.0.0.1:5555" --> Server
 ```
 
+Inside the game process, the engine reaches the OS and GPU only through `sa::Backend`
+(DGL on Windows, OpenGL on macOS/Linux, headless for CI). See [backends.md](backends.md).
+
 ## Why two processes?
 
 | Option | Pros | Cons |

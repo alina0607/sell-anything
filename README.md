@@ -38,7 +38,7 @@ Try to sell a tiger, a rainbow, or your elbow and the buyer will politely refuse
 
 | Component | Language | Path | Description |
 |---|---|---|---|
-| Engine | C++20 | [`engine/`](engine) | Game loop, rendering, input, scenes |
+| Engine | C++20 | [`engine/`](engine) | Game loop, scenes, and a backend interface with DGL / OpenGL / headless implementations |
 | Game | C++20 | [`game/`](game) | Drawing canvas, dialogue UI, game states |
 | ML service | Python | [`ml/`](ml) | Sketch classifier + buyer GPT behind a local socket |
 
@@ -50,13 +50,17 @@ See [`docs/architecture.md`](docs/architecture.md) and the [protocol spec](docs/
 
 ### Game (C++)
 
-Requires CMake ≥ 3.24 and a C++20 compiler.
+Requires CMake ≥ 3.24 and a C++20 compiler. GLFW is fetched automatically.
 
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build
-./build/game/sell_anything
+./build/game/sell_anything            # left-drag to draw, C or right-click to clear, Esc to quit
 ```
+
+The renderer is swappable at run time (`--backend dgl | opengl | null`):
+**DGL (Direct3D 11) on Windows**, **OpenGL on macOS/Linux**, and a headless backend for CI.
+Windows setup and the reasoning behind the choice are in [`docs/backends.md`](docs/backends.md).
 
 ### ML service (Python)
 

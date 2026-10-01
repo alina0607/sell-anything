@@ -20,6 +20,9 @@ out/
 *.ilk
 compile_commands.json
 
+# Proprietary SDKs (not redistributable; see docs/backends.md)
+third_party/DGL/
+
 # Python
 __pycache__/
 *.py[cod]

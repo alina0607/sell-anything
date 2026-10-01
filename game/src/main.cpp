@@ -1,39 +1,58 @@
+#include "CanvasScene.h"
+
 #include "sa/Engine.h"
 
 #include <iostream>
 #include <memory>
+#include <string_view>
+#include <utility>
 
 namespace
 {
 
-// Placeholder until the window and renderer exist: runs for one second, then quits.
-class BootScene final : public sa::Scene
+void PrintUsage()
 {
-public:
-    explicit BootScene(sa::Engine& engine) : engine_(engine) {}
-
-    void OnEnter() override { std::cout << "Sell Anything — engine booted\n"; }
-
-    void Update(double dt) override
-    {
-        elapsed_ += dt;
-        if (elapsed_ >= 1.0)
-            engine_.Quit();
-    }
-
-    void Render() override {}
-
-private:
-    sa::Engine& engine_;
-    double elapsed_ = 0.0;
-};
+    std::cout << "Usage: sell_anything [--backend NAME] [--list-backends]\n"
+                 "Backends in this build:";
+    for (std::string_view name : sa::AvailableBackends())
+        std::cout << ' ' << name;
+    std::cout << " (default: " << sa::AvailableBackends().front() << ")\n";
+}
 
 } // namespace
 
-int main()
+int main(int argc, char** argv)
 {
-    sa::Engine engine;
-    engine.SetScene(std::make_unique<BootScene>(engine));
-    engine.Run();
-    return 0;
+    std::string_view backendName;
+
+    for (int i = 1; i < argc; ++i)
+    {
+        const std::string_view arg = argv[i];
+        if (arg == "--backend" && i + 1 < argc)
+            backendName = argv[++i];
+        else if (arg == "--list-backends" || arg == "--help")
+        {
+            PrintUsage();
+            return 0;
+        }
+        else
+        {
+            std::cerr << "Unknown argument: " << arg << '\n';
+            PrintUsage();
+            return 2;
+        }
+    }
+
+    auto backend = sa::CreateBackend(backendName);
+    if (!backend)
+    {
+        std::cerr << "Backend '" << backendName << "' is not available in this build\n";
+        PrintUsage();
+        return 2;
+    }
+    std::cout << "Using backend: " << backend->Name() << '\n';
+
+    sa::Engine engine(std::move(backend));
+    engine.SetScene(std::make_unique<CanvasScene>());
+    return engine.Run() ? 0 : 1;
 }
