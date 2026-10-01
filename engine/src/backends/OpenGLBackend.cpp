@@ -1,13 +1,8 @@
 #include "OpenGLBackend.h"
 
-#if defined(__APPLE__)
-#define GL_SILENCE_DEPRECATION
-#include <OpenGL/gl3.h>
-#else
-#define GL_GLEXT_PROTOTYPES
-#include <GL/gl.h>
-#include <GL/glext.h>
-#endif
+// glad ships with GLFW's sources; one loader for Windows, macOS and Linux.
+#define GLAD_GL_IMPLEMENTATION
+#include <glad/gl.h>
 
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
@@ -117,6 +112,12 @@ bool OpenGLBackend::Init(const WindowDesc& desc)
     }
     glfwMakeContextCurrent(window_);
     glfwSwapInterval(1);
+
+    if (!gladLoadGL(glfwGetProcAddress))
+    {
+        std::cerr << "Failed to load OpenGL 3.3 functions\n";
+        return false;
+    }
 
     program_ = LinkProgram();
     if (!program_)

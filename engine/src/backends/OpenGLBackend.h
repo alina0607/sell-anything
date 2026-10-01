@@ -10,7 +10,7 @@ struct GLFWwindow;
 namespace sa
 {
 
-// GLFW window + OpenGL 3.3 core. Used on macOS and Linux.
+// GLFW window + OpenGL 3.3 core. Runs on Windows, macOS and Linux.
 // All draws in a frame are batched into one vertex buffer and submitted in EndFrame.
 class OpenGLBackend final : public Backend
 {

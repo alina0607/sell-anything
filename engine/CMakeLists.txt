@@ -11,8 +11,6 @@ target_include_directories(sa_engine
 
 # --- OpenGL backend (GLFW) ---------------------------------------------------
 if(SA_BACKEND_OPENGL)
-  find_package(OpenGL REQUIRED)
-
   include(FetchContent)
   set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
   set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
@@ -27,7 +25,9 @@ if(SA_BACKEND_OPENGL)
   FetchContent_MakeAvailable(glfw)
 
   target_sources(sa_engine PRIVATE src/backends/OpenGLBackend.cpp)
-  target_link_libraries(sa_engine PRIVATE glfw OpenGL::GL)
+  # GLFW loads the system OpenGL library at run time; glad (bundled with GLFW) loads the functions.
+  target_include_directories(sa_engine PRIVATE "${glfw_SOURCE_DIR}/deps")
+  target_link_libraries(sa_engine PRIVATE glfw)
   target_compile_definitions(sa_engine PRIVATE SA_HAS_OPENGL=1)
 endif()
 
@@ -47,5 +47,5 @@ if(SA_BACKEND_DGL)
 
   target_sources(sa_engine PRIVATE src/backends/DGLBackend.cpp)
   target_link_libraries(sa_engine PUBLIC DGL::DGL)
-  target_compile_definitions(sa_engine PRIVATE SA_HAS_DGL=1)
+  target_compile_definitions(sa_engine PRIVATE SA_HAS_DGL=1 NOMINMAX)
 endif()

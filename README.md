@@ -59,7 +59,7 @@ cmake --build build
 ```
 
 The renderer is swappable at run time (`--backend dgl | opengl | null`):
-**DGL (Direct3D 11) on Windows**, **OpenGL on macOS/Linux**, and a headless backend for CI.
+**OpenGL** on every OS (default), **DGL (Direct3D 11)** on Windows, and a headless backend for CI.
 Windows setup and the reasoning behind the choice are in [`docs/backends.md`](docs/backends.md).
 
 ### ML service (Python)

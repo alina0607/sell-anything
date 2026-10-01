@@ -6,8 +6,8 @@ Game code never includes a graphics API header, so the same game runs on every b
 
 | Backend | `--backend` | Platform | Graphics API | Built by default |
 |---|---|---|---|---|
-| DGL | `dgl` | Windows | Direct3D 11 (via DigiPen Graphics Library) | when `third_party/DGL` exists |
-| OpenGL | `opengl` | macOS, Linux | OpenGL 3.3 core via GLFW | yes |
+| OpenGL | `opengl` | Windows, macOS, Linux | OpenGL 3.3 core via GLFW + glad | yes (default) |
+| DGL | `dgl` | Windows | Direct3D 11 (via DigiPen Graphics Library) | when DGL is found ([below](#using-dgl-on-windows)) |
 | Null | `null` | all | none (headless) | always |
 
 Every enabled backend is compiled in; choose one at run time:
@@ -25,37 +25,58 @@ All backends take **window pixels, origin top-left, y down** — the same conven
 Quick, Draw! stroke format, so strokes go to the classifier without conversion.
 Each backend converts internally:
 
-- **OpenGL**: the vertex shader maps pixels to NDC; the viewport uses the framebuffer size so HiDPI displays render at full resolution.
+- **OpenGL**: functions are loaded with glad (bundled in GLFW's sources), so the same code runs on
+  every OS. The vertex shader maps pixels to NDC; the viewport uses the framebuffer size so HiDPI
+  displays render at full resolution.
 - **DGL**: points go through `DGL_Camera_ScreenCoordToWorld`, since DGL draws in a centered, y-up world space.
+
+## Building on Windows
+
+A fresh clone builds and runs the **OpenGL** backend with no setup (x64, Visual Studio 2022 or newer):
+
+```bat
+cmake -S . -B build -A x64
+cmake --build build --config Release
+build\game\Release\sell_anything.exe
+```
+
+Visual Studio users can also open `build\SellAnything.sln`.
 
 ## Using DGL on Windows
 
-DGL is © DigiPen and **must not be committed** to this repository. `third_party/DGL/` is git-ignored.
+DGL is © DigiPen and **must not be committed** to this repository, so it needs a one-time setup.
+CMake looks for a folder containing `inc/DGL.h` and `lib/x64/` (`DGL.lib`, `DGL.dll`, `DGL_d.lib`, `DGL_d.dll`),
+checking these in order:
 
-1. Copy the `DGL` folder from any CS529 project (`Libraries/DGL`) to `third_party/DGL`, so that these exist:
-   ```
-   third_party/DGL/inc/DGL.h
-   third_party/DGL/lib/x64/DGL.lib   DGL.dll   DGL_d.lib   DGL_d.dll
-   ```
-   Or point CMake somewhere else with `-DSA_DGL_ROOT=C:/path/to/DGL`.
-2. Configure and build (x64 only — DGL ships no 32-bit binaries):
-   ```bat
-   cmake -S . -B build -A x64
-   cmake --build build --config Release
-   build\game\Release\sell_anything.exe --backend dgl
-   ```
-   The build copies `DGL.dll` (or `DGL_d.dll` for Debug) next to the executable.
-   Visual Studio users can open `build\SellAnything.sln` directly.
+| | How | When to use |
+|---|---|---|
+| 1 | `cmake ... -DSA_DGL_ROOT=C:/path/to/DGL` | one-off |
+| 2 | `DGL_ROOT` environment variable | **recommended**: set once, every clone finds it |
+| 3 | copy the folder to `third_party/DGL/` (git-ignored) | per clone |
 
-If `third_party/DGL` is missing, Windows builds still succeed with only the `null` backend and CMake prints a warning.
+Any CS529 project's `Libraries/DGL` folder works. To set the environment variable once
+(then open a new terminal):
 
-## Why DGL + OpenGL, and not Vulkan (yet)
+```powershell
+setx DGL_ROOT "C:\path\to\CS529\Project3\Libraries\DGL"
+```
 
-| | DGL | OpenGL | Vulkan |
+Then build as above and run:
+
+```bat
+build\game\Release\sell_anything.exe --backend dgl
+```
+
+The build copies `DGL.dll` (or `DGL_d.dll` for Debug) next to the executable.
+If DGL isn't found, the build still succeeds with OpenGL and null; CMake's output says which backends were built.
+
+## Why OpenGL + DGL, and not Vulkan (yet)
+
+| | OpenGL | DGL | Vulkan |
 |---|---|---|---|
-| Runs on the Windows demo machines | ✅ the course's own library | ⚠️ needs a function loader | ✅ |
-| Runs on macOS (where development happens) | ❌ | ✅ native | ⚠️ only through MoltenVK |
-| Code to draw the first line | ~30 lines | ~150 lines | ~1,000+ lines |
+| Windows | ✅ | ✅ the course's own library | ✅ |
+| macOS (where development happens) | ✅ | ❌ | ⚠️ only through MoltenVK |
+| Code to draw the first line | ~150 lines | ~30 lines | ~1,000+ lines |
 | What this game needs | colored lines and quads | colored lines and quads | — |
 
 The game draws strokes and UI panels: a few thousand vertices per frame. Vulkan's strengths

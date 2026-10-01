@@ -14,11 +14,11 @@ namespace sa
 std::vector<std::string_view> AvailableBackends()
 {
     std::vector<std::string_view> names;
-#if SA_HAS_DGL
-    names.push_back(DGLBackend::kName);
-#endif
 #if SA_HAS_OPENGL
     names.push_back(OpenGLBackend::kName);
+#endif
+#if SA_HAS_DGL
+    names.push_back(DGLBackend::kName);
 #endif
     names.push_back(NullBackend::kName);
     return names;

@@ -8,20 +8,22 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # --- Backends ----------------------------------------------------------------
 # Every backend that is enabled gets compiled in; pick one at run time with --backend.
-set(SA_DGL_ROOT "${CMAKE_SOURCE_DIR}/third_party/DGL" CACHE PATH
-    "Folder containing DGL's inc/ and lib/x64/ (not redistributable, never committed)")
+# DGL is not redistributable: point at it with -DSA_DGL_ROOT=..., the DGL_ROOT environment
+# variable (set it once and every clone finds it), or by copying it into third_party/DGL.
+if(DEFINED ENV{DGL_ROOT})
+  set(_sa_dgl_default "$ENV{DGL_ROOT}")
+else()
+  set(_sa_dgl_default "${CMAKE_SOURCE_DIR}/third_party/DGL")
+endif()
+set(SA_DGL_ROOT "${_sa_dgl_default}" CACHE PATH "Folder containing DGL's inc/ and lib/x64/")
 
 set(_sa_dgl_found OFF)
 if(WIN32 AND EXISTS "${SA_DGL_ROOT}/inc/DGL.h")
   set(_sa_dgl_found ON)
 endif()
-set(_sa_opengl_default ON)
-if(WIN32)
-  set(_sa_opengl_default OFF) # Windows uses DGL; the GL backend has no function loader there
-endif()
 
+option(SA_BACKEND_OPENGL "Build the GLFW + OpenGL backend" ON)
 option(SA_BACKEND_DGL "Build the DGL (Direct3D 11) backend" ${_sa_dgl_found})
-option(SA_BACKEND_OPENGL "Build the GLFW + OpenGL backend" ${_sa_opengl_default})
 
 if(SA_BACKEND_DGL AND NOT WIN32)
   message(FATAL_ERROR "SA_BACKEND_DGL requires Windows")
@@ -29,14 +31,11 @@ endif()
 if(SA_BACKEND_DGL AND NOT EXISTS "${SA_DGL_ROOT}/inc/DGL.h")
   message(FATAL_ERROR "DGL not found at SA_DGL_ROOT=${SA_DGL_ROOT} (see docs/backends.md)")
 endif()
-if(SA_BACKEND_OPENGL AND WIN32)
-  message(FATAL_ERROR "SA_BACKEND_OPENGL is not supported on Windows yet; use DGL")
-endif()
 if(WIN32 AND NOT SA_BACKEND_DGL)
-  message(WARNING "DGL not found at ${SA_DGL_ROOT}; only the headless 'null' backend will be built")
+  message(STATUS "DGL not found at ${SA_DGL_ROOT}; building without the DGL backend")
 endif()
 
-message(STATUS "Sell Anything backends: DGL=${SA_BACKEND_DGL} OpenGL=${SA_BACKEND_OPENGL} null=ON")
+message(STATUS "Sell Anything backends: OpenGL=${SA_BACKEND_OPENGL} DGL=${SA_BACKEND_DGL} null=ON")
 
 # --- Warnings ----------------------------------------------------------------
 if(MSVC)
