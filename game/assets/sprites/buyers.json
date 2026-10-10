@@ -1,0 +1,64 @@
+{
+  "image": "buyers.png",
+  "cell": 64,
+  "ground_y": 62,
+  "transparent": "#FF00FF",
+  "frames": [
+    {
+      "name": "grandpa",
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "name": "student",
+      "x": 64,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "name": "nurse",
+      "x": 128,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "name": "mother_and_child",
+      "x": 192,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "name": "fashionista",
+      "x": 256,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "name": "hiker",
+      "x": 320,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "name": "breeder",
+      "x": 384,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "name": "bargain_hunter",
+      "x": 448,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    }
+  ]
+}
