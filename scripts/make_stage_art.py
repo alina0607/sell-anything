@@ -125,6 +125,15 @@ def main_component(frame: Image.Image) -> Image.Image:
     return frame
 
 
+def visible_bbox(frame: Image.Image, threshold: int = 20) -> tuple[int, int, int, int]:
+    """Bounding box of paint a player can actually see, excluding near-transparent ImageGen residue."""
+    alpha = frame.getchannel("A").point(lambda value: 255 if value > threshold else 0)
+    box = alpha.getbbox()
+    if box is None:
+        raise ValueError("sprite frame has no visible pixels")
+    return box
+
+
 def grid_frames(path: Path, cols: int, rows: int) -> list[Image.Image]:
     """Split an ImageGen sheet and keep only each cell's main connected alpha component."""
     im = Image.open(path).convert("RGBA")
@@ -157,9 +166,10 @@ def figure_sheet(frames: list[Image.Image], name: str, ms: list[int], standing_h
     the feet are the bottom centre of the first frame's figure."""
     box = Image.new("L", frames[0].size)
     for f in frames:
-        box.paste(255, mask=f.getchannel("A"))
+        visible = f.getchannel("A").point(lambda value: 255 if value > 20 else 0)
+        box.paste(255, mask=visible)
     left, top, right, bottom = box.getbbox()
-    fl, ft, fr, fb = frames[0].getchannel("A").getbbox()
+    fl, ft, fr, fb = visible_bbox(frames[0])
     k = standing_height / (fb - ft)
     size = (round((right - left) * k), round((bottom - top) * k))
     cells = [f.crop((left, top, right, bottom)).resize(size, Image.LANCZOS) for f in frames]
@@ -237,12 +247,12 @@ def npcs() -> None:
     """Build each buyer's walking sheet plus a separate, genuinely planted back-facing idle pose."""
     for path in sorted(SRC.glob("npc_*.gif")):
         frames, ms = gif_frames(path)
-        frames = [soft_edge(f) for f in frames]
+        frames = [main_component(soft_edge(f)) for f in frames]
         figure_sheet(frames, path.stem, ms, GIRL_PX, parts=NPC_PARTS)
         idle_path = path.with_name(f"{path.stem}_idle.png")
         if not idle_path.exists():
             raise FileNotFoundError(f"missing idle art for {path.stem}: {idle_path}")
-        idle = Image.open(idle_path).convert("RGBA")
+        idle = main_component(Image.open(idle_path).convert("RGBA"))
         figure_sheet([idle], f"{path.stem}_idle", [1000], GIRL_PX)
 
 
