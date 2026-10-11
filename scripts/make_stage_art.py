@@ -6,7 +6,8 @@ Sources: background_tile_crossfade.png (the owner's watercolor strip, its ends c
 without a seam), stall_cloth.png (the stall with its hanging cloth, on black), girl_idle.gif (12 front-facing
 frames on cream), cat_shelter.png (the shelter, on transparent, with eight empty easels), girl_run.gif (49 frames on transparent: front, starting to run, running right, stopping),
 girl_walk.gif (30 frames: walking away from the camera, turning, walking towards it),
-npc_<n>.gif (a buyer: walking away from the camera, turning, walking towards it), Nunito.ttf (SIL OFL,
+npc_<n>.gif (a buyer: walking away from the camera, turning, walking towards it), npc_<n>_idle.png
+(the same buyer standing front-facing with both feet planted), Nunito.ttf (SIL OFL,
 google/fonts). Where things stand is in game/assets/stage/layout.json, written here
 only when it does not exist yet, so it can be tuned by hand.
 Sheets leave a transparent border round every cell, so smooth sampling never bleeds from a neighbour.
@@ -165,12 +166,16 @@ def girl() -> None:
 
 
 def npcs() -> None:
-    """Each npc_<n>.gif, its binary GIF edge softened, as one sheet with the walking-away, turning and
-    walking-towards parts."""
+    """Build each buyer's walking sheet plus a separate, genuinely planted front-facing idle pose."""
     for path in sorted(SRC.glob("npc_*.gif")):
         frames, ms = gif_frames(path)
         frames = [soft_edge(f) for f in frames]
         figure_sheet(frames, path.stem, ms, GIRL_PX, parts=NPC_PARTS)
+        idle_path = path.with_name(f"{path.stem}_idle.png")
+        if not idle_path.exists():
+            raise FileNotFoundError(f"missing idle art for {path.stem}: {idle_path}")
+        idle = Image.open(idle_path).convert("RGBA")
+        figure_sheet([idle], f"{path.stem}_idle", [1000], GIRL_PX)
 
 
 def stall() -> None:
