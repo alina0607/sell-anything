@@ -8,7 +8,7 @@ frames on cream), cat_shelter.png (the shelter, on transparent, with eight empty
 (front, starting and stopping poses), girl_run_cycle_v2.png plus girl_run_pose_b.png (the two leg phases),
 girl_walk.gif (30 frames: walking away from the camera, turning, walking towards it),
 npc_<n>.gif (a buyer: walking away from the camera, turning, walking towards it), npc_<n>_idle.png
-(the same buyer standing front-facing with both feet planted), Nunito.ttf (SIL OFL,
+(the same buyer standing back-facing with both feet planted), Nunito.ttf (SIL OFL,
 google/fonts). Where things stand is in game/assets/stage/layout.json, written here
 only when it does not exist yet, so it can be tuned by hand.
 Sheets leave a transparent border round every cell, so smooth sampling never bleeds from a neighbour.
@@ -188,7 +188,7 @@ def girl() -> None:
 
 
 def npcs() -> None:
-    """Build each buyer's walking sheet plus a separate, genuinely planted front-facing idle pose."""
+    """Build each buyer's walking sheet plus a separate, genuinely planted back-facing idle pose."""
     for path in sorted(SRC.glob("npc_*.gif")):
         frames, ms = gif_frames(path)
         frames = [soft_edge(f) for f in frames]
