@@ -15,7 +15,7 @@
  ],
  "ground": 545,
  "girl_height": 200,
- "buyer_scale": 2.25,
+ "buyer_scale": 3.125,
  "girl_start": 330,
- "npc_height": 190
+ "npc_height": 200
 }

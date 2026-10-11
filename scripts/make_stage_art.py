@@ -45,7 +45,7 @@ EASELS = [(282, 498, 381, 604), (433, 498, 532, 604), (580, 498, 682, 604), (737
 # World x is 0 at the stall's centre; "bottom" is the screen y the object stands on, "height" its drawn height.
 LAYOUT = {"objects": [{"image": "stall", "x": 0, "bottom": 500, "height": 470},
                       {"image": "shelter", "x": 1500, "bottom": 520, "height": 420}],
-          "ground": 545, "girl_height": 200, "girl_start": 330, "buyer_scale": 2.25, "npc_height": 190}
+          "ground": 545, "girl_height": 200, "girl_start": 330, "buyer_scale": 3.125, "npc_height": 200}
 
 
 def keyed(frame: Image.Image, color: tuple[int, int, int]) -> Image.Image:
@@ -79,6 +79,15 @@ def soft_edge(frame: Image.Image) -> Image.Image:
     a = np.array(frame)
     alpha = (ndimage.gaussian_filter(a[..., 3] / 255.0, 0.6) * 255).astype(np.uint8)
     return Image.fromarray(np.dstack([a[..., :3], alpha]), "RGBA")
+
+
+def grade_girl_idle(frame: Image.Image) -> Image.Image:
+    """Match the pale idle source to the deeper, more saturated walking art without redrawing it."""
+    a = np.array(frame).astype(float)
+    rgb = a[..., :3]
+    gray = rgb.mean(-1, keepdims=True)
+    a[..., :3] = np.clip((gray + (rgb - gray) * 1.20) * 0.943, 0, 255)
+    return Image.fromarray(a.astype(np.uint8), "RGBA")
 
 
 def gif_frames(path: Path) -> tuple[list[Image.Image], list[int]]:
@@ -168,16 +177,11 @@ def fitted_sheet(frames: list[Image.Image], name: str, ms: list[int], heights: l
 
 def girl() -> None:
     idle, idle_ms = gif_frames(SRC / "girl_idle.gif")
-    idle = [keyed(f, idle[0].convert("RGB").getpixel((1, 1))) for f in idle]
+    idle = [grade_girl_idle(keyed(f, idle[0].convert("RGB").getpixel((1, 1)))) for f in idle]
     old_run, old_ms = gif_frames(SRC / "girl_run.gif")
     cycle = grid_frames(SRC / "girl_run_cycle_v2.png", 4, 2)
-    opposite = main_component(Image.open(SRC / "girl_run_pose_b.png"))
-    # The sheet's even poses carry the near leg forward; every odd pose uses the separately edited reverse
-    # layer order (near white-socked leg back, shaded far leg forward), so anatomical legs truly alternate.
-    for i in range(1, len(cycle), 2):
-        cycle[i] = opposite.copy()
-    # Keep the hand-drawn start/stop transitions, but replace the ambiguous middle with a readable cycle in
-    # which the front leg changes every half-stride. Every pose is fitted to the same height as idle.
+    # Keep the eight jointly authored frames together.  A separately generated replacement drifts in
+    # palette, brushwork, anatomy and leg length even when its pose looks plausible in isolation.
     run = [*old_run[:7], *cycle, *old_run[42:]]
     run_ms = [*old_ms[:7], *([90] * len(cycle)), *old_ms[42:]]
     run = [soft_edge(f) for f in run]
