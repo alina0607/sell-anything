@@ -1,4 +1,4 @@
-"""Record the real game while scripted input holds Right; used before handing off character art."""
+"""Record real-game right/left runs, away/toward walks and a jump before handing off character art."""
 
 from __future__ import annotations
 
@@ -12,14 +12,15 @@ from PIL import Image
 from e2e_autoplay import find_game
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = Path("/tmp/girl-gameplay-run.gif")
-FIRST, LAST, STEP = 45, 285, 6
+OUT = Path("/tmp/girl-gameplay-movement-qa.gif")
+FIRST, LAST, STEP = 30, 750, 6
 
 
 def main() -> int:
     with tempfile.TemporaryDirectory() as tmp:
         captures = ",".join(f"{tmp}/f{frame:04d}.png@{frame}" for frame in range(FIRST, LAST + 1, STEP))
-        env = {**os.environ, "SA_KEYS": "right@30:300", "SA_CAPTURE": captures, "SA_EXIT_AFTER": "310"}
+        keys = "right@30:180,left@210:360,up@390:480,down@510:600,space@630:632"
+        env = {**os.environ, "SA_KEYS": keys, "SA_CAPTURE": captures, "SA_EXIT_AFTER": "760"}
         run = subprocess.run([str(find_game()), "--backend", "opengl"], cwd=ROOT, env=env,
                              capture_output=True, text=True)
         paths = sorted(Path(tmp).glob("f*.png"))

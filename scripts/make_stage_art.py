@@ -4,8 +4,8 @@
 
 Sources: background_tile_crossfade.png (the owner's watercolor strip, its ends cross-faded so it repeats
 without a seam), stall_cloth.png (the stall with its hanging cloth, on black), girl_idle.gif (12 front-facing
-frames on cream), cat_shelter.png (the shelter, on transparent, with eight empty easels), girl_run.gif
-(front, starting and stopping poses), girl_run_cycle_v3.png (four equally timed opposing gait phases),
+frames on cream), cat_shelter.png (the shelter, on transparent, with eight empty easels),
+girl_run_cycle_v4.png (four equally timed contralateral gait phases),
 girl_walk.gif (30 frames: walking away from the camera, turning, walking towards it),
 npc_<n>.gif (a buyer: walking away from the camera, turning, walking towards it), npc_<n>_idle.png
 (the same buyer standing back-facing with both feet planted), Nunito.ttf (SIL OFL,
@@ -35,9 +35,13 @@ ROUND_PX, ROUND_SUPER, ROUND_RADIUS, ROUND_EDGE = 64, 4, 18, 10   # rounded text
 STALL_PX = 640                                 # stall texture height (drawn at layout.json's height)
 CLOTH = (420, 340, 1130, 830)                  # where one can draw on the cloth, in stall_cloth.png pixels
 GIRL_PX = 320                                  # girl texture height when standing (drawn at layout.json's)
-RUN_PARTS = {"start": (1, 6), "run": (7, 10), "stop": (11, 17)}  # rebuilt output sheet, inclusive
+RUN_PARTS = {"start": (0, 0), "run": (1, 4), "stop": (5, 5)}
 NPC_PARTS = {"away": (0, 11), "turn": (12, 17), "toward": (18, 29)}   # npc_<n>.gif and girl_walk.gif, inclusive
-JUMP_FRAMES = {"rise": 7, "top": 8, "fall": 9, "land": 17}
+JUMP_FRAMES = {"rise": 1, "top": 2, "fall": 3, "land": 5}
+RUN_GAIT = {
+    "stride_a": {"frame": 1, "front_arm": "right", "front_leg": "left"},
+    "stride_b": {"frame": 3, "front_arm": "left", "front_leg": "right"},
+}
 SHELTER_PX = 880                               # shelter texture height: about the source's own
 # The blank canvases on the shelter's easels, in cat_shelter.png pixels: where adoptable cats will show.
 EASELS = [(282, 498, 381, 604), (433, 498, 532, 604), (580, 498, 682, 604), (737, 498, 839, 604),
@@ -225,20 +229,15 @@ def scaled_sheet(frames: list[Image.Image], name: str, ms: list[int], scales: li
 def girl() -> None:
     idle, idle_ms = gif_frames(SRC / "girl_idle.gif")
     idle = [grade_girl_idle(keyed(f, idle[0].convert("RGB").getpixel((1, 1)))) for f in idle]
-    old_run, old_ms = gif_frames(SRC / "girl_run.gif")
-    cycle = grid_frames(SRC / "girl_run_cycle_v3.png", 4, 1)
-    # Four equal phases: stride A, crossing A, the truly opposing stride B, crossing B. The source sheet
-    # has one locked head size and palette; each phase lasts exactly 0.5 seconds.
-    run = [*old_run[:7], *cycle, *old_run[42:]]
-    run_ms = [*old_ms[:7], *([500] * len(cycle)), *old_ms[42:]]
-    run = [grade_to(soft_edge(f)) for f in run]
+    cycle = grid_frames(SRC / "girl_run_cycle_v4.png", 4, 1)
+    # One art source for start, loop and stop: no mid-run head/body/style swap. Passing poses bookend
+    # the loop; the two stride poses use opposite arm/leg pairs.
+    run = [cycle[1], *cycle, cycle[3]]
+    run_ms = [160, 500, 500, 500, 500, 160]
+    run = [grade_to(frame) for frame in run]
     figure_sheet(idle, "girl_idle", idle_ms, GIRL_PX)
-    transitions = [*old_run[:7], *old_run[42:]]
-    transition_scales = [GIRL_PX / (f.getchannel("A").getbbox()[3] - f.getchannel("A").getbbox()[1])
-                         for f in transitions]
-    cycle_scale = 175.0 / 290.0  # locked source head height -> the 175 px head in idle/walk sheets
-    scales = [*transition_scales[:7], *([cycle_scale] * 4), *transition_scales[7:]]
-    scaled_sheet(run, "girl_run", run_ms, scales, parts=RUN_PARTS, jump=JUMP_FRAMES)
+    figure_sheet(run, "girl_run", run_ms, GIRL_PX, parts=RUN_PARTS, jump=JUMP_FRAMES,
+                 gait=RUN_GAIT)
     walk, walk_ms = gif_frames(SRC / "girl_walk.gif")
     figure_sheet([soft_edge(f) for f in walk], "girl_walk", walk_ms, GIRL_PX, parts=NPC_PARTS)
 

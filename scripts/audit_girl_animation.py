@@ -1,7 +1,7 @@
 """Reject visible girl-animation regressions and render review artifacts.
 
 Checks the built sheets, not source promises: four equal 500 ms run phases, locked head dimensions,
-matched value/saturation, distinct opposing silhouettes, and consistent scale across idle/walk/run.
+matched value/saturation, distinct opposing poses, and consistent scale across idle/walk/run.
 Writes /tmp/girl-animation-contact.png and /tmp/girl-run-audit.gif for human review.
 """
 
@@ -51,6 +51,19 @@ def silhouette_difference(a: Image.Image, b: Image.Image) -> float:
     return float(np.logical_xor(aa, bb).sum() / max(np.logical_or(aa, bb).sum(), 1))
 
 
+def appearance_difference(a: Image.Image, b: Image.Image) -> float:
+    """Fraction of visible pixels whose RGB changes visibly between two poses.
+
+    Passing poses may share almost the same outer silhouette while their near/far arms and legs swap,
+    so alpha-only comparison is the wrong test for that pair.
+    """
+    aa = np.asarray(a).astype(float)
+    bb = np.asarray(b).astype(float)
+    visible = (aa[..., 3] > 40) | (bb[..., 3] > 40)
+    changed = np.max(np.abs(aa[..., :3] - bb[..., :3]), axis=2) > 10
+    return float(changed[visible].mean())
+
+
 def flatten(frame: Image.Image, size: tuple[int, int] = (366, 327)) -> Image.Image:
     canvas = Image.new("RGBA", size, "#fff4ec")
     canvas.alpha_composite(frame, ((size[0] - frame.width) // 2, size[1] - frame.height))
@@ -68,6 +81,12 @@ def main() -> int:
     checks: list[tuple[bool, str]] = []
     checks.append((len(cycle) == 4 and cycle_ms == [500] * 4,
                    f"four equal run phases at 500 ms: {cycle_ms}"))
+    expected_gait = {
+        "stride_a": {"frame": 1, "front_arm": "right", "front_leg": "left"},
+        "stride_b": {"frame": 3, "front_arm": "left", "front_leg": "right"},
+    }
+    checks.append((run_meta.get("gait") == expected_gait,
+                   "contralateral gait contract: right arm/left leg, then left arm/right leg"))
     cm = [metrics(f) for f in cycle]
     for key, limit in (("head_w", 8.0), ("head_h", 4.0), ("value", 2.0), ("saturation", 2.0)):
         spread = max(m[key] for m in cm) - min(m[key] for m in cm)
@@ -85,10 +104,11 @@ def main() -> int:
                    f"run/reference saturation delta {run_sat - target_sat:+.1f} <= 3.0"))
     checks.append((silhouette_difference(cycle[0], cycle[2]) >= .10,
                    f"opposing stride silhouette difference {silhouette_difference(cycle[0], cycle[2]):.3f} >= 0.100"))
-    checks.append((silhouette_difference(cycle[1], cycle[3]) >= .06,
-                   f"crossing silhouette difference {silhouette_difference(cycle[1], cycle[3]):.3f} >= 0.060"))
+    checks.append((appearance_difference(cycle[1], cycle[3]) >= .30,
+                   f"crossing pose appearance difference {appearance_difference(cycle[1], cycle[3]):.3f} >= 0.300"))
 
-    labels = ["idle", "away", "toward", "stride A", "cross A", "stride B", "cross B"]
+    labels = ["idle", "away", "toward", "right arm + left leg", "cross A",
+              "left arm + right leg", "cross B"]
     selected = [idle[0], walk[0], walk[walk_meta["parts"]["toward"][0]], *cycle]
     tiles = []
     for label, frame in zip(labels, selected, strict=True):
