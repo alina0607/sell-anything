@@ -117,8 +117,9 @@ PNGs and nothing else.
   Moving along the screen's y axis must not scale a character, and changing state must never pop in size.
 - Create new motion only by editing or warping pixels from the approved source set, or replace the whole action
   set with one jointly authored set. A separately generated replacement frame is not an acceptable fix.
-- Before committing, compare representative frames from every state in one contact sheet at identical height.
-  Reject the change if identity, value range, saturation, limb length, costume or rendering style shifts.
+- Before committing, run `scripts/audit_girl_animation.py` and `scripts/record_girl_animation.py`. The first
+  rejects unequal phase timing, head-size pulsing, color drift and repeated silhouettes; the second records
+  real gameplay with a held direction key. Also inspect its contact sheet and GIF before handoff.
 
 Every screen is drawn in one world (`game/assets/stage/`), built from the owner's source art in `art/stage/` by
 `python scripts/make_stage_art.py`:
@@ -129,7 +130,7 @@ Every screen is drawn in one world (`game/assets/stage/`), built from the owner'
 | `stall_cloth.png` (on black) | `stall.png` + `stall.json` | `cloth` is where one draws: the 1240-unit canvas the game keeps strokes in is shown there |
 | `cat_shelter.png` | `shelter.png` + `shelter.json` | `easels` are the eight blank canvases, for adoptable cats later |
 | `girl_idle.gif` (12 frames on cream) | `girl_idle.png` + `.json` | front view, cut out of the cream |
-| `girl_run.gif` + `girl_run_cycle_v2.png` | `girl_run.png` + `.json` | original start/stop transitions plus the jointly authored eight-frame run cycle; every frame is fitted to the same figure height. Never insert a separately generated pose. |
+| `girl_run.gif` + `girl_run_cycle_v3.png` | `girl_run.png` + `.json` | original start/stop transitions plus four equal 500 ms phases: stride A, crossing A, opposing stride B, crossing B. The cycle is scaled by one locked head size—not refitted by pose height—and every frame is graded to one measured value/saturation target. |
 | `girl_walk.gif` (30 frames) | `girl_walk.png` + `.json` | `parts` away 0–11 (up the screen, from behind), turn 12–17, toward 18–29 (down, facing the camera); the turn plays backwards to turn away |
 | `npc_<n>.gif` (30 frames) | `npc_<n>.png` + `.json` | a painted buyer: `parts` away 0–11 (walking up, seen from behind), turn 12–17, toward 18–29 (walking off, facing the camera) |
 | `Nunito.ttf` (SIL OFL, `fonts/OFL.txt`) | `fonts/nunito.png` + `.txt` | white glyphs at six sizes, drawn in any color |

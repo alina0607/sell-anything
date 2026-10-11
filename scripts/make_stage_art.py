@@ -5,7 +5,7 @@
 Sources: background_tile_crossfade.png (the owner's watercolor strip, its ends cross-faded so it repeats
 without a seam), stall_cloth.png (the stall with its hanging cloth, on black), girl_idle.gif (12 front-facing
 frames on cream), cat_shelter.png (the shelter, on transparent, with eight empty easels), girl_run.gif
-(front, starting and stopping poses), girl_run_cycle_v2.png plus girl_run_pose_b.png (the two leg phases),
+(front, starting and stopping poses), girl_run_cycle_v3.png (four equally timed opposing gait phases),
 girl_walk.gif (30 frames: walking away from the camera, turning, walking towards it),
 npc_<n>.gif (a buyer: walking away from the camera, turning, walking towards it), npc_<n>_idle.png
 (the same buyer standing back-facing with both feet planted), Nunito.ttf (SIL OFL,
@@ -35,9 +35,9 @@ ROUND_PX, ROUND_SUPER, ROUND_RADIUS, ROUND_EDGE = 64, 4, 18, 10   # rounded text
 STALL_PX = 640                                 # stall texture height (drawn at layout.json's height)
 CLOTH = (420, 340, 1130, 830)                  # where one can draw on the cloth, in stall_cloth.png pixels
 GIRL_PX = 320                                  # girl texture height when standing (drawn at layout.json's)
-RUN_PARTS = {"start": (1, 6), "run": (7, 14), "stop": (15, 21)}  # rebuilt output sheet, inclusive
+RUN_PARTS = {"start": (1, 6), "run": (7, 10), "stop": (11, 17)}  # rebuilt output sheet, inclusive
 NPC_PARTS = {"away": (0, 11), "turn": (12, 17), "toward": (18, 29)}   # npc_<n>.gif and girl_walk.gif, inclusive
-JUMP_FRAMES = {"rise": 7, "top": 10, "fall": 13, "land": 21}
+JUMP_FRAMES = {"rise": 7, "top": 8, "fall": 9, "land": 17}
 SHELTER_PX = 880                               # shelter texture height: about the source's own
 # The blank canvases on the shelter's easels, in cat_shelter.png pixels: where adoptable cats will show.
 EASELS = [(282, 498, 381, 604), (433, 498, 532, 604), (580, 498, 682, 604), (737, 498, 839, 604),
@@ -87,6 +87,19 @@ def grade_girl_idle(frame: Image.Image) -> Image.Image:
     rgb = a[..., :3]
     gray = rgb.mean(-1, keepdims=True)
     a[..., :3] = np.clip((gray + (rgb - gray) * 1.20) * 0.943, 0, 255)
+    return Image.fromarray(a.astype(np.uint8), "RGBA")
+
+
+def grade_to(frame: Image.Image, target_value: float = 170.0, target_saturation: float = 74.0) -> Image.Image:
+    """Give every motion frame one measured value/saturation target instead of eyeballing sources."""
+    a = np.array(frame).astype(float)
+    mask = a[..., 3] > 20
+    rgb = a[..., :3]
+    gray = rgb.mean(-1, keepdims=True)
+    saturation = (rgb[mask].max(1) - rgb[mask].min(1)).mean()
+    rgb = gray + (rgb - gray) * (target_saturation / max(saturation, 1.0))
+    value = rgb[mask].mean(-1).mean()
+    a[..., :3] = np.clip(rgb * (target_value / max(value, 1.0)), 0, 255)
     return Image.fromarray(a.astype(np.uint8), "RGBA")
 
 
@@ -175,18 +188,47 @@ def fitted_sheet(frames: list[Image.Image], name: str, ms: list[int], heights: l
     sheet(cells, name, ms, (round(left), cell_h), standing=GIRL_PX, **extra)
 
 
+def scaled_sheet(frames: list[Image.Image], name: str, ms: list[int], scales: list[float], **extra: object) -> None:
+    """Place frames at explicit scales, aligned by their feet.
+
+    Unlike fitted_sheet, this never enlarges a crouched/crossing pose to fill the same total height. That
+    old fitting made the head pulse larger whenever the legs moved closer together.
+    """
+    fitted, feet_x = [], []
+    for frame, scale in zip(frames, scales, strict=True):
+        im = frame.crop(frame.getchannel("A").getbbox())
+        im = im.resize((round(im.width * scale), round(im.height * scale)), Image.Resampling.LANCZOS)
+        low = np.array(im.getchannel("A"))[round(im.height * 0.8):].astype(float)
+        feet_x.append(float((low.sum(0) * np.arange(low.shape[1])).sum() / max(low.sum(), 1.0)))
+        fitted.append(im)
+    left = max(feet_x)
+    right = max(im.width - fx for im, fx in zip(fitted, feet_x, strict=True))
+    cell_h = max(GIRL_PX, max(im.height for im in fitted))
+    cells = []
+    for im, fx in zip(fitted, feet_x, strict=True):
+        cell = Image.new("RGBA", (round(left + right), cell_h))
+        cell.paste(im, (round(left - fx), cell_h - im.height))
+        cells.append(cell)
+    sheet(cells, name, ms, (round(left), cell_h), standing=GIRL_PX, **extra)
+
+
 def girl() -> None:
     idle, idle_ms = gif_frames(SRC / "girl_idle.gif")
     idle = [grade_girl_idle(keyed(f, idle[0].convert("RGB").getpixel((1, 1)))) for f in idle]
     old_run, old_ms = gif_frames(SRC / "girl_run.gif")
-    cycle = grid_frames(SRC / "girl_run_cycle_v2.png", 4, 2)
-    # Keep the eight jointly authored frames together.  A separately generated replacement drifts in
-    # palette, brushwork, anatomy and leg length even when its pose looks plausible in isolation.
+    cycle = grid_frames(SRC / "girl_run_cycle_v3.png", 4, 1)
+    # Four equal phases: stride A, crossing A, the truly opposing stride B, crossing B. The source sheet
+    # has one locked head size and palette; each phase lasts exactly 0.5 seconds.
     run = [*old_run[:7], *cycle, *old_run[42:]]
-    run_ms = [*old_ms[:7], *([90] * len(cycle)), *old_ms[42:]]
-    run = [soft_edge(f) for f in run]
+    run_ms = [*old_ms[:7], *([500] * len(cycle)), *old_ms[42:]]
+    run = [grade_to(soft_edge(f)) for f in run]
     figure_sheet(idle, "girl_idle", idle_ms, GIRL_PX)
-    fitted_sheet(run, "girl_run", run_ms, [GIRL_PX] * len(run), parts=RUN_PARTS, jump=JUMP_FRAMES)
+    transitions = [*old_run[:7], *old_run[42:]]
+    transition_scales = [GIRL_PX / (f.getchannel("A").getbbox()[3] - f.getchannel("A").getbbox()[1])
+                         for f in transitions]
+    cycle_scale = 175.0 / 290.0  # locked source head height -> the 175 px head in idle/walk sheets
+    scales = [*transition_scales[:7], *([cycle_scale] * 4), *transition_scales[7:]]
+    scaled_sheet(run, "girl_run", run_ms, scales, parts=RUN_PARTS, jump=JUMP_FRAMES)
     walk, walk_ms = gif_frames(SRC / "girl_walk.gif")
     figure_sheet([soft_edge(f) for f in walk], "girl_walk", walk_ms, GIRL_PX, parts=NPC_PARTS)
 

@@ -30,6 +30,18 @@ Each backend converts internally:
   displays render at full resolution.
 - **DGL**: points go through `DGL_Camera_ScreenCoordToWorld`, since DGL draws in a centered, y-up world space.
 
+## Deterministic visual review
+
+The OpenGL backend has environment-only test hooks used by the recording scripts:
+
+- `SA_CAPTURE=out.png@120,...` saves exact rendered frames.
+- `SA_EXIT_AFTER=300` closes the window after a bounded frame count.
+- `SA_KEYS=right@30:300,space@120:120` holds real game keys over inclusive frame ranges.
+
+`python scripts/record_girl_animation.py` combines these hooks to record the real game while the protagonist
+runs. Character-art work is not ready for handoff until this recording and `scripts/audit_girl_animation.py`
+both pass visual review.
+
 ## Building on Windows
 
 A fresh clone builds and runs the **OpenGL** backend with no setup (x64, Visual Studio 2022 or newer):
@@ -69,6 +81,23 @@ build\game\Release\sell_anything.exe --backend dgl
 
 The build copies `DGL.dll` (or `DGL_d.dll` for Debug) next to the executable.
 If DGL isn't found, the build still succeeds with OpenGL and null; CMake's output says which backends were built.
+
+## Checking the DGL backend without Windows
+
+`compat/` implements the DGL API on OpenGL. Configured with `-DSA_BACKEND_DGL_COMPAT=ON`, the same
+`DGLBackend.cpp` that ships for Windows is compiled against it, and `--backend dgl` runs on macOS
+and Linux:
+
+```bash
+cmake -S . -B build-dglc -DSA_BACKEND_DGL_COMPAT=ON
+cmake --build build-dglc --target sell_anything
+./build-dglc/game/sell_anything --backend dgl
+```
+
+`scripts/check.py` compiles it (stage `dgl`) and CI builds it on Linux and macOS. That is how the
+sprite code in the DGL backend was first run: screenshots with `DGL_COMPAT_CAPTURE=out.png@160`
+match the OpenGL ones. It is compat's reading of DGL, not DGL itself, so the Windows build is still
+the final check.
 
 ## Why OpenGL + DGL, and not Vulkan (yet)
 
