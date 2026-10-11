@@ -1,0 +1,62 @@
+{
+  "look": "look06",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    62
+  ],
+  "states": {
+    "idle": {
+      "file": "look06_idle.png",
+      "cols": 4,
+      "rows": 1,
+      "frames": 4,
+      "frame_time": 0.2,
+      "loop": true
+    },
+    "talk": {
+      "file": "look06_talk.png",
+      "cols": 4,
+      "rows": 1,
+      "frames": 4,
+      "frame_time": 0.12,
+      "loop": true
+    },
+    "happy": {
+      "file": "look06_happy.png",
+      "cols": 6,
+      "rows": 1,
+      "frames": 6,
+      "frame_time": 0.08,
+      "loop": false
+    },
+    "unhappy": {
+      "file": "look06_unhappy.png",
+      "cols": 6,
+      "rows": 1,
+      "frames": 6,
+      "frame_time": 0.08,
+      "loop": false
+    },
+    "leave": {
+      "file": "look06_leave.png",
+      "cols": 8,
+      "rows": 1,
+      "frames": 8,
+      "frame_time": 0.05,
+      "loop": false
+    },
+    "win": {
+      "file": "look06_win.png",
+      "cols": 6,
+      "rows": 1,
+      "frames": 6,
+      "frame_time": 0.08,
+      "loop": false
+    }
+  },
+  "placeholder": "drawn by scripts/make_placeholder_art.py"
+}

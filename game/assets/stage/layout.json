@@ -1,0 +1,21 @@
+{
+ "objects": [
+  {
+   "image": "stall",
+   "x": 0,
+   "bottom": 500,
+   "height": 470
+  },
+  {
+   "image": "shelter",
+   "x": 1500,
+   "bottom": 575,
+   "height": 575
+  }
+ ],
+ "ground": 545,
+ "girl_height": 200,
+ "buyer_scale": 2.25,
+ "girl_start": 330,
+ "npc_height": 190
+}
