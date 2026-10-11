@@ -4,7 +4,8 @@
 
 Sources: background_tile_crossfade.png (the owner's watercolor strip, its ends cross-faded so it repeats
 without a seam), stall_cloth.png (the stall with its hanging cloth, on black), girl_idle.gif (12 front-facing
-frames on cream), cat_shelter.png (the shelter, on transparent, with eight empty easels), girl_run.gif (49 frames on transparent: front, starting to run, running right, stopping),
+frames on cream), cat_shelter.png (the shelter, on transparent, with eight empty easels), girl_run.gif
+(front, starting and stopping poses), girl_run_cycle_v2.png plus girl_run_pose_b.png (the two leg phases),
 girl_walk.gif (30 frames: walking away from the camera, turning, walking towards it),
 npc_<n>.gif (a buyer: walking away from the camera, turning, walking towards it), npc_<n>_idle.png
 (the same buyer standing front-facing with both feet planted), Nunito.ttf (SIL OFL,
@@ -34,11 +35,9 @@ ROUND_PX, ROUND_SUPER, ROUND_RADIUS, ROUND_EDGE = 64, 4, 18, 10   # rounded text
 STALL_PX = 640                                 # stall texture height (drawn at layout.json's height)
 CLOTH = (420, 340, 1130, 830)                  # where one can draw on the cloth, in stall_cloth.png pixels
 GIRL_PX = 320                                  # girl texture height when standing (drawn at layout.json's)
-RUN_PARTS = {"start": (1, 6), "run": (7, 41), "stop": (42, 48)}   # girl_run.gif frames, inclusive
+RUN_PARTS = {"start": (1, 6), "run": (7, 14), "stop": (15, 21)}  # rebuilt output sheet, inclusive
 NPC_PARTS = {"away": (0, 11), "turn": (12, 17), "toward": (18, 29)}   # npc_<n>.gif and girl_walk.gif, inclusive
-JUMP_FRAMES = {"rise": 7, "top": 10, "fall": 25, "land": 34}         # girl_run.gif frames shown while jumping
-RUNNING_SHARE = 0.85   # girl_run.gif draws her as tall running as standing, so her head grows; running she
-                       # is drawn this share of her standing height, easing in and out while she starts and stops
+JUMP_FRAMES = {"rise": 7, "top": 10, "fall": 13, "land": 21}
 SHELTER_PX = 880                               # shelter texture height: about the source's own
 # The blank canvases on the shelter's easels, in cat_shelter.png pixels: where adoptable cats will show.
 EASELS = [(282, 498, 381, 604), (433, 498, 532, 604), (580, 498, 682, 604), (737, 498, 839, 604),
@@ -90,6 +89,30 @@ def gif_frames(path: Path) -> tuple[list[Image.Image], list[int]]:
         out.append(im.convert("RGBA"))
         ms.append(int(im.info.get("duration", 100)))
     return out, ms
+
+
+def main_component(frame: Image.Image) -> Image.Image:
+    """Remove disconnected transparent-edge paint flecks from one ImageGen sprite."""
+    frame = frame.copy().convert("RGBA")
+    alpha = np.array(frame.getchannel("A"))
+    labelled, count = ndimage.label(alpha > 20)
+    if count:
+        sizes = ndimage.sum(alpha, labelled, range(1, count + 1))
+        keep = labelled == int(np.argmax(sizes) + 1)
+        frame.putalpha(Image.fromarray(np.where(keep, alpha, 0).astype(np.uint8), "L"))
+    return frame
+
+
+def grid_frames(path: Path, cols: int, rows: int) -> list[Image.Image]:
+    """Split an ImageGen sheet and keep only each cell's main connected alpha component."""
+    im = Image.open(path).convert("RGBA")
+    frames = []
+    for row in range(rows):
+        for col in range(cols):
+            x0, x1 = round(col * im.width / cols), round((col + 1) * im.width / cols)
+            y0, y1 = round(row * im.height / rows), round((row + 1) * im.height / rows)
+            frames.append(main_component(im.crop((x0, y0, x1, y1))))
+    return frames
 
 
 def sheet(cells: list[Image.Image], name: str, ms: list[int], anchor: tuple[int, int], **extra: object) -> None:
@@ -146,21 +169,20 @@ def fitted_sheet(frames: list[Image.Image], name: str, ms: list[int], heights: l
 def girl() -> None:
     idle, idle_ms = gif_frames(SRC / "girl_idle.gif")
     idle = [keyed(f, idle[0].convert("RGB").getpixel((1, 1))) for f in idle]
-    run, run_ms = gif_frames(SRC / "girl_run.gif")
+    old_run, old_ms = gif_frames(SRC / "girl_run.gif")
+    cycle = grid_frames(SRC / "girl_run_cycle_v2.png", 4, 2)
+    opposite = main_component(Image.open(SRC / "girl_run_pose_b.png"))
+    # The sheet's even poses carry the near leg forward; every odd pose uses the separately edited reverse
+    # layer order (near white-socked leg back, shaded far leg forward), so anatomical legs truly alternate.
+    for i in range(1, len(cycle), 2):
+        cycle[i] = opposite.copy()
+    # Keep the hand-drawn start/stop transitions, but replace the ambiguous middle with a readable cycle in
+    # which the front leg changes every half-stride. Every pose is fitted to the same height as idle.
+    run = [*old_run[:7], *cycle, *old_run[42:]]
+    run_ms = [*old_ms[:7], *([90] * len(cycle)), *old_ms[42:]]
     run = [soft_edge(f) for f in run]
     figure_sheet(idle, "girl_idle", idle_ms, GIRL_PX)
-    shares = []
-    for i in range(len(run)):
-        (s0, s1), (t0, t1) = RUN_PARTS["start"], RUN_PARTS["stop"]
-        if i < s0 or i > t1:
-            shares.append(1.0)
-        elif i <= s1:
-            shares.append(1.0 + (RUNNING_SHARE - 1.0) * (i - s0 + 1) / (s1 - s0 + 2))
-        elif i < t0:
-            shares.append(RUNNING_SHARE)
-        else:
-            shares.append(RUNNING_SHARE + (1.0 - RUNNING_SHARE) * (i - t0 + 1) / (t1 - t0 + 2))
-    fitted_sheet(run, "girl_run", run_ms, [GIRL_PX * k for k in shares], parts=RUN_PARTS, jump=JUMP_FRAMES)
+    fitted_sheet(run, "girl_run", run_ms, [GIRL_PX] * len(run), parts=RUN_PARTS, jump=JUMP_FRAMES)
     walk, walk_ms = gif_frames(SRC / "girl_walk.gif")
     figure_sheet([soft_edge(f) for f in walk], "girl_walk", walk_ms, GIRL_PX, parts=NPC_PARTS)
 
@@ -201,6 +223,16 @@ def shelter() -> None:
     easels = [[round((x0 - left) * k), round((y0 - top) * k), round((x1 - left) * k), round((y1 - top) * k)]
               for x0, y0, x1, y1 in EASELS]
     (STAGE / "shelter.json").write_text(json.dumps({"size": list(im.size), "easels": easels}, indent=1) + "\n")
+    # Multiply the paintings into the stall cloth's watercolor texture. White becomes fabric instead of an
+    # artificial white square, while every painted cat stroke keeps its original color and contrast.
+    cat_out = STAGE / "shelter_cats"
+    cat_out.mkdir(exist_ok=True)
+    cloth = Image.open(SRC / "stall_cloth.png").convert("RGB").crop((510, 400, 1040, 760))
+    for cat_path in sorted((SRC / "shelter_cats").glob("cat_*.png")):
+        cat = Image.open(cat_path).convert("RGB")
+        texture = cloth.resize(cat.size, Image.LANCZOS)
+        painted = np.asarray(cat, dtype=np.uint16) * np.asarray(texture, dtype=np.uint16) // 255
+        Image.fromarray(painted.astype(np.uint8), "RGB").save(cat_out / cat_path.name, optimize=True)
 
 
 def background() -> None:
