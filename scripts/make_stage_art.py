@@ -5,7 +5,8 @@
 Sources: background_tile_crossfade.png (the owner's watercolor strip, its ends cross-faded so it repeats
 without a seam), stall_cloth.png (the stall with its hanging cloth, on black), girl_idle.gif (12 front-facing
 frames on cream), cat_shelter.png (the shelter, on transparent, with eight empty easels), girl_run.gif
-(front, starting and stopping poses), girl_run_cycle_v2.png plus girl_run_pose_b.png (the two leg phases),
+(front, starting and stopping poses), girl_run_pose_b.png (cut into a puppet for the run cycle, see
+girl_run_rig.py),
 girl_walk.gif (30 frames: walking away from the camera, turning, walking towards it),
 npc_<n>.gif (a buyer: walking away from the camera, turning, walking towards it), npc_<n>_idle.png
 (the same buyer standing back-facing with both feet planted), Nunito.ttf (SIL OFL,
@@ -22,6 +23,8 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage
+
+import girl_run_rig
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "art" / "stage"
@@ -91,30 +94,6 @@ def gif_frames(path: Path) -> tuple[list[Image.Image], list[int]]:
     return out, ms
 
 
-def main_component(frame: Image.Image) -> Image.Image:
-    """Remove disconnected transparent-edge paint flecks from one ImageGen sprite."""
-    frame = frame.copy().convert("RGBA")
-    alpha = np.array(frame.getchannel("A"))
-    labelled, count = ndimage.label(alpha > 20)
-    if count:
-        sizes = ndimage.sum(alpha, labelled, range(1, count + 1))
-        keep = labelled == int(np.argmax(sizes) + 1)
-        frame.putalpha(Image.fromarray(np.where(keep, alpha, 0).astype(np.uint8), "L"))
-    return frame
-
-
-def grid_frames(path: Path, cols: int, rows: int) -> list[Image.Image]:
-    """Split an ImageGen sheet and keep only each cell's main connected alpha component."""
-    im = Image.open(path).convert("RGBA")
-    frames = []
-    for row in range(rows):
-        for col in range(cols):
-            x0, x1 = round(col * im.width / cols), round((col + 1) * im.width / cols)
-            y0, y1 = round(row * im.height / rows), round((row + 1) * im.height / rows)
-            frames.append(main_component(im.crop((x0, y0, x1, y1))))
-    return frames
-
-
 def sheet(cells: list[Image.Image], name: str, ms: list[int], anchor: tuple[int, int], **extra: object) -> None:
     """A row-major grid of equal cells plus metadata; cells keep their PAD border on every side."""
     cw, ch = cells[0].size
@@ -145,23 +124,29 @@ def figure_sheet(frames: list[Image.Image], name: str, ms: list[int], standing_h
           **extra)
 
 
-def fitted_sheet(frames: list[Image.Image], name: str, ms: list[int], heights: list[float], **extra: object) -> None:
-    """Each frame scaled on its own so its figure is heights[i] tall, its feet (the middle of its lowest fifth)
-    at one anchor: for drawings whose figure changes size from frame to frame."""
+def fitted_sheet(frames: list[Image.Image], name: str, ms: list[int], heights: list[float],
+                 feet: list[float | None] | None = None, lifts: list[float] | None = None, **extra: object) -> None:
+    """Each frame scaled on its own so its figure is heights[i] tall, its feet (the middle of its lowest fifth,
+    unless feet[i] gives the x in the scaled figure) at one anchor, raised lifts[i] off the ground: for drawings
+    whose figure changes size from frame to frame."""
+    feet = feet or [None] * len(frames)
+    lifts = lifts or [0.0] * len(frames)
     fitted, feet_x = [], []
-    for f, h in zip(frames, heights, strict=True):
+    for f, h, fx in zip(frames, heights, feet, strict=True):
         im = f.crop(f.getchannel("A").getbbox())
         im = im.resize((round(im.width * h / im.height), round(h)), Image.LANCZOS)
-        low = np.array(im.getchannel("A"))[int(im.height * 0.8):].astype(float)
-        feet_x.append(float((low.sum(0) * np.arange(low.shape[1])).sum() / max(low.sum(), 1.0)))
+        if fx is None:
+            low = np.array(im.getchannel("A"))[int(im.height * 0.8):].astype(float)
+            fx = float((low.sum(0) * np.arange(low.shape[1])).sum() / max(low.sum(), 1.0))
+        feet_x.append(fx)
         fitted.append(im)
     left = max(fx for fx in feet_x)
     right = max(im.width - fx for im, fx in zip(fitted, feet_x, strict=True))
-    cell_h = round(max(heights))
+    cell_h = round(max(h + lift for h, lift in zip(heights, lifts, strict=True)))
     cells = []
-    for im, fx in zip(fitted, feet_x, strict=True):
+    for im, fx, lift in zip(fitted, feet_x, lifts, strict=True):
         cell = Image.new("RGBA", (round(left + right), cell_h))
-        cell.paste(im, (round(left - fx), cell_h - im.height))
+        cell.paste(im, (round(left - fx), cell_h - im.height - round(lift)))
         cells.append(cell)
     sheet(cells, name, ms, (round(left), cell_h), standing=GIRL_PX, **extra)
 
@@ -170,19 +155,27 @@ def girl() -> None:
     idle, idle_ms = gif_frames(SRC / "girl_idle.gif")
     idle = [keyed(f, idle[0].convert("RGB").getpixel((1, 1))) for f in idle]
     old_run, old_ms = gif_frames(SRC / "girl_run.gif")
-    cycle = grid_frames(SRC / "girl_run_cycle_v2.png", 4, 2)
-    opposite = main_component(Image.open(SRC / "girl_run_pose_b.png"))
-    # The sheet's even poses carry the near leg forward; every odd pose uses the separately edited reverse
-    # layer order (near white-socked leg back, shaded far leg forward), so anatomical legs truly alternate.
-    for i in range(1, len(cycle), 2):
-        cycle[i] = opposite.copy()
-    # Keep the hand-drawn start/stop transitions, but replace the ambiguous middle with a readable cycle in
-    # which the front leg changes every half-stride. Every pose is fitted to the same height as idle.
-    run = [*old_run[:7], *cycle, *old_run[42:]]
+    # Keep the hand-drawn start/stop transitions; the middle is the puppet cycle from girl_run_rig.py, in which
+    # each arm swings against the leg on its side. Those frames share one scale and one standing point, so they
+    # are not each stretched to GIRL_PX: the passing poses stay shorter and the flight poses leave the ground.
+    # 保留手繪的起跑/煞車；中間換成 girl_run_rig.py 的紙娃娃循環（每隻手都和同側的腳反向擺動）。
+    # 這些格子共用同一個比例和站立點，所以不各自拉伸到 GIRL_PX：交錯步會比較矮、騰空格會離地。
+    cycle = girl_run_rig.cycle()
+    boxes = [f.getchannel("A").getbbox() for f in cycle]
+    k = GIRL_PX / (boxes[0][3] - boxes[0][1])
+    low = np.array(cycle[0].getchannel("A"))[boxes[0][3] - (boxes[0][3] - boxes[0][1]) // 5:boxes[0][3]]
+    stand_x = float((low.sum(0) * np.arange(low.shape[1])).sum() / low.sum())
+    ground = boxes[0][3]
+    old = [soft_edge(f) for f in [*old_run[:7], *old_run[42:]]]
+    run = [*old[:7], *cycle, *old[7:]]
     run_ms = [*old_ms[:7], *([90] * len(cycle)), *old_ms[42:]]
-    run = [soft_edge(f) for f in run]
+    gap = [None] * 7, [GIRL_PX] * 7, [0.0] * 7
+    tail = [None] * len(old[7:]), [GIRL_PX] * len(old[7:]), [0.0] * len(old[7:])
+    feet = [*gap[0], *[(stand_x - b[0]) * k for b in boxes], *tail[0]]
+    heights = [*gap[1], *[(b[3] - b[1]) * k for b in boxes], *tail[1]]
+    lifts = [*gap[2], *[(ground - b[3]) * k for b in boxes], *tail[2]]
     figure_sheet(idle, "girl_idle", idle_ms, GIRL_PX)
-    fitted_sheet(run, "girl_run", run_ms, [GIRL_PX] * len(run), parts=RUN_PARTS, jump=JUMP_FRAMES)
+    fitted_sheet(run, "girl_run", run_ms, heights, feet=feet, lifts=lifts, parts=RUN_PARTS, jump=JUMP_FRAMES)
     walk, walk_ms = gif_frames(SRC / "girl_walk.gif")
     figure_sheet([soft_edge(f) for f in walk], "girl_walk", walk_ms, GIRL_PX, parts=NPC_PARTS)
 
