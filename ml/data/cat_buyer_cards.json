@@ -1,0 +1,12447 @@
+{
+ "already has an older cat at home": [
+  {
+   "cares_about": [
+    "getting along with other cats",
+    "friendly",
+    "calm"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "gets along with other cats",
+    "easygoing",
+    "doesn't mind sharing space"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "gets along with other cats",
+    "mellow",
+    "friendly"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "getting along with other cats",
+    "mellow",
+    "compatible"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "gets along with other cats",
+    "social"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "gets along with older cats",
+    "is gentle",
+    "has a calm demeanor"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "getting along",
+    "second cat"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "compatible with other cats",
+    "social",
+    "friendly"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "getting along with other cats",
+    "patient",
+    "calm"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "gets along with cats",
+    "calm",
+    "senior cat"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "gets along with my cat",
+    "similar age"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "getting along",
+    "companion for my old cat"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "gets along with other cats",
+    "social",
+    "friendly"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "gets along with other cats",
+    "is calm",
+    "has good health"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "friendly",
+    "getting along with other cats",
+    "social"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "gets along well",
+    "social",
+    "young"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "getting along",
+    "social",
+    "companionable"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "getting along with my older cat",
+    "calm",
+    "friendly"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "gets along with other cats",
+    "friendly"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "gets along with others",
+    "friendly",
+    "well-socialized"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "getting along with my cat",
+    "socialization"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "gets along with other cats",
+    "temperament",
+    "easy to integrate"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "friendly with other cats",
+    "gentle",
+    "calm"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "getting along with my older cat",
+    "calm and gentle",
+    "not too playful"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "getting along with my old cat",
+    "same energy level",
+    "good temper"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "gets along with my older cat",
+    "calm",
+    "tested healthy"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "tested healthy"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "healthy"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "healthy"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "gentle"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "tested healthy"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "tested healthy",
+    "calm"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "tested healthy",
+    "calm"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "gentle"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "tested healthy"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "tested healthy"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "gets along with my old cat",
+    "calm",
+    "tested healthy"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested before meeting my cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gets on with an older cat",
+    "tested before meeting Pepper"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting my cat",
+    "gentle with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gets along with other cats",
+    "safe to share a home with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gets along with an older cat",
+    "tested before meeting my cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting my cat",
+    "gentle with an older cat",
+    "nothing contagious"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm with an elderly cat",
+    "health tested before introductions"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an elderly cat",
+    "healthy around other cats"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "tested before meeting my cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested before meeting Tobias"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested before meeting her"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "tested before meeting Gus"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "safe around other cats",
+    "calm"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting my cat",
+    "calm with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Hamish",
+    "calm with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Vera",
+    "calm with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an elderly cat",
+    "tested clean before meeting a resident cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Yuki",
+    "calm with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting my cat",
+    "gentle with an elderly cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Eli",
+    "calm with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an elderly cat",
+    "tested before meeting my cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting my cat",
+    "gentle with an old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting a resident cat",
+    "gentle with an elderly cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "safe around a frail old cat",
+    "tested before meeting Dilly"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy around an old cat",
+    "leaves a senior in peace"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm with an older cat",
+    "tested before meeting Xena"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "tested before meeting Tess"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Merle",
+    "gentle with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting an old cat",
+    "nothing catching",
+    "gentle with a frail cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "tested before meeting Fern",
+    "quiet while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested clean for FIV and FeLV"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "safe to share a home with Ezra"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested clean before meeting Xena",
+    "gentle with an elderly cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "tested before meeting Flo"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a very old cat",
+    "tested before meeting Ivo"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested before meeting a resident cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Loki",
+    "calm around an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested before meeting Dara"
+   ]
+  },
+  {
+   "cares_about": [
+    "safe around an old cat",
+    "tested before meeting Max"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an elderly cat",
+    "tested clear before meeting Cosmo",
+    "calm at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an elderly cat",
+    "tested before meeting her"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Oz",
+    "gentle with an old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "clean FIV and FeLV tests"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Saffi",
+    "calm around an old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a very old cat",
+    "tested before meeting my old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm around an elderly cat",
+    "tested before meeting my cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "tested before meeting Amos"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested FIV and FeLV negative"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Merle",
+    "gets along with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm with an old cat",
+    "clear virus tests"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an elderly cat",
+    "tested clear before meeting her"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "tested before meeting Yogi"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Milo",
+    "gentle with an elderly cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested clear for FIV",
+    "gentle with an old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm with an old cat",
+    "tested before meeting Loki"
+   ]
+  },
+  {
+   "cares_about": [
+    "safe with an old cat",
+    "tested before meeting Mabel"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Zane",
+    "gentle with an old cat",
+    "quiet at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm with an elderly cat",
+    "tested before meeting my old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Fern",
+    "calm around an old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting my cat",
+    "gentle with a frail old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "safe to meet an older cat",
+    "gentle with an old cat",
+    "settled temperament"
+   ]
+  },
+  {
+   "cares_about": [
+    "safe around an older cat",
+    "calm with other cats"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested before meeting Mira"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an old cat",
+    "tested before meeting Yara"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Yuki",
+    "gentle with an old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Percy",
+    "calm around an old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Remy",
+    "gentle with an old cat",
+    "used to other cats"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Bram",
+    "calm with an old cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm around an elderly cat",
+    "clean FIV and FeLV tests"
+   ]
+  },
+  {
+   "cares_about": [
+    "tested before meeting Rufus",
+    "calm with an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a frail old cat",
+    "tested before meeting Zuzu"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested for FIV and FeLV"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with an older cat",
+    "tested before meeting Ivo"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm with an old cat",
+    "clear FIV and FeLV tests"
+   ]
+  }
+ ],
+ "already has two dogs": [
+  {
+   "cares_about": [
+    "calm",
+    "easy to integrate",
+    "social"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "getting along with dogs",
+    "energy level",
+    "outdoor access"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "gets along with dogs",
+    "patient"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "easygoing",
+    "gets along with dogs",
+    "good temperament"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "good with dogs",
+    "social",
+    "calm"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "gets along with dogs",
+    "is playful",
+    "is social"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "getting along with dogs",
+    "calm demeanor"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "dog-friendly",
+    "outgoing",
+    "active"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "gets along with dogs",
+    "is playful",
+    "has plenty of energy"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "getting along with dogs",
+    "temperament"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "gets along with dogs",
+    "playful",
+    "energetic"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "playful",
+    "affectionate",
+    "gets along with dogs"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "getting along with dogs",
+    "friendly",
+    "outgoing"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "calm cats",
+    "family friendly",
+    "getting along with dogs"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "gets along with dogs",
+    "friendly",
+    "doesn't cost much"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "getting along with dogs",
+    "calm",
+    "playful"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "gets along with dogs",
+    "social",
+    "loving"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "calm temperament",
+    "gets along with dogs",
+    "low maintenance"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "friendly",
+    "gets along with dogs",
+    "playful"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "gets along with dogs",
+    "calm demeanor"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "calm",
+    "fits with dogs"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "good with dogs",
+    "calm",
+    "not too energetic"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "calm demeanor",
+    "getting along with dogs",
+    "easy going"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "dog-friendly",
+    "social",
+    "calm"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "playful"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm",
+    "confident"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "playful"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "playful"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "calm"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm",
+    "confident"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "calm"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "calm"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "playful"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "calm"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "calm"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "calm"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident around big animals"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "unflappable around big animals"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm in a busy household"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm around big dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around barking"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around big animals"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "holds its ground with big dogs",
+    "needs its own high retreat"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around big dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around big playful animals"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around loud animals"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around fast movement"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "relaxed around hounds"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm around hounds"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady nerves around barking"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident",
+    "steady nerves"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady nerves"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady nerves around noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "happy with a dog free room"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around a lively dog"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around lively dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around a big dog"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "bold around a terrier"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady nerves around big dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm around bouncy dogs",
+    "vaccinated"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "confident around big dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around a big hunting dog"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "bold around big animals"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around fast dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "copes with a big and a tiny dog"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to big dogs",
+    "steady nerves"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around commotion"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around a chasing dog"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "settles while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady when chased"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady temper"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around small dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm around lively dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "brave around big dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm around big animals"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around a lively pointer"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "calm around small dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "keeps his nerve around a bouncy big dog"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady in a noisy house"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around a lively Husky"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "gentle with small dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around a bouncy dog"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around a fast hound"
+   ]
+  },
+  {
+   "cares_about": [
+    "relaxed with dogs",
+    "settled in a busy house"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady around big dogs",
+    "quiet while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to dogs",
+    "steady in a busy house"
+   ]
+  }
+ ],
+ "breeds show cats": [
+  {
+   "cares_about": [
+    "purebred",
+    "show quality",
+    "health"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "distinctive features",
+    "pedigree"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "breeding quality",
+    "pedigree",
+    "show potential"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "purebred",
+    "healthy"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "pedigree",
+    "health certificate"
+   ],
+   "budget": 300
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "distinctive features",
+    "breeding potential"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "purebred",
+    "good bloodline",
+    "show potential"
+   ],
+   "budget": 350
+  },
+  {
+   "cares_about": [
+    "breeding quality",
+    "show potential",
+    "pedigree"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "beautiful",
+    "pedigree"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "has a pedigree",
+    "is healthy",
+    "has a good temperament"
+   ],
+   "budget": 300
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "breed standard",
+    "perfect pedigree"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "perfect",
+    "unique"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "purebred",
+    "show quality",
+    "good lineage"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "has a good pedigree",
+    "has show potential",
+    "is healthy"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "show cats",
+    "breeding quality",
+    "specific breed standards"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "show quality",
+    "healthy"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "purebred",
+    "show quality",
+    "pedigree"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "breeding",
+    "show quality"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "show quality"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "beautiful coat",
+    "pedigree"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "breeding"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "pedigree",
+    "breeding potential"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "pedigree",
+    "excellent lineage"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "pedigree"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "breeding potential",
+    "health"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "pristine pedigree",
+    "perfect lineage"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "show potential",
+    "strong lineage"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "breed purity",
+    "show quality",
+    "health pedigree"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "breeding potential",
+    "show quality"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "pedigree",
+    "breeding potential"
+   ],
+   "budget": 230
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "pedigree",
+    "breeding potential"
+   ],
+   "budget": 220
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "breeding potential",
+    "pedigree"
+   ],
+   "budget": 220
+  },
+  {
+   "cares_about": [
+    "show quality",
+    "registered pedigree",
+    "breeding potential"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "can be bred",
+    "show quality"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "can be bred",
+    "show quality"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "can be bred",
+    "show quality"
+   ],
+   "budget": 180
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "can be bred",
+    "show quality"
+   ],
+   "budget": 160
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "can be bred",
+    "show quality"
+   ],
+   "budget": 170
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "show quality build",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding",
+    "show quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "known pedigree with papers",
+    "intact for breeding",
+    "show quality coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "show quality",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "registered bloodline",
+    "show standard coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered bloodline",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "intact for breeding",
+    "true breed type"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding",
+    "show standard looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "show quality build",
+    "able to join a breeding line"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "show quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "intact for breeding",
+    "show standard looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "registered pedigree",
+    "show quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding",
+    "show standard"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "gets on in a cattery",
+    "tested clean"
+   ]
+  },
+  {
+   "cares_about": [
+    "entire for breeding",
+    "registered pedigree"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "tested before meeting my queens"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "registered pedigree"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding",
+    "show quality coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed with papers",
+    "intact for breeding",
+    "healthy enough for a cattery"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree with papers",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "registered bloodline",
+    "tested before meeting my cats"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding",
+    "fits a Korat line"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered show lines",
+    "intact for breeding",
+    "calm on the judging table"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered breeding lines",
+    "intact for breeding",
+    "show standard markings"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered lineage",
+    "intact for breeding",
+    "show standard looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "show quality pedigree",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "entire for breeding",
+    "healthy enough for a cattery"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding",
+    "young enough to breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "breeding quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered Siberian",
+    "papers for showing",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered papers",
+    "intact for breeding",
+    "tested clean before joining"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "fit to breed",
+    "easy for judges to handle"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered papers",
+    "intact for breeding",
+    "show temperament"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "registered pedigree",
+    "show bench build"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered papers",
+    "intact for breeding",
+    "known show lines"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding",
+    "healthy enough for a cattery"
+   ]
+  },
+  {
+   "cares_about": [
+    "registration papers",
+    "able to breed",
+    "show presence"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "fits a breeding line"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree with papers",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "young and intact for breeding",
+    "tested clear before entering a cattery"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "able to breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "show quality",
+    "breeding prospects"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered Balinese lines",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "registration papers",
+    "entire for breeding",
+    "safe with resident cats"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "papers I can register"
+   ]
+  },
+  {
+   "cares_about": [
+    "papers and pedigree",
+    "intact for breeding",
+    "show quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed with papers",
+    "fits a breeding line"
+   ]
+  },
+  {
+   "cares_about": [
+    "Somali pedigree with papers",
+    "intact for breeding",
+    "show standard"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed with papers",
+    "intact for breeding",
+    "young enough for a new line"
+   ]
+  },
+  {
+   "cares_about": [
+    "show standard Exotic Shorthair",
+    "intact for breeding",
+    "registered papers"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree papers",
+    "intact for breeding",
+    "young enough to start a line"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "fit for the show bench",
+    "healthy enough to breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered bloodline",
+    "intact for breeding",
+    "fits my breeding lines"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "young enough to breed",
+    "still intact"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for a show line"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "show standard",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "show quality Chartreux type",
+    "registered papers",
+    "intact for breeding"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered papers",
+    "intact for breeding",
+    "show quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "intact for breeding",
+    "show ring looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "Manx with papers",
+    "intact for breeding",
+    "show quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered papers",
+    "intact for breeding",
+    "young enough to show"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered Bombay pedigree",
+    "young enough to breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered papers",
+    "show quality pedigree"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "young enough to breed",
+    "show coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "registration papers"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree papers",
+    "intact for breeding",
+    "show standard"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "good with resident cats",
+    "show quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "intact for breeding",
+    "registered papers"
+   ]
+  }
+ ],
+ "cares a lot about how things look": [
+  {
+   "cares_about": [
+    "beautiful",
+    "aesthetic",
+    "stylish"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "good looks",
+    "smooth fur",
+    "elegant features"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "beautiful fur",
+    "stylish",
+    "looks good"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "beautiful coat",
+    "striking features",
+    "graceful"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "beautiful markings",
+    "elegant appearance"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "attractive appearance",
+    "well-groomed",
+    "looks great"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "has good looks",
+    "fits in with my home",
+    "is well-groomed"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "stylish appearance",
+    "good looks",
+    "well-groomed"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "appearance",
+    "looks",
+    "stylish"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "good looks",
+    "stylish",
+    "elegant"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "looks",
+    "stylish",
+    "appearance"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "beautiful coat",
+    "good looks"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "beautiful coat",
+    "adorable eyes"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "good looks",
+    "stylish",
+    "looks like a model"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "looks",
+    "appearance"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "good looks",
+    "fashionable",
+    "stylish"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "beautiful",
+    "looks good",
+    "groomed well"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "has a beautiful coat",
+    "is well-groomed",
+    "is visually appealing"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "beautiful cats",
+    "good looks",
+    "stylish"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "appearance",
+    "stylishness",
+    "looks"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "pretty",
+    "good looks",
+    "attractive"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "looks",
+    "appearance",
+    "coats"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "looks good",
+    "well-groomed"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "beautiful coat",
+    "distinctive look",
+    "unique"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "good looks",
+    "stylish"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "looks",
+    "aesthetic appeal"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "looks",
+    "beautiful coat",
+    "elegant"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "beautiful fur",
+    "looks"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "looks",
+    "grooming needs",
+    "style"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "stylish appearance",
+    "shiny fur",
+    "fashionable temperament"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "looks",
+    "style",
+    "aesthetics"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "a striking coat",
+    "elegant looks",
+    "well groomed"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "a beautiful coat",
+    "elegant",
+    "well groomed"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "a stunning coat",
+    "elegant",
+    "photogenic"
+   ],
+   "budget": 160
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "a beautiful coat",
+    "photogenic"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "unusual",
+    "well kept"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "a striking coat",
+    "elegant",
+    "photogenic"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "a pretty coat",
+    "photogenic",
+    "striking"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "a glossy coat",
+    "elegant",
+    "photogenic"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "a beautiful coat",
+    "elegant",
+    "photogenic"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "a silky coat",
+    "striking eyes",
+    "elegant"
+   ],
+   "budget": 160
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "elegant",
+    "photogenic"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "a striking coat",
+    "elegant",
+    "photogenic"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "a striking coat",
+    "elegant",
+    "photogenic"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "a glossy coat",
+    "elegant",
+    "photogenic"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "blue eyes",
+    "a silky coat",
+    "elegant"
+   ],
+   "budget": 180
+  },
+  {
+   "cares_about": [
+    "a fluffy coat",
+    "striking looks",
+    "photogenic"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "clean coat",
+    "elegant"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "fluffy coat",
+    "elegant"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "tidy",
+    "elegant"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "tidy",
+    "elegant"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "tidy",
+    "elegant"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "fluffy coat",
+    "elegant"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "sleek coat",
+    "elegant"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "tidy",
+    "elegant"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "photogenic look"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "elegant, photogenic look"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleek striking coat",
+    "elegant and photogenic",
+    "keeps a home looking neat"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "neat in a spotless home"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "gentle on nice furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "kind to fine furniture",
+    "neat coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "calm, graceful presence"
+   ]
+  },
+  {
+   "cares_about": [
+    "photogenic look",
+    "easy on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "kind to nice furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking unusual look",
+    "elegant in a styled home"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "tidy around the home"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant looks",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant striking looks",
+    "tidy habits",
+    "sleek easy coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "a well kept coat",
+    "poised for photos"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "won't damage furniture",
+    "photographs well"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking appearance",
+    "leaves furniture unmarked"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant looks",
+    "kind to good furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking look",
+    "elegant shape",
+    "photogenic"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "tidy coat",
+    "elegant breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking breed look",
+    "clean tidy habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome sleek look",
+    "keeps furniture unmarked"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant look",
+    "little loose hair",
+    "tidy around furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome looks",
+    "neat, low mess coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome, polished coat",
+    "tidy habits at home"
+   ]
+  },
+  {
+   "cares_about": [
+    "glossy, handsome coat",
+    "striking looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "unusual breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "tidy look around the home"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "eye catching breed",
+    "elegant presence"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat pattern",
+    "tidy around studio gear"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "elegant manners"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking look",
+    "keeps furniture tidy"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome, photogenic coat",
+    "poised with visitors"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "well kept look"
+   ]
+  },
+  {
+   "cares_about": [
+    "a beautiful coat",
+    "keeps a tidy home tidy"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking face and coat",
+    "looks good in photos"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "elegant colouring"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking appearance",
+    "looks well kept"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "tidy and well kept"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "kind to nice furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "keeps a home looking tidy"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "coat kept in good order"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "keeps a smart appearance"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome look",
+    "tidy coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome markings",
+    "a neat, unscarred coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome breed",
+    "keeps furniture unmarked"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat pattern",
+    "keeps a tidy home tidy"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "kept in good condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "tidy coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "coat that stays tidy"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "relaxed in a tidy home"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking look",
+    "calm for photos"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking look",
+    "tidy habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "eye catching coat",
+    "keeps a home tidy"
+   ]
+  },
+  {
+   "cares_about": [
+    "eye catching coat",
+    "tidy, polished look"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking good looks",
+    "a coat that keeps the house tidy"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "well kept coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "keeps furniture unmarked"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome looks",
+    "relaxed around guests"
+   ]
+  },
+  {
+   "cares_about": [
+    "beautiful coat",
+    "gentle on fabric"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking good looks",
+    "tidy coat and habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "tidy home"
+   ]
+  },
+  {
+   "cares_about": [
+    "eye catching coat",
+    "tidy around the house"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "tidy fur around the house"
+   ]
+  },
+  {
+   "cares_about": [
+    "beautiful coat",
+    "leaves furniture unscratched",
+    "tidy around the home"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "tidy around fabric"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking appearance",
+    "little mess around the home"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking to look at",
+    "kind to smart furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking sleek coat",
+    "charming with guests"
+   ]
+  },
+  {
+   "cares_about": [
+    "beautiful to look at",
+    "an elegant breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "beautiful coat",
+    "elegant look"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant striking looks",
+    "a coat that stays neat"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant long coat",
+    "looks groomed and regal"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome coat",
+    "neat around the house"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "poised and elegant"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking good looks",
+    "kind to furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant breed",
+    "neat coat",
+    "graceful look"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome face",
+    "tidy coat",
+    "neat in the house"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant looks",
+    "keeps a home tidy"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking looks",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "handsome to look at",
+    "gentle on fine things"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking, elegant looks",
+    "not much fur on clothes"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking breed",
+    "handsome coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "elegant looks",
+    "photogenic at home"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking unusual look",
+    "keeps a home looking nice"
+   ]
+  },
+  {
+   "cares_about": [
+    "striking coat",
+    "neat habits"
+   ]
+  }
+ ],
+ "is a nurse working night shifts": [
+  {
+   "cares_about": [
+    "can be left alone",
+    "low maintenance",
+    "doesn't need constant attention"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "even-tempered",
+    "quiet",
+    "low maintenance"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "calm",
+    "good with night schedules",
+    "comforting presence"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "calm",
+    "low maintenance",
+    "nocturnal activity"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "is independent",
+    "doesn't need constant attention",
+    "is used to quiet hours"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "low-maintenance",
+    "independent",
+    "nighttime quiet"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "evening company",
+    "quiet"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "night-time quiet",
+    "easy-going temperament"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "quiet cats",
+    "low maintenance"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "independent",
+    "low maintenance"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "nighttime quiet",
+    "calm"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "independent",
+    "low maintenance"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "calm",
+    "quiet",
+    "low maintenance"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "calm",
+    "indoor",
+    "quiet"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "night-time quiet",
+    "low maintenance",
+    "undemanding"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "quiet nights",
+    "low maintenance",
+    "good with dogs"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "calm",
+    "low stress",
+    "comforting"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "independent",
+    "quiet",
+    "mellow"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "nocturnal activity",
+    "independent",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "night time",
+    "quiet",
+    "calm"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "calm"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "relaxed",
+    "evening companion"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "doesn't need constant care",
+    "peaceful"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "independent",
+    "low maintenance",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "indoor"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independent",
+    "quiet"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "independent",
+    "quiet",
+    "even-tempered"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "quiet in the morning",
+    "independent",
+    "low maintenance"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet in the morning",
+    "independent",
+    "easy care"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "independent",
+    "quiet in the day",
+    "easy care"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "quiet in the daytime",
+    "independent",
+    "easy care"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "independent",
+    "easy care"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet in the morning",
+    "independent",
+    "easy care"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "independent",
+    "quiet in the day",
+    "easy care"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "independent",
+    "quiet at night",
+    "easy care"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "independent",
+    "easy care"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "independent",
+    "easy care"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "independent",
+    "easy care"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "content alone at night",
+    "quiet while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the daytime",
+    "calm and settled"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "copes alone through long shifts"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone through the night",
+    "quiet while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone at night",
+    "quiet while I sleep days"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps through the day",
+    "quiet in the mornings",
+    "fine alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent through the night",
+    "sleeps through the day",
+    "known health status"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep in the day",
+    "independent at night",
+    "healthy"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone at night",
+    "quiet while I sleep in the day"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone overnight",
+    "independent nature"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep days",
+    "settles alone overnight"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone overnight",
+    "quiet while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone at night",
+    "quiet during the day"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps through the day",
+    "settles alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone at night",
+    "quiet in the daytime"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps through the day",
+    "fine alone at night",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone overnight",
+    "lets me sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep days",
+    "easy to handle",
+    "settles alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "content alone overnight"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "fine alone overnight",
+    "low daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps in the day",
+    "fine alone at night",
+    "easy routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet during the day",
+    "calm alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "settled routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone at night",
+    "quiet in the day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the daytime",
+    "content alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy alone at night",
+    "quiet in the day",
+    "independent"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "sleeps when I sleep"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent at night",
+    "quiet in the day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "clear health records"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps through the day",
+    "fine alone at night",
+    "affectionate in the mornings"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone at night",
+    "sleeps through the day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "fine alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "happy alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "lets me sleep by day",
+    "lively at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm while I sleep by day",
+    "settled, grown up nature"
+   ]
+  },
+  {
+   "cares_about": [
+    "complete medical records",
+    "quiet while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "copes with an odd routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps through the day",
+    "copes alone overnight"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy alone at night",
+    "quiet while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps through the afternoon",
+    "fine alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone at night",
+    "settled while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "sound kidney health"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the daytime",
+    "content indoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "content on a night worker's schedule"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep in the day",
+    "settles into odd hours"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone at night",
+    "easy on a daytime sleeper"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "fine alone through the night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the daytime",
+    "easy with odd hours"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "fine alone overnight"
+   ]
+  },
+  {
+   "cares_about": [
+    "settles alone overnight",
+    "quiet in the daytime"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "fine alone overnight"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "easy routine around shifts"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone through the night",
+    "calm while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "settles while I sleep"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep in the day",
+    "fine alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "copes with odd hours"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps through the day",
+    "copes alone at night",
+    "sound health records"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "settled alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "copes alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet during daytime sleep",
+    "clear health records"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "fine alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone at night",
+    "easy care on little sleep"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the daytime",
+    "fine alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps quietly through the day",
+    "company at odd hours"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet during the day",
+    "copes with a night schedule"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet during the day",
+    "fine alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "settled on his own at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet in the day",
+    "independent at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "copes with nights alone"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone through the night",
+    "little fur on my scrubs"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "a clean health record"
+   ]
+  },
+  {
+   "cares_about": [
+    "sleeps through the day",
+    "easy on a night worker"
+   ]
+  },
+  {
+   "cares_about": [
+    "settles alone at night",
+    "quiet while I sleep by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet during the day",
+    "clean health record"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet during the day",
+    "sleeps when I sleep"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet through the day",
+    "fine alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "copes alone at night",
+    "safe while I'm at work"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes with a night shift schedule",
+    "lets me sleep in the day"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet while I sleep by day",
+    "safe alone at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet during the day",
+    "settles alone at night"
+   ]
+  }
+ ],
+ "is a student on a tight budget": [
+  {
+   "cares_about": [
+    "affordable",
+    "friendly",
+    "good health"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "doesn't require expensive food",
+    "easy on the budget"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "low maintenance",
+    "small space"
+   ],
+   "budget": 40
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "good value"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "is young and energetic",
+    "has a good personality",
+    "is trainable"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "easy to care for",
+    "calm"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "responsible pet"
+   ],
+   "budget": 40
+  },
+  {
+   "cares_about": [
+    "cheap price",
+    "affordable",
+    "won't break the bank"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "low maintenance"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "low maintenance",
+    "friendly"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "doesn't require much"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "easy to care for"
+   ],
+   "budget": 40
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "friendly",
+    "good value"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "sustainable",
+    "rescue"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "healthy",
+    "budget-friendly",
+    "affectionate"
+   ],
+   "budget": 30
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "friendly",
+    "small"
+   ],
+   "budget": 30
+  },
+  {
+   "cares_about": [
+    "affordable cats",
+    "budget-friendly",
+    "good value"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "friendly",
+    "companion"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "friendly"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "easy-going"
+   ],
+   "budget": 40
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "budget friendly"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "low cost",
+    "affordable",
+    "good health"
+   ],
+   "budget": 25
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "healthy"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "easy to care for",
+    "doesn't cost much"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "healthy"
+   ],
+   "budget": 30
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "basic needs",
+    "simple"
+   ],
+   "budget": 30
+  },
+  {
+   "cares_about": [
+    "low cost",
+    "healthy",
+    "friendly"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "friendly",
+    "simple care"
+   ],
+   "budget": 40
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "healthy",
+    "friendly"
+   ],
+   "budget": 40
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "healthy",
+    "friendly"
+   ],
+   "budget": 45
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "healthy",
+    "friendly"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big upfront bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no surprise vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "few upfront vet bills",
+    "won't cost me my deposit"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no looming vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "no big vet bills soon"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "few vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "healthy now",
+    "already fixed"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no vet bills soon"
+   ]
+  },
+  {
+   "cares_about": [
+    "low vet costs",
+    "cheap daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big upfront costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big vet bills soon"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "no ongoing vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "few vet bills",
+    "no damage in a rented room"
+   ]
+  },
+  {
+   "cares_about": [
+    "low upfront vet costs",
+    "cheap to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "few vet bills",
+    "easygoing"
+   ]
+  },
+  {
+   "cares_about": [
+    "low upfront costs",
+    "cheap to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big upfront vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no upcoming vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "few bills up front"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "jabs and neutering done"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big bills soon"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "few vet bills upfront"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no upfront vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no surprise bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "calm around my pupils"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "no big upfront bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big bills ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "easy around children"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big vet bills at the start"
+   ]
+  },
+  {
+   "cares_about": [
+    "low vet bills",
+    "cheap to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big vet bills at once"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no vet bills coming up"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "vaccinations already done"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big vet bills up front",
+    "gentle with the kids I mind"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big vet bills up front"
+   ]
+  },
+  {
+   "cares_about": [
+    "low vet costs",
+    "nothing extra to buy"
+   ]
+  },
+  {
+   "cares_about": [
+    "low vet costs",
+    "few extra supplies"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "copes alone for long hours"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "no surprise vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no vet bills up front"
+   ]
+  },
+  {
+   "cares_about": [
+    "low vet bills",
+    "cheap to keep and house"
+   ]
+  }
+ ],
+ "is allergic and worried about fur": [
+  {
+   "cares_about": [
+    "low allergen",
+    "hypoallergenic",
+    "indoor living"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low shedding"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low-shedding",
+    "easy on allergies"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "is hypoallergenic",
+    "doesn't shed a lot",
+    "has short fur"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "friendly",
+    "low-shedding"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low maintenance",
+    "short fur"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low-shedding",
+    "gentle"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "hypoallergenic",
+    "easy on allergies"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "less shedding",
+    "easy to handle allergies"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low-shedding"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low shedding",
+    "small"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low shedding",
+    "gentle on allergies"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low shedding"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "short hair",
+    "won't trigger allergies"
+   ],
+   "budget": 180
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "short fur",
+    "low dander"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "less fur",
+    "friendly"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low shedding",
+    "small"
+   ],
+   "budget": 40
+  },
+  {
+   "cares_about": [
+    "hypoallergenic cats",
+    "low-shedding breeds",
+    "easy on allergies"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "less fur",
+    "friendly"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low-shedding",
+    "grooming"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low-shedding",
+    "minimal fuss"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low shedding",
+    "non-irritating"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "low shedding",
+    "hypoallergenic"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "low-shedding",
+    "hypoallergenic"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "hypoallergenic",
+    "low shedding",
+    "minimal fur"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "low-shedding",
+    "hypoallergenic",
+    "calm temperament"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "short coat",
+    "little shedding"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "gentle",
+    "meeting her first"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "short coat",
+    "holding her first"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little shedding",
+    "gentle"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "short coat",
+    "meeting her first"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "short coat",
+    "trying her first"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little shedding",
+    "visiting first"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little shedding",
+    "meeting first"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little shedding",
+    "meeting first"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little shedding",
+    "visiting first"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "light shedding"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little or no shedding"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "short coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "light shedding",
+    "meet before buying"
+   ]
+  },
+  {
+   "cares_about": [
+    "easy on allergies",
+    "little loose fur"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "light shedding",
+    "a chance to meet first"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little loose fur"
+   ]
+  },
+  {
+   "cares_about": [
+    "light shedding",
+    "low allergen",
+    "calm enough to meet first"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little loose fur",
+    "calm to hold"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "light shedding",
+    "time together before buying"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little fur around the house"
+   ]
+  },
+  {
+   "cares_about": [
+    "few allergens",
+    "fur easy to manage"
+   ]
+  },
+  {
+   "cares_about": [
+    "low shedding",
+    "low allergen",
+    "easy to groom"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "short easy coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle on allergies",
+    "little fur on clothes"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "easy to groom"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "light shedding",
+    "easy to keep clean around"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "light shedding",
+    "leaves a fish tank alone"
+   ]
+  },
+  {
+   "cares_about": [
+    "light shedding",
+    "low allergen"
+   ]
+  },
+  {
+   "cares_about": [
+    "low shedding",
+    "low allergen"
+   ]
+  },
+  {
+   "cares_about": [
+    "light shedding",
+    "less allergen"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "easy to keep dander down"
+   ]
+  },
+  {
+   "cares_about": [
+    "light shedding",
+    "low allergen",
+    "time to meet her first"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "light shedding",
+    "easy to keep fur down"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little loose fur",
+    "quiet in the evenings"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little loose hair"
+   ]
+  },
+  {
+   "cares_about": [
+    "little loose fur",
+    "low allergen"
+   ]
+  },
+  {
+   "cares_about": [
+    "little shed fur",
+    "low allergen"
+   ]
+  },
+  {
+   "cares_about": [
+    "as little allergen as possible",
+    "light shedding"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "light shedding",
+    "time to test my allergy first"
+   ]
+  },
+  {
+   "cares_about": [
+    "low allergen",
+    "little loose fur",
+    "easy to keep clean"
+   ]
+  },
+  {
+   "cares_about": [
+    "little loose fur",
+    "as easy on allergies as possible"
+   ]
+  },
+  {
+   "cares_about": [
+    "light shedding",
+    "low allergen",
+    "a chance to meet first"
+   ]
+  }
+ ],
+ "is buying for a family with young kids": [
+  {
+   "cares_about": [
+    "kid friendly",
+    "gentle",
+    "tolerant"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "gentle",
+    "easy-going"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "good with children",
+    "gentle"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "is kid-friendly",
+    "has a gentle nature",
+    "is friendly and easy to handle"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "patient",
+    "tolerant"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "kids friendly",
+    "playful",
+    "gentle"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "playful",
+    "easy to handle"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "is good with kids",
+    "is friendly",
+    "is gentle"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "kids-friendly",
+    "playful",
+    "good with children"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "family-friendly",
+    "kids-safe",
+    "gentle"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "family-friendly",
+    "kid-friendly",
+    "gentle"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "good with children"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "friendly"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "gentle",
+    "kid-friendly",
+    "easy to care for"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "kid friendly",
+    "playful"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "gentle",
+    "easy to care for"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "is good with kids",
+    "is gentle",
+    "has a friendly temperament"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "patient",
+    "tolerant"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "kid-friendly cats",
+    "gentle with children",
+    "playful"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "child friendly",
+    "good temperament",
+    "affordable"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "gentle",
+    "patient"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "gentle",
+    "patient",
+    "kid-friendly"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "playful",
+    "affectionate"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "gentle",
+    "easy to handle"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "tolerant",
+    "patient"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "patient",
+    "good with children"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "gentle",
+    "playful"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient temperament",
+    "playful but gentle"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "gentle",
+    "patient"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "kid-friendly",
+    "gentle",
+    "social"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "gentle with young kids",
+    "patient",
+    "healthy"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "gentle with kids",
+    "patient",
+    "not easily scared"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "gentle with toddlers",
+    "patient",
+    "healthy"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient",
+    "gentle"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient",
+    "not easily scared"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "gentle with kids",
+    "patient",
+    "calm"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient",
+    "gentle"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient",
+    "healthy"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient",
+    "gentle"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient",
+    "gentle"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient",
+    "gentle"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "good with kids",
+    "patient",
+    "gentle"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "tolerates handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "gentle when handled",
+    "not easily startled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "calm about noise and grabbing hands"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "patient when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small kids",
+    "patient when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with young kids",
+    "tolerant of handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "patient with handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "gentle when handled",
+    "safe around kids"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small kids",
+    "easygoing about handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with young children",
+    "tolerates handling",
+    "gentle temper"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "tolerates handling",
+    "calm around noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "calm around noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "patient with clumsy handling",
+    "safe in a busy house"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with young kids",
+    "patient with noise and handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small kids",
+    "calm about being handled",
+    "settled at bedtime"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "gentle when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small kids",
+    "gentle when handled",
+    "not easily startled"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "copes with household noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with young kids",
+    "quiet at bedtime"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small kids",
+    "tolerates handling",
+    "steady around noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "patient with handling and noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "gentle when handled",
+    "safe around a toddler"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a child",
+    "settled nights for the family"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with young children",
+    "tolerates handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a young child",
+    "patient when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with young children",
+    "patient with noise and handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to small children",
+    "patient when handled",
+    "easy upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with a toddler",
+    "relaxed in a busy family home"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "tolerates handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with young kids",
+    "patient with handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with a small child",
+    "relaxed around noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with toddlers",
+    "patient when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with a child",
+    "gentle when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "copes with grabbing and noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with toddlers",
+    "patient with noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with toddlers",
+    "gentle when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "safe to handle"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small kids",
+    "patient with handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "tolerant of handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a toddler",
+    "calm when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "calm about being handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "good with children",
+    "relaxed about handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "good with young children",
+    "relaxed about being handled",
+    "settled personality"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with a toddler",
+    "calm when things get noisy"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a small child",
+    "tolerant of handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle when handled",
+    "patient with a young child"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "calm when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "patient with handling",
+    "fully vaccinated"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "calm about noise and handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "tolerant of noise and handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with toddlers",
+    "spares the furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "used to being handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "patient when grabbed",
+    "calm in a busy house"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "steady temper"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with toddlers",
+    "safe around small hands",
+    "settled sleeper"
+   ]
+  },
+  {
+   "cares_about": [
+    "good with toddlers",
+    "easy to care for"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a seven year old",
+    "patient when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "happy to be handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a young child",
+    "happy to be handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "good with young children",
+    "patient when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "copes with grabbing and noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "copes with noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with a six year old",
+    "healthy for years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with small children",
+    "happy to be handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with a six year old",
+    "relaxed with noise and handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with toddlers",
+    "happy to be handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "patient with a small child",
+    "calm when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with children",
+    "calm around noise",
+    "easy to handle"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to small children",
+    "patient when handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "good with young children",
+    "tolerant of noise and handling"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to children",
+    "sleeps through the night"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "settled temperament",
+    "healthy"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle with small children",
+    "easy to handle"
+   ]
+  }
+ ],
+ "is retired and home all day": [
+  {
+   "cares_about": [
+    "affectionate",
+    "patient",
+    "social"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "calm demeanor",
+    "good with quiet time",
+    "doesn't need much exercise"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "lots of attention",
+    "indoor activities",
+    "socialization"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "calm demeanor",
+    "likes company",
+    "indoor pet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "laid-back personality",
+    "indoor companion"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "calm demeanor",
+    "good lap cat",
+    "elderly friendly"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "loving",
+    "patient",
+    "home all day"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "constant company",
+    "easy-going"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "calm",
+    "affectionate",
+    "indoor"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "is affectionate",
+    "is good with older people",
+    "likes to cuddle"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "lots of attention",
+    "quiet",
+    "indoor life"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "companion",
+    "indoor activities",
+    "senior-friendly"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "company",
+    "interactive"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "is active",
+    "is friendly",
+    "has a good temperament"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "companionship",
+    "indoor play",
+    "quiet"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "good companion"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "active companion",
+    "easy to care for"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "loving",
+    "cuddly"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "cuddly",
+    "attentive",
+    "companionable"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "lots of attention",
+    "indoor play",
+    "quiet nights"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "companionship",
+    "calm demeanor"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "interactive",
+    "playful",
+    "lots of energy"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "lap cat",
+    "cuddle buddy",
+    "quiet"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "loving",
+    "great companion"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "lots of interaction",
+    "cuddle time",
+    "being home a lot"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "cuddly",
+    "affectionate",
+    "interactive"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "affectionate",
+    "a settled routine"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "playful",
+    "gentle"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "a lap cat",
+    "gentle"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "playful",
+    "affectionate"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "gentle",
+    "calm"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "affectionate",
+    "gentle"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "gentle",
+    "calm"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "affectionate",
+    "gentle"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "affectionate",
+    "a lap cat"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "calm",
+    "gentle"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "calm",
+    "affectionate"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "calm",
+    "affectionate"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "calm",
+    "affectionate"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "settles into a calm home"
+   ]
+  },
+  {
+   "cares_about": [
+    "enjoys company all day",
+    "a gentle routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "enjoys company all day",
+    "affectionate lap cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "settled grown companion",
+    "happy to keep someone company"
+   ]
+  },
+  {
+   "cares_about": [
+    "company all day long",
+    "gentle with visiting grandkids"
+   ]
+  },
+  {
+   "cares_about": [
+    "enjoys company all day",
+    "happy to settle on a lap"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "warms up to me with time"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap company",
+    "gentle to handle"
+   ]
+  },
+  {
+   "cares_about": [
+    "sociable all day",
+    "enjoys being near people"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "enjoys being handled"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "many years ahead",
+    "lively enough to play"
+   ]
+  },
+  {
+   "cares_about": [
+    "company through the day",
+    "lively enough to keep me busy"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "happy with a slow routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "many good years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "gentle with visiting grandkids"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "likes a daily routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "wants company all day",
+    "affectionate"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "settled through the night"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves a lap",
+    "enjoys company all day",
+    "a gentle temper"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "settles into a home routine",
+    "many years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company all day",
+    "happy to sit quietly nearby"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy to stay in with me",
+    "settled adult",
+    "steady daytime company"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap company",
+    "happy with someone home all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "company through the day",
+    "lively and playful"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy with company all day",
+    "quiet and unhurried"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "clear health records"
+   ]
+  },
+  {
+   "cares_about": [
+    "sociable company all day",
+    "a character with quirks"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "enjoys a calm home"
+   ]
+  },
+  {
+   "cares_about": [
+    "wants company all day",
+    "enjoys being fussed over"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "enjoys being around people"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap company",
+    "happy to stay close all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "happy with company all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "enjoys being fussed over"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "company through the day"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "loves company all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "settled and calm"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm lap companion",
+    "content indoors all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "company all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "lively company",
+    "enjoys attention all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "company through the day",
+    "settles in a quiet house"
+   ]
+  },
+  {
+   "cares_about": [
+    "lively company",
+    "loves to play"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "enjoys a lap"
+   ]
+  },
+  {
+   "cares_about": [
+    "company through the day",
+    "unbothered by music and movement"
+   ]
+  },
+  {
+   "cares_about": [
+    "enjoys company all day",
+    "sociable and chatty"
+   ]
+  },
+  {
+   "cares_about": [
+    "company through the day",
+    "steady habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "happy to stay close all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm companion",
+    "enjoys company at home"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "settles at home"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "many years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "company around the house",
+    "likes a chat"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap company",
+    "settled personality"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "happy to stay in with me"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "likes to stay close"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "easy daily routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "enjoys company all day",
+    "settled personality",
+    "sleeps through the night"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm company all day",
+    "gentle and affectionate"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "likes being near people"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "happy with one person"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "likes being close to people"
+   ]
+  },
+  {
+   "cares_about": [
+    "enjoys company",
+    "good health"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves company",
+    "happy indoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "quiet at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "enjoys being near people"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle company",
+    "relaxed pace"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "at ease with people around"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "lively in the daytime",
+    "happy to stay home"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "enjoys a person around all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "calm indoor companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "company all day",
+    "lively and sociable"
+   ]
+  },
+  {
+   "cares_about": [
+    "glad of company all day",
+    "chatty and affectionate"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle company",
+    "happy to be fussed over"
+   ]
+  },
+  {
+   "cares_about": [
+    "company through the day",
+    "lets me sleep at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "sociable company all day",
+    "enjoys attention"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves company all day",
+    "leaves my fish tank alone"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "enjoys company all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "happy in a quiet home"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves company",
+    "a settled adult"
+   ]
+  },
+  {
+   "cares_about": [
+    "company through the day",
+    "enjoys a garden"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "content at home all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "daytime company",
+    "settles into a routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "happy to stay near me all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "company through the day",
+    "enjoys a daily routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap company",
+    "enjoys a person around"
+   ]
+  },
+  {
+   "cares_about": [
+    "lively company at home",
+    "happy as an only cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "bonds with one person"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "settles into a quiet home"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm company",
+    "settles into a quiet house"
+   ]
+  }
+ ],
+ "lives in a small apartment": [
+  {
+   "cares_about": [
+    "small space friendly",
+    "calm",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "small size",
+    "apartment-friendly",
+    "calm"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "small space-friendly",
+    "not too active",
+    "low maintenance"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "small space-friendly",
+    "quiet",
+    "low-energy"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "small space friendly",
+    "quiet",
+    "independent"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "small space friendly",
+    "doesn't need lots of space"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "small space friendly",
+    "quiet",
+    "low-energy"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "small space friendly",
+    "calm",
+    "indoor cat"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "small space",
+    "indoor",
+    "cuddly"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "space-saving",
+    "small",
+    "quiet"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "small space friendly",
+    "compact",
+    "low noise"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "small space-friendly",
+    "not too big"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "small size",
+    "easy to care for"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "space efficient",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "small space friendly",
+    "calm",
+    "indoor only"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "is small",
+    "is quiet",
+    "doesn't need a lot of space"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "small space friendly",
+    "not destructive",
+    "good with neighbors"
+   ],
+   "budget": 55
+  },
+  {
+   "cares_about": [
+    "small space",
+    "compact",
+    "low maintenance"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "easy to care for",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "small",
+    "indoor friendly",
+    "low activity"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "space efficiency",
+    "low maintenance"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "small space",
+    "easy to care for",
+    "quiet"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "small size",
+    "doesn't need much space"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "small size",
+    "quiet",
+    "indoor friendly"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "small space friendly",
+    "quiet",
+    "easy to care for"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "happy in a small space",
+    "indoor only"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "easy care"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "indoor"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet at night",
+    "easy care"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "tidy"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "tidy",
+    "easy care"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "calm",
+    "indoor"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "indoor"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "indoor",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "indoor"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "calm",
+    "a lap cat"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "tidy",
+    "quiet"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "indoor"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "tidy"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "tidy"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet",
+    "tidy"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for thin walls",
+    "content in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small space",
+    "spares the furniture",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in small rooms",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for close neighbours",
+    "happy in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small space",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "quiet for the neighbours",
+    "light shedding"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for the neighbours",
+    "happy in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "doesn't mind close quarters",
+    "quiet at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for neighbours",
+    "happy in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "low mess",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "quiet for the neighbours",
+    "fits a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in one small room",
+    "little mess in tight quarters"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in one small room",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "fine alone through long workdays"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for thin walls",
+    "happy in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for the neighbours",
+    "calm in one small room"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "little mess"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet at night",
+    "won't wreck a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "easy on the furniture",
+    "not much loose fur"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "calm in small rooms",
+    "little mess"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in small rooms",
+    "quiet for the neighbours",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "light shedding",
+    "fine alone by day"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in small rooms",
+    "quiet while I work",
+    "kind to furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in small rooms",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "suited to small rooms",
+    "kind to furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone through the day",
+    "content in a small flat"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for close neighbours",
+    "content in small rooms"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small flat",
+    "quiet for the neighbours",
+    "fine alone in the day"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "quiet for close neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for the neighbours",
+    "content in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in small rooms",
+    "leaves fish tanks alone"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a few small rooms",
+    "no spraying or yowling"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for thin walls",
+    "happy in a small flat"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy living indoors",
+    "calm in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "fits a small flat",
+    "tidy habits",
+    "quiet for neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small space",
+    "spares the furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for close neighbours",
+    "happy in one room",
+    "leaves the fish alone"
+   ]
+  },
+  {
+   "cares_about": [
+    "settles in a small space",
+    "calm and quiet indoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small space",
+    "fine alone on long days"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small flat",
+    "fine alone during long shifts"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small space",
+    "quiet at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "little loose hair"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "gentle around delicate fabrics"
+   ]
+  },
+  {
+   "cares_about": [
+    "suits a small space",
+    "quiet for close neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "suited to a small flat",
+    "easy on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "settles in a small space",
+    "spares the furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small space",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet at night",
+    "content in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors",
+    "suited to a small space",
+    "quiet at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in small rooms",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "fits a one room flat",
+    "no spraying or smells"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "quiet in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in one small room",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in small rooms",
+    "low fuss to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "settles in small rooms",
+    "quiet for close neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "quiet for neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet through thin walls",
+    "happy in a small flat"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "content indoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "suits a small flat",
+    "light on mess"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small flat",
+    "quiet for close neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors in a small flat",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "leaves fabric alone"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in small rooms",
+    "quiet at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for the neighbours",
+    "suits a small flat"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet at night",
+    "tidy in a small space"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in small rooms",
+    "calm around fragile things"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy living small",
+    "tidy indoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "little hair or mess"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors in a small space",
+    "tidy with furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a small space",
+    "quiet at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "settled in a small space",
+    "quiet through thin walls"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm in a small space",
+    "settled adult habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "quiet for the neighbours",
+    "suited to a small flat"
+   ]
+  },
+  {
+   "cares_about": [
+    "content in a small space",
+    "quiet for the neighbours",
+    "kind to furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy in a small flat",
+    "quiet for the neighbours"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors",
+    "suits a small space"
+   ]
+  }
+ ],
+ "lives on a busy road": [
+  {
+   "cares_about": [
+    "indoor life",
+    "quiet surroundings",
+    "low energy"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "tolerates noise",
+    "doesn't get anxious",
+    "can handle a busy environment"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "low stress",
+    "quiet environment",
+    "good with neighbors"
+   ],
+   "budget": 55
+  },
+  {
+   "cares_about": [
+    "adaptable",
+    "good with noise",
+    "outgoing"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outgoing",
+    "not bothered by noise",
+    "active"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "not scared of traffic",
+    "good for a busy environment"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "active",
+    "outgoing",
+    "loud environment friendly"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "is quiet",
+    "doesn't meow a lot",
+    "is calm around traffic"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet home life",
+    "not too active",
+    "indoor"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "indoor",
+    "low-energy",
+    "quiet"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "is calm",
+    "is quiet",
+    "won't be scared of traffic"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "indoor-friendly",
+    "low-energy"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "calm",
+    "not a lot of noise"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "outgoing",
+    "active",
+    "good with noise"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "indoor",
+    "noise level"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "indoor only",
+    "calm",
+    "quiet"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "is energetic",
+    "is good with noise",
+    "is brave"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "calm",
+    "indoor"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "calm",
+    "no outdoor access"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "tolerates noise",
+    "active"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outdoor safety",
+    "active",
+    "playful"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "calm",
+    "outgoing",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outgoing",
+    "good with noise",
+    "resilient"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "calm",
+    "indoor-friendly"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "calm",
+    "indoor",
+    "easy to care for"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "no fear of traffic",
+    "calm around noise",
+    "good with busy environments"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "quiet",
+    "not easily scared"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "outdoor-friendly",
+    "active"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "loud noises tolerant",
+    "independent",
+    "hardy"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "not a runner"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "not a runner"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "not a runner"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "not a runner"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "not a runner"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "safe near traffic"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "safe near traffic"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "safe near traffic"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "calm",
+    "safe near traffic"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "happy living indoors",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "content to stay indoors",
+    "not a door dasher",
+    "steady around traffic noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "no urge to roam near traffic"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors only",
+    "no urge to dash outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "content to stay indoors",
+    "won't bolt out the door"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "no urge to bolt outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no urge to wander"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "safe from traffic"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no urge to slip outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no urge to bolt outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no interest in the street"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "won't dash out the door",
+    "unbothered by traffic noise"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "won't dash for the door",
+    "predictable costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "content to stay indoors",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "content staying indoors",
+    "no dashing out the door"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no habit of roaming"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy as an indoor cat",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "won't bolt for the door"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "not a door dasher"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no urge to dart outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "traceable if lost"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors",
+    "safe from traffic"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "safe from traffic"
+   ]
+  },
+  {
+   "cares_about": [
+    "content to stay indoors",
+    "no urge to bolt outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors",
+    "no urge to slip outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors",
+    "no urge to bolt outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "content to stay indoors",
+    "light shedding near my quilts"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "won't dash for the door"
+   ]
+  },
+  {
+   "cares_about": [
+    "kept away from traffic",
+    "content indoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no urge to dash outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "won't dash for the door"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy to stay indoors",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy to stay indoors",
+    "won't dash for the road"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy to stay indoors",
+    "no door dashing"
+   ]
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "won't dash out the door"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no urge to reach the street"
+   ]
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "no urge to bolt outside"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy to live indoors",
+    "calm away from traffic"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "won't slip out the door"
+   ]
+  },
+  {
+   "cares_about": [
+    "content indoors",
+    "no urge to bolt"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy staying indoors",
+    "quiet while I work at home"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy indoors only",
+    "no urge to roam"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy to stay indoors",
+    "safe from traffic"
+   ]
+  },
+  {
+   "cares_about": [
+    "content to stay indoors",
+    "no hunting birds"
+   ]
+  },
+  {
+   "cares_about": [
+    "stays away from traffic",
+    "content indoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "stays off the street",
+    "content indoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "stays indoors",
+    "won't dash out the door"
+   ]
+  }
+ ],
+ "lost an old cat last year": [
+  {
+   "cares_about": [
+    "friendly",
+    "comforting",
+    "loyal"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "calm demeanor",
+    "companionship",
+    "loyalty"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "friendly personality",
+    "good companion",
+    "affectionate"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "comforting presence",
+    "affectionate",
+    "senior-friendly"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "mellow",
+    "friendly"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "loving",
+    "friendly",
+    "affectionate"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "old cat memories",
+    "calm companion"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "mature",
+    "calm",
+    "affectionate"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "brings back good memories",
+    "is friendly",
+    "has a nice personality"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "memories",
+    "comforting",
+    "loving"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "comfort",
+    "affectionate",
+    "loving"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "memories",
+    "comforting",
+    "similar to my old cat"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "healing",
+    "comfort",
+    "company"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "cuddly",
+    "affectionate"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "loving",
+    "affectionate",
+    "a good companion"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "comforting presence",
+    "loyal",
+    "affectionate"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "sweet",
+    "comforting",
+    "a new companion"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "is friendly",
+    "has lots of energy",
+    "fills the home with life"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "loving",
+    "company",
+    "affectionate"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "loving",
+    "comforting",
+    "similar to my old cat"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "comforting",
+    "affectionate",
+    "good health"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "bond",
+    "emotional connection",
+    "loyalty"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "comforting",
+    "similar to her old cat",
+    "friendly"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "comforting presence",
+    "affectionate"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "emotional support",
+    "affectionate",
+    "calm"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "good health",
+    "warm personality",
+    "affectionate"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "loyal",
+    "companionable"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "companion",
+    "old age",
+    "calm nature"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "a steady companion",
+    "calm"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "a close companion",
+    "gentle"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "a cuddler",
+    "a steady companion",
+    "gentle"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "a close companion",
+    "gentle"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "a calm companion",
+    "healthy"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "a calm companion",
+    "older is fine"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "a cuddler",
+    "gentle"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "a close companion",
+    "gentle"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "healthy",
+    "gentle"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "healthy",
+    "gentle"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "healthy",
+    "gentle"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "affectionate companion",
+    "many years ahead",
+    "a familiar daily rhythm"
+   ]
+  },
+  {
+   "cares_about": [
+    "young and healthy",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "mature and settled",
+    "healthy years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate companion",
+    "many years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "young and healthy",
+    "many years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate companion",
+    "many healthy years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "calm older companion",
+    "many healthy years left"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "affectionate companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "young with many years ahead",
+    "healthy",
+    "a cat to fuss over"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate companion",
+    "good long term health"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "a cat that bonds closely"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy with many years ahead",
+    "affectionate companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "long healthy years ahead",
+    "healthy from the start"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle senior company",
+    "a known health history"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "gentle and affectionate"
+   ]
+  },
+  {
+   "cares_about": [
+    "long healthy life ahead",
+    "gentle companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "a senior with good years left",
+    "an honest health history"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle mature cat",
+    "known health history"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle senior company",
+    "quiet evenings together"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "long healthy years ahead",
+    "gentle with delicate things"
+   ]
+  },
+  {
+   "cares_about": [
+    "many years ahead",
+    "gentle companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "gentle companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "long healthy years ahead",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy for years ahead",
+    "gentle companion",
+    "enjoys a garden"
+   ]
+  },
+  {
+   "cares_about": [
+    "many years ahead",
+    "affectionate and close"
+   ]
+  },
+  {
+   "cares_about": [
+    "senior cat companion",
+    "affectionate",
+    "manageable health"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy for many years",
+    "a close companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "long healthy life ahead",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "a steady companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle senior company",
+    "honest health history"
+   ]
+  },
+  {
+   "cares_about": [
+    "long life ahead",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "evening company"
+   ]
+  },
+  {
+   "cares_about": [
+    "many years together",
+    "a cat with character"
+   ]
+  },
+  {
+   "cares_about": [
+    "a calm older companion",
+    "honest health history"
+   ]
+  },
+  {
+   "cares_about": [
+    "a long healthy life ahead",
+    "gentle evening company"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate companion",
+    "a long healthy life ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy for years ahead",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "young with years ahead",
+    "a healthy start"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle older companion",
+    "settled with people"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "gentle, settled company"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle senior",
+    "settles into a quiet home"
+   ]
+  },
+  {
+   "cares_about": [
+    "an older cat welcome",
+    "happy as an only cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate company",
+    "settled adult"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy for a long life",
+    "young enough for many years"
+   ]
+  },
+  {
+   "cares_about": [
+    "many years ahead",
+    "loves a lap"
+   ]
+  },
+  {
+   "cares_about": [
+    "a calm older companion",
+    "honest about health"
+   ]
+  },
+  {
+   "cares_about": [
+    "settled older companion",
+    "health watched closely"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy to take an older cat",
+    "affectionate"
+   ]
+  },
+  {
+   "cares_about": [
+    "many years ahead",
+    "affectionate companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "young and healthy",
+    "settles in quickly"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "lively company at home"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate nature",
+    "good years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "good health for years",
+    "settled adult"
+   ]
+  },
+  {
+   "cares_about": [
+    "many years ahead",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "a mature companion",
+    "content in a quiet workroom",
+    "light shedding"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "content alone through a workday"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "settled, easygoing nature"
+   ]
+  },
+  {
+   "cares_about": [
+    "a senior cat to look after",
+    "affectionate"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "an affectionate companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "gentle older companion",
+    "years of health ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "happy to take on an older cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "safe from traffic"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate",
+    "many years ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "young with years ahead",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "many good years ahead",
+    "known health history"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "affectionate and lively"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy young adult",
+    "content alone on long workdays"
+   ]
+  },
+  {
+   "cares_about": [
+    "many healthy years ahead",
+    "affectionate at my side"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy for many years",
+    "affectionate companion"
+   ]
+  },
+  {
+   "cares_about": [
+    "affectionate lap cat",
+    "spares the furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "many good years ahead",
+    "affectionate company"
+   ]
+  },
+  {
+   "cares_about": [
+    "loving lap cat",
+    "good years of health ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy for years ahead",
+    "settled and gentle"
+   ]
+  },
+  {
+   "cares_about": [
+    "healthy senior",
+    "clear vet history"
+   ]
+  }
+ ],
+ "loves rare, premium and pedigree things": [
+  {
+   "cares_about": [
+    "rare breed",
+    "show quality",
+    "premium"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "unique look",
+    "premium quality"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "rare breeds",
+    "premium genetics",
+    "show potential"
+   ],
+   "budget": 400
+  },
+  {
+   "cares_about": [
+    "rare",
+    "premium breed",
+    "unique"
+   ],
+   "budget": 500
+  },
+  {
+   "cares_about": [
+    "unique traits",
+    "rare breeds"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "show quality",
+    "expensive pedigree"
+   ],
+   "budget": 300
+  },
+  {
+   "cares_about": [
+    "premium",
+    "beautiful",
+    "show quality"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "is a rare breed",
+    "has a pedigree",
+    "is unique"
+   ],
+   "budget": 500
+  },
+  {
+   "cares_about": [
+    "premium",
+    "unique",
+    "high-quality"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "rare",
+    "quality"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "rare",
+    "unique",
+    "pedigree"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "looks stunning"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "unique features"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "exclusive",
+    "premium",
+    "pedigree"
+   ],
+   "budget": 300
+  },
+  {
+   "cares_about": [
+    "breed",
+    "pedigree"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "rare breeds",
+    "high quality",
+    "pedigree"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "rare",
+    "unique"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "rare",
+    "pedigree",
+    "unique"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "pedigree cats",
+    "rare breeds",
+    "quality"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "rare",
+    "premium quality"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "unique",
+    "high-quality",
+    "premium"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "rare breed",
+    "looks and quality"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "high quality",
+    "rare"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "premium breed",
+    "rare",
+    "show-quality"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "rare",
+    "high-quality"
+   ],
+   "budget": 300
+  },
+  {
+   "cares_about": [
+    "rare",
+    "premium pedigree"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "premium quality",
+    "rare breed",
+    "show cat"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "show-quality",
+    "beautiful"
+   ],
+   "budget": 300
+  },
+  {
+   "cares_about": [
+    "beautiful",
+    "unique"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "rare"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "breed",
+    "rarity",
+    "pedigree"
+   ],
+   "budget": 200
+  },
+  {
+   "cares_about": [
+    "rare pedigree",
+    "unique traits",
+    "luxury"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "premium",
+    "rare",
+    "high quality"
+   ],
+   "budget": 300
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "rare breed",
+    "show quality"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "rare breed",
+    "papers"
+   ],
+   "budget": 220
+  },
+  {
+   "cares_about": [
+    "pedigree",
+    "rare",
+    "papers"
+   ],
+   "budget": 220
+  },
+  {
+   "cares_about": [
+    "rare",
+    "premium",
+    "pedigree"
+   ],
+   "budget": 220
+  },
+  {
+   "cares_about": [
+    "rare",
+    "premium",
+    "pedigree"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "papers",
+    "premium"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "rare",
+    "premium",
+    "pedigree"
+   ],
+   "budget": 230
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "rare",
+    "premium"
+   ],
+   "budget": 250
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "premium",
+    "striking looks"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "rare breed",
+    "premium"
+   ],
+   "budget": 140
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "rare breed",
+    "premium"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "pedigree papers",
+    "rare breed",
+    "premium"
+   ],
+   "budget": 160
+  },
+  {
+   "cares_about": [
+    "rare breed with papers",
+    "something truly special"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree",
+    "rare, premium breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree with papers",
+    "rare breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed",
+    "papers to prove the line",
+    "elegant and rare"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree breed",
+    "papers to prove it",
+    "luxurious looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "known pedigree",
+    "rare look",
+    "papers to show"
+   ]
+  },
+  {
+   "cares_about": [
+    "prestigious breed",
+    "proven pedigree"
+   ]
+  },
+  {
+   "cares_about": [
+    "a recognised breed",
+    "papers to prove it",
+    "a well raised kitten"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree with papers",
+    "rare, elegant breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed with papers",
+    "rare and distinguished"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "complete pedigree and vet records"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree",
+    "papers to prove it",
+    "a distinctive breed look"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree",
+    "papers to prove it",
+    "rare looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised rare breed",
+    "papers to prove it",
+    "striking rare look"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree with papers",
+    "rare breed",
+    "premium health"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare pedigree",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "uncommon breed",
+    "papers to prove it",
+    "a look worth collecting"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree with papers",
+    "rare and striking"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree",
+    "rare and premium"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed",
+    "pedigree papers",
+    "polished presentation"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised rare breed",
+    "documented pedigree",
+    "premium condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed with papers",
+    "premium pedigree look"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare or pedigree breed",
+    "papers to prove it",
+    "a cat worth showing off"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "papers and lineage"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "pedigree papers"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed with papers",
+    "distinctive looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare or pedigree breed",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "papers to prove it",
+    "striking looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "proven bloodline",
+    "classic breed look",
+    "premium quality"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "papers to prove it",
+    "flawless presentation"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed with papers",
+    "premium health records"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare look",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "prestigious pedigree breed",
+    "elegant looks",
+    "calm around recording"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare pedigree breed",
+    "an elegant, premium cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "registered pedigree",
+    "rare and valuable"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised premium breed",
+    "papers proving the line"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "proper papers"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "documented pedigree"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree breed",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed with papers",
+    "premium condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "pedigree papers",
+    "premium condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "documented pedigree",
+    "flawless record",
+    "something rare"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "proven pedigree"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare pedigree breed",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree",
+    "premium coat",
+    "documented history"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "fully documented",
+    "flawless condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed with papers",
+    "a showpiece for guests"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "papers to prove it",
+    "flawless condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "proper papers",
+    "a cat with a lineage"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed with papers",
+    "premium health record"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed with papers",
+    "rare and premium"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "pedigree papers",
+    "something unusual"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree with papers",
+    "prestigious breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "papers and a known bloodline"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "premium look"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed with papers",
+    "rare, striking looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "papers and provenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree breed",
+    "papers proving his line",
+    "a premium look"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare or pedigree breed",
+    "papers to prove it",
+    "prime condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree with papers",
+    "rare and special"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree",
+    "papers to prove it",
+    "something rare"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree",
+    "papers to prove it",
+    "rare breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "something special with a story"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree breed",
+    "papers to prove it",
+    "rare looks"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised premium breed",
+    "papers to prove it"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "pedigree papers",
+    "luxurious look"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "registered pedigree"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised breed",
+    "papers to prove it",
+    "something rare"
+   ]
+  },
+  {
+   "cares_about": [
+    "prestige breed",
+    "papers and a clean health record"
+   ]
+  },
+  {
+   "cares_about": [
+    "known pedigree",
+    "papers to prove it",
+    "premium breed"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare recognised breed",
+    "proof of pedigree",
+    "fine condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised premium breed",
+    "papers to prove it",
+    "looks impressive"
+   ]
+  },
+  {
+   "cares_about": [
+    "pedigree with papers",
+    "rare and premium"
+   ]
+  },
+  {
+   "cares_about": [
+    "recognised pedigree breed",
+    "papers to prove it",
+    "a clean health record"
+   ]
+  },
+  {
+   "cares_about": [
+    "rare breed",
+    "pedigree papers",
+    "premium look"
+   ]
+  },
+  {
+   "cares_about": [
+    "proven pedigree",
+    "rare or premium breed"
+   ]
+  }
+ ],
+ "mostly wants a good deal": [
+  {
+   "cares_about": [
+    "good value",
+    "doesn't cost a lot",
+    "won't break the bank"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "good deal",
+    "health",
+    "temperament"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "healthy",
+    "good temperament"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "is a good deal",
+    "has a good temperament",
+    "is healthy"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "good price",
+    "healthy",
+    "active"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "best price",
+    "no frills"
+   ],
+   "budget": 30
+  },
+  {
+   "cares_about": [
+    "good deal",
+    "affordable",
+    "bargain"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "price",
+    "bargain",
+    "affordable"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "good price",
+    "healthy"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "bargain",
+    "deals",
+    "not overspending"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "good price",
+    "value",
+    "practical"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "healthy",
+    "good deal",
+    "affordable"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "best deal",
+    "healthy",
+    "easy to care for"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "good health",
+    "reliable"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "price",
+    "good value",
+    "reliable"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "value",
+    "good deal"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "good deal",
+    "healthy"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "bargain",
+    "affordable",
+    "good deal"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "healthy"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "affordable",
+    "value",
+    "good deal"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "good value",
+    "healthy",
+    "not too expensive"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "good deal",
+    "practicality"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "good deal",
+    "affordable"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "good deal",
+    "healthy"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "a fair price",
+    "healthy",
+    "no extra costs"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "healthy",
+    "nothing extra to buy"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "a fair price",
+    "healthy",
+    "no surprises"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "no hidden costs",
+    "healthy"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "healthy",
+    "low cost"
+   ],
+   "budget": 55
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "healthy",
+    "no extra costs"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "healthy",
+    "nothing extra"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "healthy",
+    "no extras"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "healthy",
+    "no extras"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "low cost",
+    "healthy"
+   ],
+   "budget": 55
+  },
+  {
+   "cares_about": [
+    "a good price",
+    "healthy",
+    "low cost"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "a good deal",
+    "low price",
+    "healthy"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "a good deal",
+    "low price",
+    "healthy"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "low price",
+    "few extra vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no extra costs up front"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price",
+    "few extra bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low upfront costs",
+    "vaccines already done"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price",
+    "few extra costs up front"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "few hidden costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "no hidden extra costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "a price that reflects every flaw",
+    "no surprise bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no surprise vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no bills coming up"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "good value for money"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price",
+    "few extra costs",
+    "value for money"
+   ]
+  },
+  {
+   "cares_about": [
+    "vet work already done",
+    "fair price for a sound cat"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big vet bills soon"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "no hidden costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no surprise bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "low vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no hidden costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no big upfront bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "few extra costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "no big vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price",
+    "no hidden costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "cheap to keep",
+    "easy on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price",
+    "no surprise vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "vet work already done"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "cheap to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "few vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "few vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "vet work already done",
+    "low running costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "few upfront bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price for what's offered",
+    "few extra vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "fair asking price"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "no costly habits",
+    "little fur on fabric"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price for what I get",
+    "no hidden flaws"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to buy",
+    "low running costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no extra bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price for an ordinary cat",
+    "vet work already done"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "good value for the price"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "cheap to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "few bills coming"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "a bargain price"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "few upfront bills",
+    "easy to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no damage to replace"
+   ]
+  },
+  {
+   "cares_about": [
+    "low running costs",
+    "no surprise bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "few extra bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "cheap to keep",
+    "no surprise vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no extra costs after buying"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no costly surprises"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "few upfront vet bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "fair price",
+    "no surprise costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "few upfront costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no surprise bills"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no extra bills after buying"
+   ]
+  },
+  {
+   "cares_about": [
+    "low upfront costs",
+    "cheap to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "low upfront costs",
+    "vet work already done"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no surprise bills",
+    "good value for years"
+   ]
+  },
+  {
+   "cares_about": [
+    "low asking price",
+    "no surprise costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "few bills coming up"
+   ]
+  },
+  {
+   "cares_about": [
+    "good value for the price",
+    "few extra costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no extra running costs"
+   ]
+  },
+  {
+   "cares_about": [
+    "a fair low price",
+    "cheap to keep"
+   ]
+  },
+  {
+   "cares_about": [
+    "low price",
+    "no extra vet bills"
+   ]
+  }
+ ],
+ "spends weekends hiking and wants an adventure cat": [
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "playful",
+    "active"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "outdoor activity",
+    "athletic",
+    "adventurous"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outdoor activity",
+    "adventurous",
+    "energetic"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "adventurous",
+    "outdoor friendly",
+    "energetic"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "active",
+    "outdoor companion"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "adventurous",
+    "outdoor friendly",
+    "energetic"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "is energetic",
+    "likes to explore",
+    "is good with hiking"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "active",
+    "curious"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "outdoor activities",
+    "active",
+    "adventures"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "outdoor",
+    "active",
+    "adventurous"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "outdoor-friendly",
+    "energetic",
+    "adventurous"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "active",
+    "adventurous"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "active",
+    "outdoor",
+    "adventurous"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "adventurous",
+    "active"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "outdoor activities",
+    "adventure",
+    "active"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "active",
+    "outdoor-friendly"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "active",
+    "outdoor"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "active",
+    "curious"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "is adventurous",
+    "is energetic",
+    "likes to go on hikes"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "active",
+    "friendly"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "active",
+    "energetic"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outdoor cats",
+    "active cats",
+    "adventure"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "active",
+    "tolerates long absences"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "active",
+    "adventurous",
+    "outdoor companion"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "active",
+    "outdoor-friendly",
+    "adventurous"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "outdoor play",
+    "activity",
+    "energy"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "outdoor-friendly",
+    "active"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "energetic",
+    "adventurous"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "active",
+    "outdoor-friendly"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "active",
+    "adventurous",
+    "outdoor"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "outdoor activities",
+    "active companion"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "active",
+    "adventurous"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "active",
+    "outdoor friendly",
+    "adventurous"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "outdoor friendly",
+    "adventurous",
+    "energetic"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "active",
+    "outdoor friendly",
+    "adventurous"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "adventurous",
+    "confident outdoors",
+    "energetic"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "adventurous",
+    "confident outdoors",
+    "energetic"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "adventurous",
+    "outdoor confident",
+    "energetic"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "adventurous",
+    "outdoor confident",
+    "energetic"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "adventurous",
+    "outdoor confident",
+    "energetic"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "adventurous",
+    "outdoor confident",
+    "energetic"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "confident outdoors",
+    "happy on a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "happy to travel",
+    "energetic and curious"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "steady around strange animals",
+    "up for adventures"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "takes to a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "happy to travel",
+    "curious and energetic"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves the outdoors",
+    "fit and energetic",
+    "comfortable in a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "happy on a harness",
+    "travels well"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and curious",
+    "loves the outdoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and curious outside",
+    "fit enough for long walks",
+    "calm in a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves being outdoors",
+    "bold and energetic",
+    "travels well"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and curious outdoors",
+    "happy to travel"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "comfortable on a harness",
+    "loves new places"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "happy on the move",
+    "lots of energy"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors on a harness",
+    "bold and curious"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit for long walks",
+    "happy on a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to the outdoors",
+    "energy for long hikes",
+    "sticks close on the move"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy on a harness",
+    "bold outdoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "comfortable on a harness",
+    "bold outdoors",
+    "fit and agile"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit enough for long walks",
+    "steady around strangers and dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "happy on a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and energetic",
+    "happy outdoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "fit and energetic",
+    "confident outdoors",
+    "keen to explore"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "happy to travel"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "easy around dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit and full of energy",
+    "happy to travel"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves the outdoors",
+    "energetic and bold"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit for long walks",
+    "happy in a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit enough for long walks"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit for long walks",
+    "young and energetic"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "young and energetic"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "steady around dogs"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "young and energetic",
+    "fully vaccinated for trips"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors",
+    "takes to a harness",
+    "bold and curious"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and active",
+    "keen on the outdoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and curious",
+    "used to the outdoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors",
+    "bold on a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "happy on long walks"
+   ]
+  },
+  {
+   "cares_about": [
+    "comfortable outdoors",
+    "bold and fit"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and curious outdoors",
+    "happy on a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit for long walks"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit for long hikes"
+   ]
+  },
+  {
+   "cares_about": [
+    "confident outdoors",
+    "energetic and adventurous"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "stamina for long walks"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves the outdoors",
+    "fit for long walks",
+    "bold and curious"
+   ]
+  },
+  {
+   "cares_about": [
+    "used to the outdoors",
+    "bold and energetic"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors on a harness",
+    "energy for long days"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors",
+    "game for long walks"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and active",
+    "up for adventures"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit for long walks",
+    "takes to a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold enough for outdoor trips",
+    "happy on a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold enough for hikes",
+    "takes to a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors",
+    "brave on a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold and curious",
+    "could learn a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "confident outdoors",
+    "bold with new places and people"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "keen to explore"
+   ]
+  },
+  {
+   "cares_about": [
+    "confident outdoors",
+    "young and energetic"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "energetic and fit"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "game for long walks"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "fit for long walks",
+    "calm on a harness"
+   ]
+  },
+  {
+   "cares_about": [
+    "confident outdoors",
+    "travels well",
+    "up for long walks"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors",
+    "bold and energetic"
+   ]
+  },
+  {
+   "cares_about": [
+    "loves the outdoors",
+    "bold and active",
+    "fit for long walks"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold outdoors",
+    "young and fit"
+   ]
+  },
+  {
+   "cares_about": [
+    "confident outdoors",
+    "fit enough for hikes",
+    "calm on the move"
+   ]
+  },
+  {
+   "cares_about": [
+    "fit enough for the fells",
+    "bold outdoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors on a harness",
+    "bold in new places"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold enough for outings",
+    "loves the outdoors"
+   ]
+  },
+  {
+   "cares_about": [
+    "bold enough for outdoor walks",
+    "healthy and energetic"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy outdoors",
+    "walks on a harness"
+   ]
+  }
+ ],
+ "wants things in excellent shape": [
+  {
+   "cares_about": [
+    "healthy",
+    "well-cared for",
+    "strong"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "cleanliness",
+    "low shedding"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "well-groomed",
+    "vaccinations up to date"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "well-groomed",
+    "socialized"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "no flaws",
+    "exceptional"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "is in excellent health",
+    "is well-groomed",
+    "has a perfect temperament"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "good behavior"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "is in top condition",
+    "has a perfect coat",
+    "is well-behaved"
+   ],
+   "budget": 180
+  },
+  {
+   "cares_about": [
+    "in excellent condition",
+    "healthy",
+    "perfect"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "healthy",
+    "well-groomed",
+    "vaccinated"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "well-groomed",
+    "clean"
+   ],
+   "budget": 95
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "no flaws"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "perfect pedigree"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "well-socialized",
+    "no behavior issues"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "in excellent condition",
+    "healthy",
+    "young"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "in excellent condition",
+    "healthy",
+    "young"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "healthy cats",
+    "perfect condition",
+    "no health issues"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "no hidden issues",
+    "well groomed"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "healthy",
+    "well-cared",
+    "excellent shape"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "healthy",
+    "well-groomed",
+    "socialized"
+   ],
+   "budget": 150
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "clean",
+    "well-groomed"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "healthy",
+    "well-groomed",
+    "active"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "well-groomed",
+    "healthy",
+    "young"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "healthy",
+    "well-groomed"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "healthy",
+    "well-cared-for",
+    "up-to-date on shots"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "good breeding",
+    "no defects"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "perfect condition"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "perfect condition",
+    "healthy",
+    "no defects"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "well-groomed"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "good health",
+    "well-groomed"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "excellent grooming",
+    "no flaws"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "well-groomed",
+    "well-socialized"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "perfect health",
+    "well-groomed",
+    "excellent condition"
+   ],
+   "budget": 100
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clear vet records",
+    "well groomed"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean records",
+    "well groomed"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean records",
+    "no defects"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "regular vet care",
+    "no problems"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "up to date shots",
+    "well cared for"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "up to date shots",
+    "clean records"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean records",
+    "no surprises"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "no medication",
+    "clean records"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "up to date shots",
+    "clean records"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean records",
+    "up to date shots"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "no ongoing problems",
+    "good records"
+   ],
+   "budget": 110
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "no ongoing problems",
+    "good records"
+   ],
+   "budget": 120
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "no ongoing problems",
+    "good records"
+   ],
+   "budget": 130
+  },
+  {
+   "cares_about": [
+    "recent vet records",
+    "no hidden health problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health records",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "well kept and cared for"
+   ]
+  },
+  {
+   "cares_about": [
+    "in top health",
+    "no problems to fix"
+   ]
+  },
+  {
+   "cares_about": [
+    "in excellent health",
+    "fully vetted and fixed"
+   ]
+  },
+  {
+   "cares_about": [
+    "complete vet records",
+    "sound health"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "complete vet history"
+   ]
+  },
+  {
+   "cares_about": [
+    "full health records",
+    "no known illness",
+    "well cared for"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "up to date vet care"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent health records",
+    "no hidden problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "complete health records",
+    "in top condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "recent vet checks",
+    "no hidden problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "fully tested",
+    "no hidden problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "no treatment ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "tests all done",
+    "no lingering problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "complete vet records",
+    "carefully kept"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "sound joints and body"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "complete vet records"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "well looked after"
+   ]
+  },
+  {
+   "cares_about": [
+    "vet care up to date",
+    "no health unknowns"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "sound and well kept"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet checks",
+    "sound health",
+    "no hidden problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "nothing left to fix"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean vet records"
+   ]
+  },
+  {
+   "cares_about": [
+    "fully vetted",
+    "well kept coat",
+    "good manners"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean health record",
+    "sound condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "in top health",
+    "no lingering illness",
+    "fully checked over"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean health record",
+    "no wear or injuries"
+   ]
+  },
+  {
+   "cares_about": [
+    "complete vet records",
+    "excellent health"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean health record",
+    "fully fit right now"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean vet results"
+   ]
+  },
+  {
+   "cares_about": [
+    "fully vaccinated",
+    "clean health record"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "up to date at the vet"
+   ]
+  },
+  {
+   "cares_about": [
+    "spotless health record",
+    "years of good form ahead"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet records",
+    "in top condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean vet record"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health record",
+    "no hidden problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean health record",
+    "up to date on vet care"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "up to date vet care"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean health record",
+    "furniture left intact"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent clean vet record",
+    "no lasting health problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "complete vet record",
+    "no jobs left undone"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet check",
+    "clean bill of health"
+   ]
+  },
+  {
+   "cares_about": [
+    "full health records",
+    "no hidden problems",
+    "kept in top condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "sound health",
+    "no ongoing treatment",
+    "a clean vet record"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet checks",
+    "nothing left to fix"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health records",
+    "careful with furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "good house manners"
+   ]
+  },
+  {
+   "cares_about": [
+    "spotless health record",
+    "no hidden faults"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "recent vet records"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean health record",
+    "up to date vaccines"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet checkup",
+    "clean health record"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet checks",
+    "in top health"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean health record",
+    "in top condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean habits",
+    "nothing left to fix"
+   ]
+  },
+  {
+   "cares_about": [
+    "fully vaccinated",
+    "excellent health record"
+   ]
+  },
+  {
+   "cares_about": [
+    "full health records",
+    "top physical condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "fully tested"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "up to date vet care",
+    "tidy habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent clean bloodwork",
+    "no ongoing conditions"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet check",
+    "sound health",
+    "no hidden problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "clean coat and habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "no ongoing illness",
+    "top condition for his age"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "no ongoing treatment"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "tests and checks done"
+   ]
+  },
+  {
+   "cares_about": [
+    "fully vaccinated",
+    "clean bill of health",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "top health",
+    "clean vet record",
+    "well kept coat"
+   ]
+  },
+  {
+   "cares_about": [
+    "sound physical condition",
+    "nothing still being treated"
+   ]
+  },
+  {
+   "cares_about": [
+    "sound health",
+    "recent vet records"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "well kept habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "complete records"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet checks",
+    "in top condition"
+   ]
+  },
+  {
+   "cares_about": [
+    "recent vet records",
+    "excellent health"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "up to date records"
+   ]
+  },
+  {
+   "cares_about": [
+    "full vet records",
+    "no hidden health problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "full vet records",
+    "excellent health"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "in his prime"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "recent vet records",
+    "no lingering problems"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "no costly surprises"
+   ]
+  },
+  {
+   "cares_about": [
+    "clean bill of health",
+    "recent vet check"
+   ]
+  },
+  {
+   "cares_about": [
+    "excellent health",
+    "complete vet care"
+   ]
+  }
+ ],
+ "works long hours and has little free time": [
+  {
+   "cares_about": [
+    "low maintenance",
+    "easy-going",
+    "relaxed"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independent",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "independent",
+    "low maintenance",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independent",
+    "quiet"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independent"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independent",
+    "doesn't need much attention"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "independent",
+    "low maintenance",
+    "quiet"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "is independent",
+    "is low-maintenance",
+    "doesn't need much attention"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "independent",
+    "low-maintenance",
+    "quiet"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "independent",
+    "low maintenance"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "quiet"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independent",
+    "quiet"
+   ],
+   "budget": 90
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independent",
+    "quiet"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "is independent",
+    "doesn't need too much attention",
+    "is low maintenance"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "quiet",
+    "indoor"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independence",
+    "easy care"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "calm temperament",
+    "easy care"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "independent",
+    "low maintenance",
+    "quiet"
+   ],
+   "budget": 65
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "calm"
+   ],
+   "budget": 75
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "quiet"
+   ],
+   "budget": 60
+  },
+  {
+   "cares_about": [
+    "independent",
+    "low maintenance",
+    "easygoing"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "independent",
+    "doesn't need constant attention"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "easy to care for",
+    "quiet"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "quiet",
+    "easy care"
+   ],
+   "budget": 50
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "low maintenance",
+    "independent"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "fine alone",
+    "independent",
+    "low maintenance"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "fine alone",
+    "low maintenance",
+    "independent"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "fine alone",
+    "low maintenance",
+    "quiet"
+   ],
+   "budget": 70
+  },
+  {
+   "cares_about": [
+    "independent",
+    "easy care",
+    "calm"
+   ],
+   "budget": 85
+  },
+  {
+   "cares_about": [
+    "independent",
+    "easy care",
+    "calm"
+   ],
+   "budget": 80
+  },
+  {
+   "cares_about": [
+    "fine on its own all day",
+    "low upkeep",
+    "gentle on furniture"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent when alone",
+    "simple daily care"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "easy daily routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent when alone",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone for long hours",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent during the day",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "low daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "low grooming",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent",
+    "fine alone all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone all day",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine on her own",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "fine alone all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "low upkeep habits"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy left alone",
+    "simple daily care"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy alone all day",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone for long hours",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone for long days",
+    "low daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine on his own all day",
+    "few vet errands"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy alone all day",
+    "low daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent when alone",
+    "low daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "low grooming"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy alone all day",
+    "little upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent",
+    "fine alone for long days"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone all day",
+    "little daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine left alone",
+    "little grooming"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine on her own",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone through long days",
+    "low daily care"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "little upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone all day",
+    "little daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy alone all day",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone through long days",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy alone all day",
+    "settles without fuss"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone all day",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone for long hours",
+    "easy daily care"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone for long days",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone all day",
+    "simple routine"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone all day",
+    "little daily fuss"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone all day",
+    "easy to look after"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine on its own",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "independent while I'm out",
+    "low daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone all day",
+    "low grooming needs"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone for long hours",
+    "low maintenance"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone all day",
+    "little upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes when left alone",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone for long days",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone all day",
+    "quiet at night"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine left alone",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine on his own",
+    "little daily care"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone in the day",
+    "simple daily care"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone all day",
+    "easy to care for"
+   ]
+  },
+  {
+   "cares_about": [
+    "content alone all day",
+    "low daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone on long days",
+    "little upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes alone all day",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone for long days",
+    "low upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "happy alone all day",
+    "low daily care"
+   ]
+  },
+  {
+   "cares_about": [
+    "copes with long hours alone",
+    "little daily upkeep"
+   ]
+  },
+  {
+   "cares_about": [
+    "low maintenance",
+    "copes alone all day"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone on long days",
+    "easy to care for"
+   ]
+  },
+  {
+   "cares_about": [
+    "low upkeep",
+    "fine alone for long days"
+   ]
+  },
+  {
+   "cares_about": [
+    "fine alone for long days",
+    "little upkeep"
+   ]
+  }
+ ]
+}
