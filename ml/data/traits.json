@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "tags": {
+    "condition": "wear, damage, freshness, whether it works properly",
+    "space": "how much room it takes up at home",
+    "low_maintenance": "how little care, training or upkeep it needs",
+    "family": "safe and suitable for a household with kids",
+    "status": "brand, rarity, pedigree, prestige",
+    "performance": "how well it does its job",
+    "style": "looks, materials, design",
+    "active": "suits an active, outdoor lifestyle"
+  },
+  "traits": {
+    "apartment_dweller": {
+      "label": "Small apartment",
+      "persona": "lives in a small apartment",
+      "weights": {
+        "space": 2
+      },
+      "refuses_risky": true
+    },
+    "perfectionist": {
+      "label": "Perfectionist",
+      "persona": "wants things in excellent shape",
+      "weights": {
+        "condition": 2
+      }
+    },
+    "busy_professional": {
+      "label": "Busy",
+      "persona": "works long hours and has little free time",
+      "weights": {
+        "low_maintenance": 2,
+        "performance": 1
+      }
+    },
+    "parent": {
+      "label": "Parent",
+      "persona": "is buying for a family with young kids",
+      "weights": {
+        "family": 2,
+        "condition": 1
+      },
+      "refuses_risky": true
+    },
+    "collector": {
+      "label": "Collector",
+      "persona": "loves rare, premium and brand-name things",
+      "weights": {
+        "status": 2,
+        "style": 1
+      },
+      "budget": "generous"
+    },
+    "bargain_hunter": {
+      "label": "Bargain hunter",
+      "persona": "mostly wants a good deal",
+      "weights": {
+        "condition": 1
+      },
+      "budget": "tight"
+    },
+    "outdoorsy": {
+      "label": "Outdoorsy",
+      "persona": "spends weekends hiking and cycling",
+      "weights": {
+        "active": 2,
+        "performance": 1
+      }
+    },
+    "style_lover": {
+      "label": "Style lover",
+      "persona": "cares a lot about how things look",
+      "weights": {
+        "style": 2,
+        "status": 1
+      }
+    },
+    "practical": {
+      "label": "Practical",
+      "persona": "just wants something that works well",
+      "weights": {
+        "performance": 2,
+        "low_maintenance": 1
+      }
+    },
+    "student": {
+      "label": "Student",
+      "persona": "is a student on a tight budget",
+      "weights": {
+        "space": 1,
+        "performance": 1
+      },
+      "budget": "tight"
+    },
+    "retiree": {
+      "label": "Retiree",
+      "persona": "is retired and likes a calm, quiet home",
+      "weights": {
+        "low_maintenance": 2,
+        "condition": 1
+      },
+      "refuses_risky": true
+    }
+  },
+  "budgets": {
+    "tight": {
+      "min": 0.6,
+      "max": 0.95
+    },
+    "normal": {
+      "min": 0.95,
+      "max": 1.5
+    },
+    "generous": {
+      "min": 1.5,
+      "max": 2.5
+    }
+  },
+  "default_budget_odds": {
+    "tight": 0.25,
+    "normal": 0.55,
+    "generous": 0.2
+  },
+  "names": [
+    "Maya",
+    "Leo",
+    "Sam",
+    "Priya",
+    "Jonah",
+    "Ava",
+    "Diego",
+    "Hana",
+    "Owen",
+    "Zoe",
+    "Ravi",
+    "Nora",
+    "Felix",
+    "Ines",
+    "Marcus",
+    "Lily",
+    "Tomas",
+    "Aisha",
+    "Ben",
+    "Chloe",
+    "Kenji",
+    "Elena",
+    "Omar",
+    "Ruby",
+    "Victor",
+    "Mei",
+    "Theo",
+    "Sofia",
+    "Andre",
+    "Grace"
+  ]
+}

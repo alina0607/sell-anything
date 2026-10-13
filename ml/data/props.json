@@ -1,0 +1,368 @@
+{
+ "version": 1,
+ "about": "Drawable props for buyer scenes (docs/design-v2.md 2.3, 5.4). tags: -2..+2 per tag, same scale as option signals; base: relevance on its own for the items it fits; zone: where it goes in the scene; size: real-world size class; fits: item groups from items.tsv, or * for any.",
+ "props": {
+  "sun": {
+   "tags": {
+    "active": 2
+   },
+   "zone": "sky",
+   "size": "medium",
+   "fits": "*"
+  },
+  "cloud": {
+   "tags": {
+    "active": 1
+   },
+   "zone": "sky",
+   "size": "medium",
+   "fits": "*"
+  },
+  "grass": {
+   "tags": {
+    "active": 2
+   },
+   "zone": "ground",
+   "size": "large",
+   "fits": "*"
+  },
+  "tree": {
+   "tags": {
+    "active": 1
+   },
+   "zone": "background",
+   "size": "large",
+   "fits": "*"
+  },
+  "mountain": {
+   "tags": {
+    "active": 2
+   },
+   "zone": "background",
+   "size": "large",
+   "fits": "*"
+  },
+  "bicycle": {
+   "tags": {
+    "active": 2
+   },
+   "zone": "beside",
+   "size": "medium",
+   "fits": "*"
+  },
+  "soccer ball": {
+   "tags": {
+    "active": 1,
+    "family": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "fence": {
+   "tags": {
+    "active": 1
+   },
+   "zone": "ground",
+   "size": "large",
+   "fits": "*"
+  },
+  "tent": {
+   "tags": {
+    "active": 2
+   },
+   "zone": "beside",
+   "size": "medium",
+   "fits": "*"
+  },
+  "river": {
+   "tags": {
+    "active": 1
+   },
+   "zone": "ground",
+   "size": "large",
+   "fits": "*"
+  },
+  "house": {
+   "tags": {
+    "family": 1
+   },
+   "zone": "background",
+   "size": "large",
+   "fits": "*"
+  },
+  "couch": {
+   "tags": {
+    "space": 1,
+    "low_maintenance": 1
+   },
+   "zone": "beside",
+   "size": "medium",
+   "fits": "*"
+  },
+  "bed": {
+   "tags": {
+    "space": 1
+   },
+   "zone": "beside",
+   "size": "medium",
+   "fits": "*"
+  },
+  "door": {
+   "tags": {
+    "space": 1
+   },
+   "zone": "wall",
+   "size": "medium",
+   "fits": "*"
+  },
+  "stairs": {
+   "tags": {
+    "space": 1
+   },
+   "zone": "background",
+   "size": "large",
+   "fits": "*"
+  },
+  "ladder": {
+   "tags": {
+    "condition": 1
+   },
+   "zone": "beside",
+   "size": "medium",
+   "fits": "*"
+  },
+  "teddy-bear": {
+   "tags": {
+    "family": 2
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "birthday cake": {
+   "tags": {
+    "family": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "hat": {
+   "tags": {
+    "family": 1,
+    "style": 1
+   },
+   "zone": "wall",
+   "size": "small",
+   "fits": "*"
+  },
+  "smiley face": {
+   "tags": {
+    "family": 1
+   },
+   "zone": "wall",
+   "size": "small",
+   "fits": "*"
+  },
+  "toothbrush": {
+   "tags": {
+    "family": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "crown": {
+   "tags": {
+    "status": 2
+   },
+   "zone": "wall",
+   "size": "small",
+   "fits": "*"
+  },
+  "diamond": {
+   "tags": {
+    "status": 2
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "castle": {
+   "tags": {
+    "status": 2
+   },
+   "zone": "background",
+   "size": "large",
+   "fits": "*"
+  },
+  "necklace": {
+   "tags": {
+    "status": 1,
+    "style": 1
+   },
+   "zone": "wall",
+   "size": "small",
+   "fits": "*"
+  },
+  "star": {
+   "tags": {
+    "status": 1,
+    "condition": 1
+   },
+   "zone": "sky",
+   "size": "small",
+   "fits": "*"
+  },
+  "flower": {
+   "tags": {
+    "style": 2
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "vase": {
+   "tags": {
+    "style": 2
+   },
+   "zone": "beside",
+   "size": "small",
+   "fits": "*"
+  },
+  "lipstick": {
+   "tags": {
+    "style": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "paint can": {
+   "tags": {
+    "style": 1,
+    "condition": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "eyeglasses": {
+   "tags": {
+    "style": 1
+   },
+   "zone": "wall",
+   "size": "small",
+   "fits": "*"
+  },
+  "bowtie": {
+   "tags": {
+    "style": 1
+   },
+   "zone": "wall",
+   "size": "small",
+   "fits": "*"
+  },
+  "clock": {
+   "tags": {
+    "low_maintenance": 1
+   },
+   "zone": "wall",
+   "size": "small",
+   "fits": "*"
+  },
+  "alarm clock": {
+   "tags": {
+    "low_maintenance": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "calendar": {
+   "tags": {
+    "low_maintenance": 1
+   },
+   "zone": "wall",
+   "size": "small",
+   "fits": "*"
+  },
+  "pillow": {
+   "tags": {
+    "low_maintenance": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "screwdriver": {
+   "tags": {
+    "condition": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "hammer": {
+   "tags": {
+    "condition": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "paintbrush": {
+   "tags": {
+    "condition": 1,
+    "style": 1
+   },
+   "zone": "ground_side",
+   "size": "small",
+   "fits": "*"
+  },
+  "lightning": {
+   "tags": {
+    "performance": 2
+   },
+   "zone": "sky",
+   "size": "medium",
+   "fits": "*"
+  },
+  "speedboat": {
+   "tags": {
+    "performance": 1
+   },
+   "zone": "background",
+   "size": "medium",
+   "fits": "*"
+  },
+  "steak": {
+   "tags": {},
+   "base": 6,
+   "zone": "ground_side",
+   "size": "small",
+   "fits": [
+    "pets_livestock"
+   ]
+  },
+  "fish": {
+   "tags": {},
+   "base": 3,
+   "zone": "ground_side",
+   "size": "small",
+   "fits": [
+    "pets_livestock"
+   ]
+  },
+  "bird": {
+   "tags": {},
+   "base": 1,
+   "zone": "sky",
+   "size": "small",
+   "fits": [
+    "pets_livestock"
+   ]
+  }
+ }
+}
