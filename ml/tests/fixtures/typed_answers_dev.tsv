@@ -1,0 +1,83 @@
+# Typed answers, DEV set: the matcher may be tuned on these (the test set is typed_answers_test.tsv).
+# item	attribute	typed	expected
+cat	age	3 months	kitten
+cat	age	shes a kitten	kitten
+cat	age	two years old	adult
+cat	age	5 years	adult
+cat	age	11	senior
+cat	age	shes pretty old, like 12	senior
+cat	breed	maine coon with papers	pedigree
+cat	breed	purebred	pedigree
+cat	breed	just a mixed cat	mixed
+cat	breed	a regular house cat	mixed
+cat	litter	yes	yes
+cat	litter	yep never misses	yes
+cat	litter	not really	no
+cat	litter	no not yet	no
+cat	temperament	super cuddly	cuddly
+cat	temperament	she scratches	feisty
+cat	temperament	very shy	shy
+cat	temperament	independent	independent
+cat	temperament	loves people	cuddly
+cat	health	fully vaccinated	vaccinated
+cat	health	not sure about shots	unknown
+cat	health	yes she had her shots	vaccinated
+bicycle	age	brand new, a few months	under_1
+bicycle	age	2 years	1_3
+bicycle	age	like 5 years	3_7
+bicycle	age	over 10 years	older
+bicycle	age	twenty years old	older
+bicycle	condition	like new	like_new
+bicycle	condition	some scratches but rides fine	minor
+bicycle	condition	needs new brakes	needs_tuneup
+bicycle	condition	rusty with a flat	rusty
+bicycle	type	road bike	road
+bicycle	type	mountain bike	mountain
+bicycle	type	its a kids bike	kids
+bicycle	type	city bike with a basket	city
+bicycle	brand	trek	known
+bicycle	brand	store brand	generic
+bicycle	brand	no idea	unknown
+dog	size	small	small
+dog	size	about 20 kg	medium
+dog	size	big dog, 35 kilos	large
+dog	potty	yes fully trained	yes
+dog	potty	mostly	mostly
+dog	potty	not yet	no
+dog	temperament	calm and good with kids	calm
+dog	temperament	lots of energy	energetic
+dog	temperament	barks at strangers	protective
+dog	temperament	nervous	anxious
+laptop	model	macbook pro	pro
+laptop	model	a chromebook	chromebook
+laptop	model	gaming laptop	gaming
+laptop	model	a windows laptop	mid
+laptop	battery	lasts all day	great
+laptop	battery	about 2 hours	weak
+laptop	battery	dead, needs to be plugged in	dead
+laptop	age	7 years	old
+laptop	age	bought it last year	new
+apple	freshness	picked this morning	just_picked
+apple	freshness	has some bruises	bruised
+apple	freshness	a week old	week_plus
+apple	variety	honeycrisp	premium
+apple	variety	gala	common
+apple	variety	from my backyard tree	unknown
+apple	organic	no	no
+apple	organic	yes no pesticides	yes
+tiger	age	a cub	young
+tiger	age	15 years	old
+tiger	age	5	adult
+tiger	permits	nope cash only	none
+tiger	permits	yes fully legal	permits
+chair	material	oak	wood
+chair	material	plastic	plastic
+chair	material	metal	metal
+chair	condition	wobbly leg	wobbly
+chair	comfort	really comfy, thick cushion	cushioned
+chair	type	office chair	office
+chair	type	folding	folding
+dog	age	puppy	puppy
+dog	age	9 years	senior
+cat	age	blah	-
+dog	size	whatever	-

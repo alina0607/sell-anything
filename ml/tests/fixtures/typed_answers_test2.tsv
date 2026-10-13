@@ -1,0 +1,65 @@
+# Typed answers, second FROZEN test set. Written 2026-10-04 after the matcher had been fixed against
+# typed_answers_test.tsv (which therefore no longer gives a clean number), for 20 new attributes:
+# random.Random(8).sample over the sellable attributes not in the dev or first test set.
+# item	attribute	typed	expected
+cup	condition	theres a small crack	damaged
+cup	condition	good shape	used
+cup	condition	barely used	like_new
+helmet	type	for skiing	ski
+helmet	type	bike helmet	bike
+helmet	type	motorcycle full face	motorcycle
+helmet	type	its for a kid	kids
+hockey stick	flex	medium flex	fits
+hockey stick	flex	really stiff	stiff
+cactus	type	saguaro	saguaro
+cactus	type	christmas cactus	blooming
+cactus	type	bunny ears	bunny
+cactus	type	golden barrel	barrel
+compass	accuracy	yes spot on	yes
+compass	accuracy	the needle is a bit sticky	sticky
+compass	accuracy	yep checked it with my phone	yes
+stop sign	condition	it has bullet holes	damaged
+stop sign	condition	pretty worn	worn
+stop sign	condition	like new	like_new
+baseball bat	material	wood	wood
+baseball bat	material	aluminum	aluminum
+baseball bat	material	composite	composite
+baseball bat	material	metal	aluminum
+blueberry	organic	yes	yes
+blueberry	organic	nope	no
+camel	health	healthy, saw the vet last month	checked
+camel	health	hes been sick	sick
+camel	health	never been to a vet	unknown
+door	type	front door	exterior
+door	type	sliding barn door	barn
+door	type	antique with stained glass	antique
+door	type	interior door	interior
+van	type	minivan	minivan
+van	type	camper van with a bed	camper
+van	type	cargo	cargo
+paintbrush	count	just one	one
+paintbrush	count	a set of 10	set
+couch	size	three seater	three
+couch	size	l shaped sectional	sectional
+couch	size	a loveseat	loveseat
+couch	size	2 seats	loveseat
+house plant	type	monstera	monstera
+house plant	type	snake plant	snake
+house plant	type	fiddle leaf fig	fiddle
+house plant	type	pothos	pothos
+sheep	health	healthy	checked
+sheep	health	not sure, never seen a vet	unknown
+banana	organic	yes organic	yes
+banana	organic	no	no
+megaphone	power	very loud	loud
+megaphone	power	loud enough for a classroom	normal
+nail	rust	no rust, galvanized	galvanized
+nail	rust	a little	some
+nail	rust	yes some surface rust	some
+marker	ink	all fresh	fresh
+marker	ink	some are dried out	some_dry
+hot tub	working	everything works	all
+hot tub	working	the heater needs to be replaced	heater
+hot tub	working	some jets are weak	jets
+cactus	type	lol	-
+van	type	idk tbh	-

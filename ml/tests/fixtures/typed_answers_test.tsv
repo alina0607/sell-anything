@@ -1,0 +1,103 @@
+# Typed answers, FROZEN test set. Written 2026-10-04 before the matcher existed, for 30 attributes
+# sampled at random (random.Random(7).sample over all 927 sellable attributes). Do not tune on these;
+# tune on typed_answers_dev.tsv. "-" means the matcher should say it can't tell (ask again).
+# item	attribute	typed	expected
+fire hydrant	age	its from like 1910	antique
+fire hydrant	age	pretty old, early 20th century	antique
+fire hydrant	age	1980s	newer
+fire hydrant	age	newer one from the 80s	newer
+calendar	condition	basically new	like_new
+calendar	condition	a few pages ripped out	damaged
+calendar	condition	used but fine	used
+calendar	condition	really worn out	worn
+headphones	condition	like new	like_new
+headphones	condition	the left side cuts out sometimes	damaged
+headphones	condition	pretty beat up	worn
+headphones	condition	used, good shape	used
+rhinoceros	temperament	very docile	gentle
+rhinoceros	temperament	grumpy in the morning	lively
+rhinoceros	temperament	it charges at people	wild
+baseball bat	size	youth	youth
+baseball bat	size	33 inch adult bat	adult
+baseball bat	size	for kids	youth
+belt	designer	yes gucci	designer
+belt	designer	its from h&m, fast fashion	fast
+belt	designer	a decent mall brand	brand
+toaster	working	works great	perfect
+toaster	working	it doesnt heat up at all	dead
+toaster	working	the lever sticks sometimes	faulty
+octopus	cleaned	yes its cleaned	clean
+octopus	cleaned	no	whole
+octopus	cleaned	nope still whole	whole
+birthday cake	size	serves 6	small
+birthday cake	size	enough for 30 people	large
+birthday cake	size	about a dozen	medium
+birthday cake	size	12	medium
+giraffe	permits	yes all the permits	permits
+giraffe	permits	no papers	none
+giraffe	permits	cash only dont ask	none
+pencil	type	yellow #2 pencils	standard
+pencil	type	colored pencils	colored
+pencil	type	mechanical	mechanical
+pencil	type	graphite drawing pencils	art
+bathtub	size	six feet	long
+bathtub	size	5 ft	standard
+bathtub	size	4.5 feet	short
+microwave	clean	spotless	spotless
+microwave	clean	theres some stains	stained
+microwave	clean	yeah its clean	spotless
+clock	type	cuckoo clock	cuckoo
+clock	type	a grandfather clock	grandfather
+clock	type	just a wall clock	wall
+bandage	type	waterproof	waterproof
+bandage	type	kids ones with cartoons	kids
+bandage	type	plain plastic	basic
+binoculars	waterproof	yes	yes
+binoculars	waterproof	nope	no
+binoculars	waterproof	yeah fogproof too	yes
+house	location	downtown	city
+house	location	in the suburbs	suburb
+house	location	out in the countryside	rural
+house	location	near good schools	suburb
+hot air balloon	basket	2 people	two
+hot air balloon	basket	four	four
+hot air balloon	basket	8	eight
+bee	queen	young queen from this spring	new
+bee	queen	shes 2 years old	old
+bee	queen	havent seen her in a while	missing
+cow	milk	8 gallons a day	lots
+cow	milk	a couple gallons	some
+cow	milk	shes dry	dry
+bird	species	budgie	budgie
+bird	species	its a canary	canary
+bird	species	two lovebirds	lovebirds
+bird	species	cockatiel	cockatiel
+paintbrush	type	watercolor	watercolor
+paintbrush	type	for painting walls	house
+paintbrush	type	acrylic brushes	acrylic
+paintbrush	type	kids brushes	kids
+hot dog	type	all beef	beef
+hot dog	type	veggie	veggie
+hot dog	type	just a normal hot dog	regular
+bathtub	type	clawfoot	clawfoot
+bathtub	type	a built in tub	alcove
+bathtub	type	modern freestanding	freestanding
+toothbrush	type	electric	electric
+toothbrush	type	manual	manual
+parrot	cage	yes a big cage	full
+parrot	cage	no cage	none
+broccoli	organic	yes organic	yes
+broccoli	organic	no its regular	no
+computer	extras	comes with monitor keyboard and mouse	extras
+computer	extras	just the computer	nothing
+power outlet	working	works fine	perfect
+power outlet	working	one socket is dead	faulty
+power outlet	working	doesnt turn on	dead
+potato	type	russet	russet
+potato	type	yukon gold	gold
+potato	type	purple ones	fingerling
+toaster	working	asdfgh	-
+bird	species	idk	-
+clock	type	maybe	-
+house	location	???	-
+calendar	condition	hmm	-

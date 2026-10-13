@@ -1,0 +1,17 @@
+# Typed answers from real play (the owner's own sessions, ml/logs/2026-10-05.jsonl and 2026-10-07.jsonl),
+# not written for testing. Labels by the developer on 2026-10-07 from the option texts; "-" = no option
+# (the answer is about something else). Left out: "I have no clues" to the breed question (whether
+# not knowing the breed means "mixed" is a judgement, not a reading of the text). Add every new
+# typed answer from play here. Never tune on this file.
+# item	attribute	typed	expected
+cat	breed	A tiny kitty is just 3 months old	-
+cat	breed	british longhair	pedigree
+cat	breed	pursh	pedigree
+cat	breed	ragdoll	pedigree
+cat	age	10 years old	senior
+cat	litter	not really	no
+cat	health	it has its shots	vaccinated
+cat	age	20	senior
+cat	breed	persh	pedigree
+cat	breed	british shorthair	pedigree
+bee	temperament	sweet	gentle
