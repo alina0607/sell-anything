@@ -152,6 +152,22 @@ def test_painted_names_both_folders_and_leaves_out_badly_painted_eyes(tmp_path):
     assert G._painted(cat) == {"CAT_DATASET_01__CAT_00__00000001_000": "CAT_DATASET_01/CAT_00/00000001_000.jpg"}
 
 
+def test_reorder_after_alignment_puts_a_turned_face_back_in_top_to_bottom_order(tmp_path):
+    row = painting(7)[:, :G.SEQ]
+    # an upside-down face: the eyes to the right of each other in the photo's frame, turned 180 degrees
+    pts = np.array([[[170.0, 150.0], [90.0, 150.0]] + [[128.0, 100.0]] * 7])
+    np.savez(tmp_path / "t.npz", tokens=row, tokens_mirror=G.mirror(row), tokens_overlap=G.reorder(row[0])[None],
+             tokens_mirror_overlap=G.reorder(G.mirror(row)[0])[None], ids=np.array(["CAT_DATASET_01/x.jpg"]),
+             split=np.array(["train"]), points=pts, points_mirror=G.mirror_points(pts))
+    G.align_data(tmp_path / "t.npz", tmp_path / "a.npz", reorder_after=False)
+    G.align_data(tmp_path / "t.npz", tmp_path / "b.npz", reorder_after=True)
+    a, b = np.load(tmp_path / "a.npz"), np.load(tmp_path / "b.npz")
+    assert (a["tokens"] == b["tokens"]).all()                                    # the same strokes
+    assert np.abs(G.render(b["tokens"][0]) - G.render(b["tokens_overlap"][0])).max() < 1e-4   # the same picture
+    assert (b["tokens_overlap"][0] == G.reorder(b["tokens"][0])).all()          # the order of the aligned face
+    assert not (a["tokens_overlap"] == b["tokens_overlap"]).all()
+
+
 def test_a_stopped_training_resumes_where_it_stopped(tmp_path, monkeypatch):
     rows = np.concatenate([painting(s)[:, :G.SEQ] for s in range(6)])
     pts = np.tile(np.array([[90.0, 140.0], [166.0, 140.0]] + [[128.0, 170.0]] * 7), (6, 1, 1))

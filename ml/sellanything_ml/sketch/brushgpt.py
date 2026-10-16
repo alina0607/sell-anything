@@ -322,10 +322,17 @@ def align_rows(rows: np.ndarray, points: np.ndarray, mid: np.ndarray, dist: floa
     return out, moved
 
 
-def align_data(data: Path = DATA_FILE, out: Path = ALIGNED_FILE, ref: Path | None = None) -> dict[str, object]:
+def align_data(data: Path = DATA_FILE, out: Path = ALIGNED_FILE, ref: Path | None = None,
+               reorder_after: bool = False) -> dict[str, object]:
     """Every painting of `data` with its face aligned (see the module docstring), the mirror images too. With `ref`
     (an aligned file), its eye midpoint and distance are used instead of this data's own, so cats that are in both
-    files get exactly the same tokens (and losses on them compare between runs)."""
+    files get exactly the same (unordered) tokens.
+
+    `reorder_after` (run J on, 2026-10-16): the "overlap" order is worked out again on the aligned strokes. Without
+    it the order is the one of the painting as painted (runs H, I), whose top-to-bottom bands turn with the face: the
+    CAT dataset has upside-down and sideways cats (906 of 6,848 turned more than 20°), and for the 325 turned more
+    than 45° the last stage's order then follows y with a median correlation of 0.14 instead of about 0.7 (92 cats
+    are painted bottom to top). Re-ordering keeps the picture (the order of every two overlapping strokes is kept)."""
     z = dict(np.load(data))
     train_pts = z["points"][z["split"] == "train"]
     mid = np.array([B.SIDE / 2, float(train_pts[:, :2, 1].mean())])     # x at the centre, so mirrors stay aligned
@@ -338,11 +345,19 @@ def align_data(data: Path = DATA_FILE, out: Path = ALIGNED_FILE, ref: Path | Non
         for order in ("", "_overlap"):
             z["tokens" + side + order], moved = align_rows(z["tokens" + side + order], pts, mid, dist)
         z["points" + side] = moved
+        if reorder_after:
+            z["tokens" + side + "_overlap"] = np.stack([reorder(r) for r in z["tokens" + side]])
+    if reorder_after:                            # the same picture: compare renders of a few re-ordered paintings
+        for i in range(0, len(z["ids"]), max(1, len(z["ids"]) // 8)):
+            change = float(np.abs(render(z["tokens"][i]) - render(z["tokens_overlap"][i])).max())
+            if change > 1e-4:
+                raise ValueError(f"re-ordering after alignment changed painting {i} by {change}")
     if not all(valid(z[k]).all() for k in z if k.startswith("tokens")):
         raise ValueError("an aligned painting has a token outside its slot's range")
     np.savez(out, **z, align_mid=mid, align_dist=dist)
     eyes = z["points"][:, :2]
-    report = {"paintings": len(z["ids"]), "mid": mid.round(2).tolist(), "eye_distance": round(dist, 2),
+    report = {"paintings": len(z["ids"]), "reordered_after_alignment": reorder_after, "mid": mid.round(2).tolist(),
+              "eye_distance": round(dist, 2),
               "eye_spread_px": round(float(eyes.std(0).mean()), 3)}
     print(json.dumps(report), flush=True)
     return report
@@ -869,6 +884,7 @@ def main() -> None:
     ap.add_argument("--paint-dirs", type=Path, nargs="+", default=[PAINT_DIR], help="data: the painting folders")
     ap.add_argument("--aligned", type=Path, default=ALIGNED_FILE, help="align: the output file (input: --data)")
     ap.add_argument("--align-ref", type=Path, default=None, help="align: take the eye midpoint and distance from here")
+    ap.add_argument("--reorder-after", type=int, default=0, help="align: work out the stroke order on the aligned faces")
     for f, v in asdict(Config()).items():
         if f != "name":
             ap.add_argument("--" + f.replace("_", "-"), type=type(v) if not isinstance(v, bool) else int, default=v)
@@ -876,7 +892,7 @@ def main() -> None:
     if a.stage == "data":
         stage_data(a.paint_dirs if len(a.paint_dirs) > 1 else a.paint_dirs[0], out=a.data)
     elif a.stage == "align":
-        align_data(a.data, a.aligned, a.align_ref)
+        align_data(a.data, a.aligned, a.align_ref, bool(a.reorder_after))
     elif a.stage == "train":
         cfg = Config(name=a.name, **{f: getattr(a, f) for f in asdict(Config()) if f != "name"})
         cfg.mirror, cfg.heads, cfg.points, cfg.resume = bool(cfg.mirror), bool(cfg.heads), bool(cfg.points), bool(cfg.resume)

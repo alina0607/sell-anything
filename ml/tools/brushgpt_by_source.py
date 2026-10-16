@@ -4,7 +4,8 @@ A run trained on more cats has a different validation set, so its early-stopping
 run's. Here every run is scored on the same rows: the AFHQ validation cats and AFHQ's own test folder (never used for
 early stopping by any run), plus the CAT-dataset validation cats. With `--data` an aligned file made with
 `brushgpt.py align --align-ref tokens_runs_HI.npz`, the AFHQ rows are token for token those of runs H and I (checked
-here against `--check`).
+here against `--check`); with `--reorder-after 1` as well (run J), the same strokes in another order (`--unordered`),
+so a run is then scored on its own file: the losses compare the same pictures, each in its own stroke order.
 
     PYTHONPATH=. python tools/brushgpt_by_source.py --data data/processed/brushgpt/tokens_J_aligned.npz \
         --runs I_aligned_points_eyes J_cat_aligned_points_eyes --check data/processed/brushgpt/tokens_runs_HI.npz
@@ -30,6 +31,8 @@ def main() -> None:
     ap.add_argument("--data", type=Path, required=True)
     ap.add_argument("--runs", nargs="+", required=True)
     ap.add_argument("--check", type=Path, default=None, help="an older file whose AFHQ rows must be the same")
+    ap.add_argument("--unordered", action="store_true",
+                    help="check only the strokes, not their order (for a file made with align --reorder-after 1)")
     ap.add_argument("--out", type=Path, default=None)
     a = ap.parse_args()
     z = np.load(a.data)
@@ -37,7 +40,8 @@ def main() -> None:
         old = np.load(a.check)
         where = {str(i): k for k, i in enumerate(z["ids"])}
         at = np.array([where[str(i)] for i in old["ids"]])
-        same = {k: bool((z[k][at] == old[k]).all()) for k in old.files if k.startswith(("tokens", "points"))}
+        keys = [k for k in old.files if k.startswith(("tokens", "points")) and not (a.unordered and k.endswith("_overlap"))]
+        same = {k: bool((z[k][at] == old[k]).all()) for k in keys}
         print(json.dumps({"same_as_check": same}), flush=True)
         if not all(same.values()):
             raise SystemExit("the AFHQ rows differ from the check file")
