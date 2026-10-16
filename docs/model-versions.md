@@ -127,3 +127,26 @@ renders score 39.5 for D–G, 41.8 for H–I). Eye judge: `ml/tools/eye_judge.py
 
 Next data: CAT dataset paintings (`ml/data/processed/cat_brush_face/`, painting since 2026-10-12 03:58). When they are
 tokenized, `tokens.npz` changes; the frozen files above keep C–I reproducible.
+
+Run J (2026-10-16, on the Mac, `ml/tools/run_brushgpt_J_mac.sh`, log `runs/brushgpt/J_driver.log`): run I's flags on
+AFHQ + CAT-dataset cats. Data: `tokens_J.npz` (sha256 4fe5536b3e7be2ed; 10,933 cats: train 3,413 + 6,327, val 292 + 521,
+test 380 + 0, after leaving out 135 of the 6,983 painted CAT cats for badly painted eyes, `brushgpt.CAT_EYE_*`), aligned
+with H/I's eye midpoint and distance (`--align-ref tokens_runs_HI.npz`) and the stroke order worked out again on the
+aligned faces (`--reorder-after 1`) → `tokens_J_aligned_reordered.npz` (sha256 0e064371cee2644d). Why re-order: the CAT
+dataset has upside-down and sideways cats (906 turned more than 20°, 325 more than 45°); aligned without re-ordering
+(`tokens_J_aligned.npz`, 2fae31d37fbe08b0, kept but unused) their bands run with the turned face, and 92 cats were
+painted bottom to top (last-stage order vs y: CAT 5th percentile 0.32 → 0.50 after re-ordering, AFHQ 0.56; no row
+below 0). The AFHQ strokes are H/I's exactly (checked), in the re-worked order. Run I on the two orders: AFHQ val 3.9152
+(own order) vs 3.9202 (re-ordered), CAT val 3.9491 vs 3.9407: re-ordering helps the CAT rows even for a model that
+never saw them. No AFHQ val/test cat is a copy of a CAT training cat (32 × 32 face crops, mirror too: best correlation
+0.93, the closest five pairs looked at: different cats).
+
+J trains on the Mac (MPS), not on an A100: batch 1 × accumulation 16 (I's 8 × 2 ran out of MPS memory: 18.8 GiB at
+batch 8, over 20 GiB at batch 4), the same 16 rows a step; max 8,000 steps, evaluation every 100, patience 8 as I;
+about 14 s a step. `brushgpt.py train --resume 1` continues from `last.pt`, written at every evaluation (checked
+2026-10-16: a run killed with `kill -9` after step 20 and resumed gave the same train and validation losses at steps
+30 and 40, to 4 decimals, as an uninterrupted run); weights kept every 1,000 steps. Earlier starts, kept for the
+record: 02:35 out of memory at step 0; 13:22 stopped after a few minutes to settle the setup; 14:03 stopped after step
+100 (val 4.7283, `runs/brushgpt/J_attempt_before_reorder/`) to re-order. J started again at 14:47. Scored by
+`tools/brushgpt_by_source.py` (each model on its own file: AFHQ val, AFHQ test, CAT val) and by the eye judge at
+temperatures 1.0, 0.8, 0.6. Results to be filled in from the run.
