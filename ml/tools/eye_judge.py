@@ -72,7 +72,7 @@ def main() -> None:
     val, _ = G.load_rows(a.data or G.DATA_FILE, "val")
     real = np.stack([G.render(r) for r in val[:a.n]])
     model = G.load_model(G.RUN_DIR / a.run / "best.pt", G.device())
-    gen = np.stack([G.render(r) for r in G.sample(model, a.n, a.temperature, seed=3, batch=a.n)])
+    gen = np.stack([G.render(r) for r in G.sample(model, a.n, a.temperature, seed=3, batch=min(a.n, 64))])
     print(json.dumps({"real_paintings": eye_score(real), f"{a.run}_t{a.temperature}": eye_score(gen)}))
 
 
