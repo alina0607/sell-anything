@@ -133,3 +133,20 @@ def test_align_rows_levels_the_eyes_and_moves_the_strokes_with_them():
     assert G.valid(out).all() and out.shape == row.shape
     x, y = out[0, xs] - T.OFFSET["x"], out[0, xs + 1] - T.OFFSET["y"]
     assert abs(x - moved[0, 0, 0]) <= 1.5 and abs(y - moved[0, 0, 1]) <= 1.5             # it stays on the eye
+
+
+def test_painted_names_both_folders_and_leaves_out_badly_painted_eyes(tmp_path):
+    import json
+    afhq, cat = tmp_path / "afhq", tmp_path / "cat"
+    afhq.mkdir(), cat.mkdir()
+    (afhq / "flickr_cat_000002.npz").write_bytes(b"")
+    (afhq / "log.jsonl").write_text(json.dumps({"id": "train/cat/flickr_cat_000002.png", "kept": True}) + "\n")
+    rows = [{"id": "CAT_DATASET_01/CAT_00/00000001_000.jpg", "eye_conf": 0.50, "eye_conf_photo": 0.52, "eye_err": 0.03},
+            {"id": "CAT_DATASET_01/CAT_00/00000001_001.jpg", "eye_conf": 0.30, "eye_conf_photo": 0.50, "eye_err": 0.03},
+            {"id": "CAT_DATASET_01/CAT_00/00000001_002.jpg", "eye_conf": 0.50, "eye_conf_photo": 0.50, "eye_err": 0.40},
+            {"id": "CAT_DATASET_01/CAT_00/00000001_003.jpg", "skipped": "eyes outside the subject mask"}]
+    for r in rows:
+        (cat / (r["id"].replace("/", "__").rsplit(".", 1)[0] + ".npz")).write_bytes(b"")
+    (cat / "log.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
+    assert G._painted(afhq) == {"flickr_cat_000002": "train/cat/flickr_cat_000002.png"}
+    assert G._painted(cat) == {"CAT_DATASET_01__CAT_00__00000001_000": "CAT_DATASET_01/CAT_00/00000001_000.jpg"}

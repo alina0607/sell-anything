@@ -51,6 +51,8 @@ stable 8% chosen by a hash of the file name is validation, so painting more cats
 
     python -m sellanything_ml.sketch.brushgpt data                       # paintings → tokens.npz, checks
     python -m sellanything_ml.sketch.brushgpt align                      # tokens.npz → tokens_aligned.npz
+    python -m sellanything_ml.sketch.brushgpt data --paint-dirs <afhq> <cat> --data <file>   # several folders
+    python -m sellanything_ml.sketch.brushgpt align --data <file> --aligned <out> --align-ref tokens_runs_HI.npz
     python -m sellanything_ml.sketch.brushgpt train --name t400 --cats 400
     python -m sellanything_ml.sketch.brushgpt eval --name t400 --n 256
 """
@@ -228,21 +230,48 @@ def reorder(row: np.ndarray) -> np.ndarray:
     return np.array(T.encode(stages), dtype=row.dtype)
 
 
-def stage_data(paint_dir: Path = PAINT_DIR, out: Path = DATA_FILE) -> dict[str, object]:
-    """Every finished painting as a token row, with its AFHQ id and split; round-trip and mirror checks."""
+CAT_PAINT_DIR = ML_DIR / "data" / "processed" / "cat_brush_face"
+# A CAT-dataset cat is left out when its eyes were not painted well (owner, 2026-10-12: drop those cats, the threshold
+# set from the distribution; set 2026-10-16): the landmark model's eye confidence on the painting is below 0.85 of
+# that on the photo it copies, or it finds the painting's eyes more than 0.2 eye-to-eye distances from the
+# hand-labelled ones. Of the 6,965 painted cats with eye measures: 73 + 73, 11 by both, 135 left out (1.9%).
+CAT_EYE_CONF_RATIO, CAT_EYE_ERR = 0.85, 0.2
+
+
+def _painted(paint_dir: Path) -> dict[str, str]:
+    """{.npz stem: cat id} of the paintings in paint_dir that pass the data rules. AFHQ paintings are named by the
+    photo's stem (flickr_cat_000002), CAT-dataset ones by the id with / → __ (CAT_DATASET_02__CAT_04__00000909_011),
+    since CAT file names repeat between folders."""
     log = [json.loads(line) for name in ("log.jsonl", "log_modal.jsonl") if (paint_dir / name).exists()
            for line in (paint_dir / name).read_text().splitlines()]          # the Mac's log and Modal's (all kept)
-    ids = {Path(e["id"]).stem: e["id"] for e in log if e.get("kept", True)}  # cats failing the data rules stay out
-    names = sorted(p.stem for p in paint_dir.glob("*.npz") if p.stem in ids)
-    rows = np.empty((len(names), SEQ), np.uint16)
-    for i, name in enumerate(names):
-        tok = T.encode(T.load_npz(str(paint_dir / f"{name}.npz")))
+    ids = {}
+    for e in log:
+        if "skipped" in e or not e.get("kept", True):                     # cats failing the data rules stay out
+            continue
+        if "eye_conf" in e and (e["eye_conf"] < CAT_EYE_CONF_RATIO * e["eye_conf_photo"] or e["eye_err"] > CAT_EYE_ERR):
+            continue
+        for stem in (Path(e["id"]).stem, Path(e["id"].replace("/", "__")).stem):
+            if (paint_dir / f"{stem}.npz").exists():
+                ids[stem] = e["id"]
+    return ids
+
+
+def stage_data(paint_dir: Path | list[Path] = PAINT_DIR, out: Path = DATA_FILE) -> dict[str, object]:
+    """Every finished painting (of one folder, or several: AFHQ and the CAT dataset) as a token row, with its id and
+    split; round-trip and mirror checks."""
+    dirs = paint_dir if isinstance(paint_dir, list) else [paint_dir]
+    found = [(d, name, cat) for d in dirs for name, cat in sorted(_painted(d).items())]
+    names = [name for _, name, _ in found]
+    rows = np.empty((len(found), SEQ), np.uint16)
+    for i, (d, name, _) in enumerate(found):
+        tok = T.encode(T.load_npz(str(d / f"{name}.npz")))
         if len(tok) != SEQ:
             raise ValueError(f"{name}: {len(tok)} tokens, expected {SEQ}")
         rows[i] = tok
-    rel = np.array([ids[n] for n in names])
+    rel = np.array([cat for *_, cat in found])
     split = np.array([split_of(r) for r in rel])
-    points = face_points(paint_dir, names, rel)
+    points = np.concatenate([face_points(d, [n for dd, n, _ in found if dd == d],
+                                         np.array([c for dd, _, c in found if dd == d])) for d in dirs])
     if not valid(rows).all():
         raise ValueError("a painting has a token outside its slot's range")
     if not (mirror(mirror(rows)) == rows).all():
@@ -263,6 +292,8 @@ def stage_data(paint_dir: Path = PAINT_DIR, out: Path = DATA_FILE) -> dict[str, 
              ids=rel, split=split, points=points, points_mirror=mirror_points(points))
     report = {"paintings": len(names), "tokens_each": SEQ, "vocab": T.VOCAB,
               "splits": {s: int((split == s).sum()) for s in ("train", "val", "test")},
+              "by_folder": {d.name: {s: int(sum(dd == d and sp == s for (dd, *_), sp in zip(found, split, strict=True)))
+                                     for s in ("train", "val", "test")} for d in dirs},
               "roundtrip_first_20": roundtrip, "mirror_render_l1": round(mirror_l1, 5),
               "reorder_max_pixel_change": reorder_change}
     print(json.dumps(report), flush=True)
@@ -290,12 +321,17 @@ def align_rows(rows: np.ndarray, points: np.ndarray, mid: np.ndarray, dist: floa
     return out, moved
 
 
-def align_data(data: Path = DATA_FILE, out: Path = ALIGNED_FILE) -> dict[str, object]:
-    """Every painting of `data` with its face aligned (see the module docstring), the mirror images too."""
+def align_data(data: Path = DATA_FILE, out: Path = ALIGNED_FILE, ref: Path | None = None) -> dict[str, object]:
+    """Every painting of `data` with its face aligned (see the module docstring), the mirror images too. With `ref`
+    (an aligned file), its eye midpoint and distance are used instead of this data's own, so cats that are in both
+    files get exactly the same tokens (and losses on them compare between runs)."""
     z = dict(np.load(data))
     train_pts = z["points"][z["split"] == "train"]
     mid = np.array([B.SIDE / 2, float(train_pts[:, :2, 1].mean())])     # x at the centre, so mirrors stay aligned
     dist = float(np.median(np.linalg.norm(train_pts[:, 0] - train_pts[:, 1], axis=1)))
+    if ref is not None:
+        r = np.load(ref)
+        mid, dist = r["align_mid"], float(r["align_dist"])
     for side in ("", "_mirror"):
         pts = z["points" + side]
         for order in ("", "_overlap"):
@@ -785,14 +821,17 @@ def main() -> None:
     ap.add_argument("--runs", type=Path, default=RUN_DIR)
     ap.add_argument("--n", type=int, default=256)
     ap.add_argument("--temperature", type=float, default=1.0)
+    ap.add_argument("--paint-dirs", type=Path, nargs="+", default=[PAINT_DIR], help="data: the painting folders")
+    ap.add_argument("--aligned", type=Path, default=ALIGNED_FILE, help="align: the output file (input: --data)")
+    ap.add_argument("--align-ref", type=Path, default=None, help="align: take the eye midpoint and distance from here")
     for f, v in asdict(Config()).items():
         if f != "name":
             ap.add_argument("--" + f.replace("_", "-"), type=type(v) if not isinstance(v, bool) else int, default=v)
     a = ap.parse_args()
     if a.stage == "data":
-        stage_data(out=a.data)
+        stage_data(a.paint_dirs if len(a.paint_dirs) > 1 else a.paint_dirs[0], out=a.data)
     elif a.stage == "align":
-        align_data()
+        align_data(a.data, a.aligned, a.align_ref)
     elif a.stage == "train":
         cfg = Config(name=a.name, **{f: getattr(a, f) for f in asdict(Config()) if f != "name"})
         cfg.mirror, cfg.heads, cfg.points = bool(cfg.mirror), bool(cfg.heads), bool(cfg.points)
