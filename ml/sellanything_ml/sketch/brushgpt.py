@@ -64,6 +64,7 @@ import contextlib
 import hashlib
 import json
 import math
+import os
 import time
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -390,6 +391,8 @@ class Config:
     heads: bool = False              # one output layer per field (see the module docstring)
     points: bool = False             # the face points first (see the module docstring)
     eye_weight: float = 1.0          # loss weight of eye-region strokes (1 = off)
+    resume: bool = False             # continue from the run's last.pt if there is one (see `train`)
+    keep_every: int = 0              # also keep the weights every this many steps, as step_NNNNN.pt (0 = off)
 
 
 def model_config(cfg: Config):
@@ -586,7 +589,13 @@ def train(cfg: Config, data: Path = DATA_FILE, run_dir: Path = RUN_DIR) -> Path:
     """Train on the train split (and its mirror images); every eval_every optimiser steps, measure the loss on the
     validation split (never trained on, not mirrored) and keep the weights with the lowest one. Stops early after
     cfg.patience evaluations without a better one, after cfg.stop_after_min minutes, or when a stretch of steps
-    gets much slower than the first ones (Watchdog)."""
+    gets much slower than the first ones (Watchdog).
+
+    At every evaluation the whole training state is written to last.pt (weights, optimiser, the batch order and
+    position, the random generators, the best loss so far, the minutes used): with cfg.resume a stopped run
+    (watchdog, crash, power cut) continues from its last evaluation instead of starting again; the steps after it are
+    lost and done again. Checkpoints are written to a temporary file first, so a stop while writing never leaves a
+    broken file."""
     import torch
     from ..llm.model import GPT
     dev = device()
@@ -610,16 +619,33 @@ def train(cfg: Config, data: Path = DATA_FILE, run_dir: Path = RUN_DIR) -> Path:
             "tokens_per_step": cfg.batch * cfg.accum * (train_rows.shape[1] - 1), "device": dev,
             "eye_token_share": round(float((weights > 1).mean()) if cfg.eye_weight != 1 else 0.0, 4),
             "gpu": torch.cuda.get_device_name() if dev == "cuda" else ""}
-    (out / "config.json").write_text(json.dumps(info, indent=1) + "\n")
-    (out / "train_ids.txt").write_text("\n".join(train_ids) + "\n")
-    print(json.dumps({k: v for k, v in info.items() if k != "config"}), flush=True)
     log = out / "metrics.jsonl"
-    log.write_text("")
     batches, watch = Batches(train_rows, cfg.batch, cfg.seed, weights), Watchdog("train interval")
     best, since_best, losses, t0, t_last = float("inf"), 0, [], time.time(), time.time()
-    for step in range(cfg.max_steps):
+    start, used_min = 0, 0.0
+    if cfg.resume and (out / "last.pt").exists():
+        st = torch.load(out / "last.pt", map_location="cpu", weights_only=False)
+        same = {k: v for k, v in asdict(cfg).items() if k not in RESUME_FREE}
+        if {k: v for k, v in st["config"].items() if k not in RESUME_FREE} != same:
+            raise ValueError("last.pt was written with a different configuration; not resuming")
+        model.load_state_dict(st["model"])
+        opt.load_state_dict(st["optimiser"])
+        scaler.load_state_dict(st["scaler"])
+        batches.rng.bit_generator.state, batches.order, batches.pos = st["batches"]
+        torch.set_rng_state(st["torch_rng"])
+        if dev == "mps" and st.get("mps_rng") is not None:
+            torch.mps.set_rng_state(st["mps_rng"])
+        start, best, since_best, used_min = st["step"], st["best"], st["since_best"], st["minutes"]
+        print(json.dumps({"resumed_at_step": start, "best": best, "since_best": since_best, "minutes": used_min}),
+              flush=True)
+    else:
+        (out / "config.json").write_text(json.dumps(info, indent=1) + "\n")
+        (out / "train_ids.txt").write_text("\n".join(train_ids) + "\n")
+        log.write_text("")
+    print(json.dumps({k: v for k, v in info.items() if k != "config"}), flush=True)
+    for step in range(start, cfg.max_steps):
         losses.append(_step(model, opt, scaler, batches, cfg, step, dev, mask))
-        late = cfg.stop_after_min and time.time() - t0 > cfg.stop_after_min * 60
+        late = cfg.stop_after_min and used_min + (time.time() - t0) / 60 > cfg.stop_after_min
         if (step + 1) % cfg.eval_every and step + 1 < cfg.max_steps and not late:
             continue
         train_s = time.time() - t_last
@@ -628,23 +654,42 @@ def train(cfg: Config, data: Path = DATA_FILE, run_dir: Path = RUN_DIR) -> Path:
                "train_loss": round(float(np.mean(losses)), 4), "val_loss": round(val["all"], 4),
                "val_slots": {k: round(v, 4) for k, v in val.items() if k != "all"},
                "lr": round(_lr(cfg, step), 7), "tokens_per_s": round(len(losses) * info["tokens_per_step"] / train_s),
-               "minutes": round((time.time() - t0) / 60, 1),
+               "minutes": round(used_min + (time.time() - t0) / 60, 1),
                **watch.tick(train_s / len(losses), dev)}
         with open(log, "a") as f:
             f.write(json.dumps(rec) + "\n")
         print(json.dumps(rec), flush=True)
         losses = []
+        weights_only = {"model": model.state_dict(), "config": asdict(cfg), **rec}
         if val["all"] < best:
             best, since_best = val["all"], 0
-            torch.save({"model": model.state_dict(), "config": asdict(cfg), **rec}, out / "best.pt")
+            _save(weights_only, out / "best.pt")
         else:
             since_best += 1
+        if cfg.keep_every and (step + 1) % cfg.keep_every == 0:
+            _save(weights_only, out / f"step_{step + 1:05d}.pt")
+        _save({"model": model.state_dict(), "config": asdict(cfg), "optimiser": opt.state_dict(),
+               "scaler": scaler.state_dict(), "batches": (batches.rng.bit_generator.state, batches.order, batches.pos),
+               "torch_rng": torch.get_rng_state(), "mps_rng": torch.mps.get_rng_state() if dev == "mps" else None,
+               "step": step + 1, "best": best, "since_best": since_best, "minutes": rec["minutes"]}, out / "last.pt")
         if since_best >= cfg.patience or late:
             print(json.dumps({"stopped": "patience" if since_best >= cfg.patience else "time", "step": step + 1}),
                   flush=True)
             break
         t_last = time.time()
     return out / "best.pt"
+
+
+RESUME_FREE = ("resume", "stop_after_min", "patience", "keep_every")   # may change between resumes (not max_steps:
+                                                                      # the learning-rate schedule depends on it)
+
+
+def _save(obj: dict, path: Path) -> None:
+    """torch.save to a temporary name, then rename: a stop while writing never leaves a broken checkpoint."""
+    import torch
+    tmp = path.with_suffix(".tmp")
+    torch.save(obj, tmp)
+    os.replace(tmp, path)
 
 
 def load_model(path: Path, dev: str = "cpu") -> "GPT":
@@ -834,7 +879,7 @@ def main() -> None:
         align_data(a.data, a.aligned, a.align_ref)
     elif a.stage == "train":
         cfg = Config(name=a.name, **{f: getattr(a, f) for f in asdict(Config()) if f != "name"})
-        cfg.mirror, cfg.heads, cfg.points = bool(cfg.mirror), bool(cfg.heads), bool(cfg.points)
+        cfg.mirror, cfg.heads, cfg.points, cfg.resume = bool(cfg.mirror), bool(cfg.heads), bool(cfg.points), bool(cfg.resume)
         train(cfg, a.data, a.runs)
     else:
         evaluate(a.name, a.n, a.temperature, a.data, a.runs)

@@ -150,3 +150,40 @@ def test_painted_names_both_folders_and_leaves_out_badly_painted_eyes(tmp_path):
     (cat / "log.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
     assert G._painted(afhq) == {"flickr_cat_000002": "train/cat/flickr_cat_000002.png"}
     assert G._painted(cat) == {"CAT_DATASET_01__CAT_00__00000001_000": "CAT_DATASET_01/CAT_00/00000001_000.jpg"}
+
+
+def test_a_stopped_training_resumes_where_it_stopped(tmp_path, monkeypatch):
+    rows = np.concatenate([painting(s)[:, :G.SEQ] for s in range(6)])
+    pts = np.tile(np.array([[90.0, 140.0], [166.0, 140.0]] + [[128.0, 170.0]] * 7), (6, 1, 1))
+    np.savez(tmp_path / "t.npz", tokens=rows, tokens_mirror=G.mirror(rows), tokens_overlap=rows,
+             tokens_mirror_overlap=G.mirror(rows), ids=np.array([f"train/cat/c{i}.png" for i in range(6)]),
+             split=np.array(["train"] * 4 + ["val"] * 2), points=pts, points_mirror=G.mirror_points(pts))
+    monkeypatch.setattr(G, "device", lambda: "cpu")
+    cfg = dict(d_model=32, n_layers=1, n_heads=2, n_kv_heads=2, batch=2, accum=1, max_steps=6, warmup=1,
+               eval_every=2, patience=50, heads=True, points=True, eye_weight=3.0)
+    G.train(G.Config(name="straight", **cfg), tmp_path / "t.npz", tmp_path)
+
+    class Stop(Exception):
+        pass
+
+    real = G.slot_losses
+    calls = []
+
+    def stop_after_two_evaluations(*args, **kwargs):
+        if len(calls) == 2:
+            raise Stop
+        calls.append(1)
+        return real(*args, **kwargs)
+    monkeypatch.setattr(G, "slot_losses", stop_after_two_evaluations)
+    try:
+        G.train(G.Config(name="stopped", **cfg), tmp_path / "t.npz", tmp_path)
+    except Stop:
+        pass
+    monkeypatch.setattr(G, "slot_losses", real)
+    G.train(G.Config(name="stopped", resume=True, **cfg), tmp_path / "t.npz", tmp_path)
+    import json
+    straight = [json.loads(line) for line in (tmp_path / "straight" / "metrics.jsonl").read_text().splitlines()]
+    resumed = [json.loads(line) for line in (tmp_path / "stopped" / "metrics.jsonl").read_text().splitlines()]
+    assert [r["step"] for r in resumed] == [2, 4, 6]
+    for s, r in zip(straight, resumed, strict=True):
+        assert np.isclose(s["train_loss"], r["train_loss"], atol=1e-4) and np.isclose(s["val_loss"], r["val_loss"], atol=1e-4)
