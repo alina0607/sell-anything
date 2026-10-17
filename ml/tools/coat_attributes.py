@@ -45,6 +45,9 @@ Colours are measured in CIE Lab (L 0–100, a green→red, b blue→yellow; chro
        bridge        |u| ≤ 0.17, −0.32 ≤ v ≤ 0.3, outside the muzzle
        muzzle_chin   ellipse centred (0, −0.72), half-axes 0.42 (u) and 0.40 (v): nose, mouth and chin
        cheek_left    −1.15 ≤ u ≤ −0.25, −0.95 ≤ v ≤ −0.2, outside the muzzle      cheek_right   its mirror
+       eye_ring_left the fur around eye 0 from 0.34 d (where the eye disc that fur leaves out ends) to 0.6 d,
+                     outside the ears: white "spectacles", dark rims, a patch over one eye     eye_ring_right  eye 1
+                     The rings overlap the crown, bridge and cheeks; every region is measured on its own.
    For each region: mean Lab, ΔE (CIE76) from the main fur colour, and its patch: pixels at least 0.05 d inside the
    subject mask (its edge mixes in white paper and backlit fur) whose colour (Lab smoothed with σ = 0.1 d, so
    stripes blur away) differs from the main fur colour by
@@ -109,7 +112,7 @@ AFHQ, MASKS, PAINTED = ML / "data/raw/afhq", ML / "data/processed/afhq_masks", M
 OUT = ML / "runs/coat"
 SIDE = 256
 
-EYE_R, NOSE_R, IRIS_R = 0.34, 0.14, 0.2
+EYE_R, NOSE_R, IRIS_R, RING_R = 0.34, 0.14, 0.2, 0.6
 PATCH_D, PATCH_SHARE = 18.0, 0.2
 PATCH_BLUR, PATCH_EDGE = 0.1, 0.05     # in eye distances
 DARK_L, WHITE_L, WHITE_C = 25.0, 68.0, 12.0
@@ -122,12 +125,14 @@ GRID_N, GRID_U, GRID_V = 16, (-0.7, 0.7), (0.25, 1.45)
 FUR_NAMES = ["white", "black", "grey", "orange", "cream", "brown"]
 EYE_NAMES = ["yellow", "green", "blue", "orange", "copper", "unclear"]
 PATTERNS = ["solid", "tabby", "spots", "bicolour", "tortie_calico"]
-REGIONS = ["crown", "ear_left", "ear_right", "bridge", "muzzle_chin", "cheek_left", "cheek_right"]
+REGIONS = ["crown", "ear_left", "ear_right", "bridge", "muzzle_chin", "cheek_left", "cheek_right", "eye_ring_left",
+           "eye_ring_right"]
 ZH = {"white": "白", "black": "黑", "grey": "灰", "orange": "橘", "cream": "奶油", "brown": "棕", "mixed": "混色",
       "yellow": "黃", "green": "綠", "blue": "藍", "copper": "銅", "unclear": "看不清",
       "solid": "純色", "tabby": "虎斑條紋", "spots": "斑點/塊狀", "bicolour": "雙色", "tortie_calico": "玳瑁/三花",
       "crown": "頭頂", "ear_left": "左耳", "ear_right": "右耳", "bridge": "鼻樑", "muzzle_chin": "口鼻下巴",
-      "cheek_left": "左臉頰", "cheek_right": "右臉頰"}
+      "cheek_left": "左臉頰", "cheek_right": "右臉頰",
+      "eye_ring_left": "左眼周", "eye_ring_right": "右眼周"}
 
 
 # ---------------------------------------------------------------- colour names
@@ -203,6 +208,9 @@ def regions(face, u: np.ndarray, v: np.ndarray, fur: np.ndarray) -> dict[str, np
     cheek = (np.abs(u) >= 0.25) & (np.abs(u) <= 1.15) & (v >= -0.95) & (v <= -0.2) & ~muzzle
     out = {"crown": crown, "ear_left": ear_l, "ear_right": ear_r, "bridge": bridge, "muzzle_chin": muzzle,
            "cheek_left": cheek & (u < 0), "cheek_right": cheek & (u > 0)}
+    for key, (eu, ev) in (("eye_ring_left", P[0]), ("eye_ring_right", P[1])):
+        r = np.hypot(u - eu, v - ev)
+        out[key] = (r > EYE_R) & (r <= RING_R) & ~ear_l & ~ear_r
     return {k: r & fur for k, r in out.items()}
 
 
@@ -478,7 +486,8 @@ def describe(i: int) -> dict:
             "regions": region_out, "crown_grid": np.round(grid, 2).tolist(), "eyes_lab": eyes_lab}
 
 
-MIRROR_KEYS = [("eye_left", "eye_right"), ("ear_left", "ear_right"), ("cheek_left", "cheek_right")]
+MIRROR_KEYS = [("eye_left", "eye_right"), ("ear_left", "ear_right"), ("cheek_left", "cheek_right"),
+               ("eye_ring_left", "eye_ring_right")]
 
 
 def mirror(row: dict) -> dict:
@@ -581,7 +590,7 @@ def crown_figure(rows: list[dict], path: Path, n: int = 16) -> None:
 
 REGION_RGB = {"crown": (230, 40, 40), "ear_left": (40, 200, 230), "ear_right": (40, 90, 230),
               "bridge": (240, 200, 0), "muzzle_chin": (200, 0, 200), "cheek_left": (150, 230, 80),
-              "cheek_right": (0, 160, 60)}
+              "cheek_right": (0, 160, 60), "eye_ring_left": (255, 140, 0), "eye_ring_right": (255, 90, 160)}
 
 
 def regions_figure(rows: list[dict], path: Path, n: int = 12) -> None:
