@@ -25,14 +25,46 @@ CAT val(3.9407,521 隻)上按貓數加權的結果(3.9334),跟 D 的 3.9331 只�
 
 ---
 
-## 🔴 優先處理
+## ✅ 已完成(2026-10-18,第二輪)
 
-- [ ] **[現在] 18 隻沒有眼睛分數的 CAT 畫作**:為什麼沒有?(猜測:是 `log_modal.jsonl` 那批,Modal 上畫的時候沒算眼睛分數。)
-      要嘛補算分數再套規則,要嘛在 §3.4 寫明原因。程式在 `brushgpt.py` 的 `_painted()`:`if "eye_conf" in e` 會讓沒分數的直接通過。
-- [ ] **[現在] Table 2d 的標籤**:最後一列寫 `kept 6830`,但那只是「有分數的 6,965 隻裡留下的」。
-      把標籤改成 `kept (of the 6,965 with eye measures)`,然後在 Mac 上重跑該格(這台雲端機器沒有資料)。
-- [ ] **[現在] `catbrush.py` 的 docstring 跟論文矛盾**:模組說明和 `Photo` 寫「along the fur's direction」,
-      但論文 §4.1.4 說初始角度是**沿著影像邊緣**、不一定順著毛(這才是對的,§12 正是在處理這件事)。改 docstring。
+- **Table 2d 的標籤**:`kept` → `kept (of the paintings with eye measures)`。
+  ⚠️ 只改了標籤文字(程式碼和存下來的輸出都改了,數字沒動),**還沒在 Mac 上重跑**。
+- **`catbrush.py` 的 docstring**:三處「along the fur」改成「along the photo's edges」,跟論文 §4.1.4 一致(程式行為沒變)。
+- **正文的開發日誌痕跡**:日期、「development log」、「project owner's agreement」、「hand-off note 7,531」都清掉了。
+  被拿掉的出處**沒有丟**,記在下面「Appendix E 要列的出處」,寫附錄時照抄。
+- **18 隻沒有眼睛分數的 CAT 畫作**:新增 `ml/tools/backfill_cat_eye_checks.py` 補算(見下面「要在 Mac 上跑的」)。
+  從程式碼推斷的原因:`paint_cat_dataset.py` 從 10-12 03:58 開始畫,眼睛檢查是 10-12 才決定加的,
+  **最早畫的那批紀錄裡沒有 `eye_conf`**;而 `brushgpt._painted()` 只有在 `"eye_conf" in e` 時才套規則,所以這批直接通過。
+  ⚠️ 這是推斷,沒有資料無法證實;跑腳本時它會把那幾隻列出來,可以對照它們的畫圖時間。
+
+## 🖥️ 要在 Mac 上跑的(這台雲端機器沒有資料、沒有 torch)
+
+```bash
+cd ml
+PYTHONPATH=. python tools/backfill_cat_eye_checks.py           # 1. 先只列出:應該剛好 18 隻
+PYTHONPATH=. python tools/backfill_cat_eye_checks.py --write   # 2. 補算並改寫 log.jsonl(舊檔留成 log.jsonl.bak)
+```
+
+3. 重跑 notebook 的 Table 2b–2d 那一格(cell 39)和 Figure 6、7:6,965 會變成 6,983,排除數 135 可能會變。
+4. 依新的數字更新 §3.4 最後那段(現在寫的是「18 隻沒有分數、規則檢查不到」),以及摘要/Table 3 若有受影響的數字。
+5. ⚠️ `tokens_J*.npz` 是凍結的,**J 這次訓練用的仍然是 6,848 隻**。
+   如果 18 隻裡有應該被排除的,在 §3.4 / §8.6 寫明「J 的資料包含 N 隻未經檢查的貓」,下一個版本重新 tokenise 時才會生效。
+
+## 📎 Appendix E 要列的出處(從正文拿掉的日期與紀錄)
+
+| 正文位置 | 原本寫的出處 |
+|---|---|
+| §3.2「與事前預期相反的結果」 | development log 2026-10-10 §1 |
+| §3.3 重現性說明(Table 2 的 AUROC) | development log;2026-10-10 用未 commit 的臨時腳本算的 |
+| Table 4a「Face box」 | decision 2026-10-10(臉部 vs 整張照片) |
+| Table 4a「Brush shape」 | decision 2026-10-09(五種筆刷比較;程式在私人 Kaggle dataset `alinachuang/cat-brush-proto`) |
+| §4.1.1 只畫臉 | 2026-10-10 決定 |
+| §4.2 五 token 版面 | 2026-10-09 與 painter 一起決定 |
+| §4.2 詞彙表 | 早期交接筆記寫 7,531(錯),程式為 7,499;development log 2026-10-11 記錄更正 |
+| Table 6a、Table 6c 的 Trial 欄 | development log 2026-10-11 §2 |
+| §4.3.3 field restriction | 2026-10-11 由專案擁有者決定採用(「這是架構改變還是補丁?」);正文改成指向 Appendix A |
+
+## 🔴 優先處理
 - [ ] **[轉論文] 文字的作者**:會議規定可以用 AI 潤稿,**不能由 AI 代寫段落和論點**。
       轉 Overleaf 時每一段用自己的話重寫,Claude 只負責審稿。
 - [ ] **[轉論文] 「(made by Claude)」**:給教授看的版本保留(誠實揭露)。
@@ -58,10 +90,8 @@ CAT val(3.9407,521 隻)上按貓數加權的結果(3.9334),跟 D 的 3.9331 只�
 - [ ] **每一筆都從 arXiv / DBLP 抓 BibTeX 重新核對**,尤其 2026 年的 arXiv 編號(2603.*、2605.*、2601.*)。
 - [ ] §1–§4 沒有引用到 [22]–[31]、[39]、[44]–[52]、[55]–[59];等 §5 之後寫完再檢查一次,沒用到的刪掉。
 
-## 🟡 notebook 痕跡(現在可以先收斂,轉論文時移到附錄)
+## 🟡 notebook 痕跡(轉論文時移到附錄)
 
-- [ ] **[現在] 日期**(約 10 處 `2026-10-…`)和「development log」(5 處):正文改成「after a comparison (Appendix X)」,日期集中放到附錄。
-- [ ] **[現在] 「project owner's agreement」**(§4.3.3)、「hand-off note gave 7,531, which was wrong」(§4.2):對論文讀者沒有意義,刪掉或移到附錄。
 - [ ] **[轉論文] commit `d6e00d0`、檔名 `catbrush.py` / `modal_brushgpt.py` / `brushgpt.py`**:移到 Reproducibility 附錄。
 - [ ] **[轉論文] 摘要裡的「Evidence rule … this notebook」**:改成一個附錄(Appendix E 本來就有)。
 - [ ] **[轉論文] GitHub 連結 `alina0607/cat-face-landmarks`**:投雙盲會議時會洩漏身分,要匿名化;arXiv 可以保留。

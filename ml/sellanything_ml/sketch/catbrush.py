@@ -4,8 +4,9 @@ A stroke is a rounded rectangle with a one-pixel edge and faint bristle streaks 
 angle, colour and opacity. Strokes are laid one over another (later strokes on top) on white paper.
 
 The decomposition is fitted stage by stage, coarse to fine: each stage places its strokes where the canvas is still
-furthest from the photo, starts them along the fur's direction and in the photo's colour there, then adjusts every
-parameter of that stage's strokes by gradient descent on the L1 distance to the photo; earlier stages stay fixed.
+furthest from the photo, starts them along the photo's edges (the local image structure, which need not follow the
+fur) and in the photo's colour there, then adjusts every parameter of that stage's strokes by gradient descent on
+the L1 distance to the photo; earlier stages stay fixed.
 This is direct optimisation through a differentiable renderer, as in Zou et al., "Stylized Neural Painting"
 (CVPR 2021), with Paint Transformer's (Liu et al., ICCV 2021) straight oil stroke.
 
@@ -191,7 +192,7 @@ def orientation(target: torch.Tensor) -> torch.Tensor:
 
 @dataclass
 class Photo:
-    """What a painting is fitted to: the photo on white paper, where the cat is, and the fur's direction."""
+    """What a painting is fitted to: the photo on white paper, where the cat is, and the direction along its edges."""
 
     target: torch.Tensor         # (SIDE, SIDE, 3) in 0–1
     mask: torch.Tensor           # (SIDE, SIDE), 1 on the cat
@@ -212,7 +213,7 @@ class PaintSettings:
 
 
 def new_stage(photo: Photo, canvas: torch.Tensor, k: int, rng: np.random.Generator) -> Strokes:
-    """Stage k's strokes, placed with probability ∝ the canvas's error, along the fur, in the photo's colour."""
+    """Stage k's strokes, placed with probability ∝ the canvas's error, along the edges, in the photo's colour."""
     length, width, n = STAGES[k]
     err = ((photo.target - canvas).abs().sum(-1) * photo.mask).flatten().numpy() + 1e-6
     idx = rng.choice(err.size, n, replace=False, p=err / err.sum())
