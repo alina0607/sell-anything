@@ -37,18 +37,14 @@ CAT val(3.9407,521 隻)上按貓數加權的結果(3.9334),跟 D 的 3.9331 只�
   **最早畫的那批紀錄裡沒有 `eye_conf`**;而 `brushgpt._painted()` 只有在 `"eye_conf" in e` 時才套規則,所以這批直接通過。
   ⚠️ 這是推斷,沒有資料無法證實;跑腳本時它會把那幾隻列出來,可以對照它們的畫圖時間。
 
-## 🖥️ 要在 Mac 上跑的(這台雲端機器沒有資料、沒有 torch)
+## ✅ 已在 Mac 上完成(2026-10-17)
 
-```bash
-cd ml
-PYTHONPATH=. python tools/backfill_cat_eye_checks.py           # 1. 先只列出:應該剛好 18 隻
-PYTHONPATH=. python tools/backfill_cat_eye_checks.py --write   # 2. 補算並改寫 log.jsonl(舊檔留成 log.jsonl.bak)
-```
-
-3. 重跑 notebook 的 Table 2b–2d 那一格(cell 39)和 Figure 6、7:6,965 會變成 6,983,排除數 135 可能會變。
-4. 依新的數字更新 §3.4 最後那段(現在寫的是「18 隻沒有分數、規則檢查不到」),以及摘要/Table 3 若有受影響的數字。
-5. ⚠️ `tokens_J*.npz` 是凍結的,**J 這次訓練用的仍然是 6,848 隻**。
-   如果 18 隻裡有應該被排除的,在 §3.4 / §8.6 寫明「J 的資料包含 N 隻未經檢查的貓」,下一個版本重新 tokenise 時才會生效。
+- `backfill_cat_eye_checks.py` 列出**剛好 18 隻**,`--write` 補算後改寫 `log.jsonl`(舊檔在 `log.jsonl.bak`)。
+  只有這 18 行改變,而且只多了四個眼睛欄位,其餘內容不變。
+- **推斷已證實**:這 18 張正是 log 最前面的畫作(第 0–18 行),第一行有 `eye_conf` 的是第 20 行,之後沒有任何畫作缺少。
+- **18 隻全部通過規則**:排除數仍是 135(1.9%),保留 6,983 − 135 = **6,848**,正好等於 Table 3 的 CAT 貓數。
+  Table 2c 的百分位、Figure 6 的數字(比值中位數 0.995、eye_err 0.038 / 0.104)與 Figure 7 的六隻貓都沒有變。
+- 因此 **J 的資料(補算前 tokenise)與規則現在保留的貓完全相同**,§3.4 已照此改寫;Table 2d 的標籤改回 `kept`。
 
 ## 📎 Appendix E 要列的出處(從正文拿掉的日期與紀錄)
 
